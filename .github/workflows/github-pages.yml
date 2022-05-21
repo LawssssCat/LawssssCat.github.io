@@ -1,6 +1,6 @@
 # https://github.com/crazy-max/ghaction-github-pages
 
-name: website
+name: build docs and deploy to branch gh-pages
 
 on: push
 
@@ -14,8 +14,8 @@ jobs:
       -
         name: Gen dummy page
         run: |
-          mkdir public
-          cat > public/index.html <<EOL
+          mkdir docs
+          cat > docs/README.md <<EOL
           <!doctype html>
           <html>
             <head>
@@ -32,6 +32,6 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
-          build_dir: public
+          build_dir: docs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
