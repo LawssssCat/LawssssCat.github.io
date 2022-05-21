@@ -1,6 +1,6 @@
 # https://github.com/crazy-max/ghaction-github-pages
 
-name: build docs and deploy to branch gh-pages
+name: build-docs-deploy-gh-pages
 
 on: push
 
@@ -15,7 +15,7 @@ jobs:
         name: Gen dummy page
         run: |
           # mkdir docs
-          cat > docs/actions_build.log <<EOL
+          cat > jekyll/actions_build.log <<EOL
               GitHub Pages with ${{ github.sha }} commit ID has been deployed through "https://github.com/marketplace/actions/github-pages" GitHub Pages action successfully.
           EOL
       -
@@ -24,6 +24,6 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
-          build_dir: docs
+          build_dir: jekyll
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

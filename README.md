@@ -10,7 +10,7 @@
         <img src="https://img.shields.io/github/license/LawssssCat/lawsssscat.github.io.svg" alt="LICENSE">
     </a>
     <a href="https://LawssssCat.github.io">
-        <img src="https://github.com/LawssssCat/LawssssCat.github.io/actions/workflows/pages/pages-build-deployment/badge.svg" alt="github pages status">
+        <img src="https://shields-staging.herokuapp.com/github/deployments/LawssssCat/LawssssCat.github.io/github-pages.svg?logo=github&label=github%20pages%20deploy" alt="github pages status">
     </a>
 </p>
 <br><br>

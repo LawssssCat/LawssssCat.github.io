@@ -179,7 +179,8 @@ ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (t
 
 # Build settings settings
 ##############################
-remote_theme: just-the-docs/just-the-docs
+# 复制到本地编辑
+# remote_theme: just-the-docs/just-the-docs
 # theme: minima
 # theme: just-the-docs
 plugins:
