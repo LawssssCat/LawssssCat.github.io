@@ -55,6 +55,9 @@ color_scheme: light # See Customization: https://just-the-docs.github.io/just-th
 # text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 # highlight_theme: tomorrow-night-eighties # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 
+# "node_modules/", "package.json", "package-lock.json",  "LICENSE.txt", "README.md", 
+exclude: ["*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "script/", "lib/", "bin/", "Rakefile", "docs/tests/"]
+
 # kramdown
 ##############################
 # 代码高亮
@@ -65,6 +68,12 @@ kramdown:
 
 # 页面压缩
 compress_html:
+  # clippings: all
+  # comments: all
+  # endings: all
+  # startings: []
+  # blanklines: false
+  # profile: false
   ignore:
     envs: all
 
@@ -156,7 +165,7 @@ back_to_top_text: "Back to top"
 
 # see: https://just-the-docs.github.io/just-the-docs/docs/configuration/#footer-content
 
-footer_content: "Copyright &copy; 2017-2020 Patrick Marsceill. Distributed by an <a href=\"https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt\">MIT license.</a>"
+footer_content: "Copyright &copy; 2017-2020 Patrick Marsceill. Distributed by an <a href=\"https://github.com/LawssssCat/LawssssCat.github.io/blob/main/LICENSE\">MIT license.</a>"
 
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
@@ -187,7 +196,8 @@ plugins:
   - jekyll-feed
 #  - jekyll-paginate
 #  - jekyll-sitemap
-#  - jemoji
+  - jemoji
+  - jekyll-seo-tag
 
 # Exclude from processing.
 ##############################
