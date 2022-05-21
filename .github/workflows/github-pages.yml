@@ -14,17 +14,9 @@ jobs:
       -
         name: Gen dummy page
         run: |
-          mkdir docs
-          cat > docs/README.md <<EOL
-          <!doctype html>
-          <html>
-            <head>
-              <title>GitHub Pages deployed!</title>
-            </head>
-            <body>
-              <p>GitHub Pages with <strong>${{ github.sha }}</strong> commit ID has been deployed through <a href="https://github.com/marketplace/actions/github-pages">GitHub Pages action</a> successfully.</p>
-            </body>
-          </html>
+          # mkdir docs
+          cat > docs/actions_build.log <<EOL
+              GitHub Pages with ${{ github.sha }} commit ID has been deployed through "https://github.com/marketplace/actions/github-pages" GitHub Pages action successfully.
           EOL
       -
         name: Deploy to GitHub Pages
