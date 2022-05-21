@@ -21,6 +21,7 @@
 # Change Logs
 ##############################
 # 2022年5月21日 imitate https://walbatrossw.github.io/
+# 2022年5月21日 use theme https://github.com/just-the-docs/just-the-docs
 
 # Site settings
 ##############################
@@ -29,33 +30,158 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: LawssssCat's blog
+baseurl: "" # the subpath of your site, e.g. /blog
+
+title: LawssssCat' Blog
 email: 1191693505@qq.com
 description: >- # this means to ignore newlines until "baseurl:"
   Share those projects I'm working on.
 #  Write an awesome description for your new site here. You can edit this
 #  line in _config.yml. It will appear in your document head meta (for
 #  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
+
 url: "https://lawsssscat.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  LawssssCat
 # https://blog.csdn.net/LawssssCat
-remote_theme: just-the-docs/just-the-docs
+
+# 左上角的图标（不是标签头的小图标）
+# Set a path/url to a logo that will be displayed instead of the title
+logo: "/assets/images/just-the-docs.png"
+
+# Color scheme supports "light" (default) and "dark"
+color_scheme: light # See Customization: https://just-the-docs.github.io/just-the-docs/docs/customization/
+
 # text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 # highlight_theme: tomorrow-night-eighties # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
+
+# kramdown
+##############################
+# 代码高亮
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# 页面压缩
+compress_html:
+  ignore:
+    envs: all
 
 # Language and Timezone
 ##############################
 # lang: ko # the language of your site, default as "en"
 # timezone: Asia/Seoul # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
 
-# Author and Social
+# Search settings
 ##############################
+# Enable or disable the site search
+# Supports true (default) or false
+search_enabled: true
 
-# Build settings
+search:
+  # Split pages into sections that can be searched individually
+  # Supports 1 - 6, default: 2
+  heading_level: 6
+  # Maximum amount of previews per search result
+  # Default: 3
+  previews: 3
+  # Maximum amount of words to display before a matched word in the preview
+  # Default: 5
+  preview_words_before: 5
+  # Maximum amount of words to display after a matched word in the preview
+  # Default: 10
+  preview_words_after: 10
+  # Set the search token separator
+  # Default: /[\s\-/]+/
+  # Example: enable support for hyphenated search words
+  tokenizer_separator: /[\s/]+/
+  # Display the relative url in search results
+  # Supports true (default) or false
+  rel_url: true
+  # Enable or disable the search button that appears in the bottom right corner of every page
+  # Supports true or false (default)
+  button: false
+
+# Define Jekyll collections
 ##############################
-theme: minima
+### collections:
+###   # Define a collection named "docs", its documents reside in the "_docs" directory
+###   docs:
+###     permalink: "/:collection/:path/"
+###     output: true
+### 
+### just_the_docs:
+###   # Define which collections are used in just-the-docs
+###   collections:
+###     # Reference the "docs" collection
+###     docs:
+###       # Give the collection a name
+###       name: Documentation
+###       # Exclude the collection from the navigation
+###       # Supports true or false (default)
+###       nav_exclude: false
+###       # Exclude the collection from the search
+###       # Supports true or false (default)
+###       search_exclude: false
+
+# Aux links
+##############################
+# 右上角链接
+# Aux links for the upper right navigation
+aux_links:
+  "GitHub": "//github.com/LawssssCat/LawssssCat.github.io"
+# Makes Aux links open in a new tab. Default is false
+aux_links_new_tab: true
+
+# Heading anchor links
+##############################
+# 标题锚链接
+# Heading anchor links appear on hover over h1-h6 tags in page content
+# allowing users to deep link to a particular heading on a page.
+#
+# Supports true (default) or false
+heading_anchors: true
+
+# Back to top link
+##############################
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Footer content (deprecated)
+##############################
+# appears at the bottom of every page's main content
+# Note: The footer_content option is deprecated and will be removed in a future major release. Please use `_includes/footer_custom.html` for more robust
+# markup / liquid-based content.
+
+# see: https://just-the-docs.github.io/just-the-docs/docs/configuration/#footer-content
+
+footer_content: "Copyright &copy; 2017-2020 Patrick Marsceill. Distributed by an <a href=\"https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt\">MIT license.</a>"
+
+# Footer last edited timestamp
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+
+# Footer "Edit this page on GitHub" link text
+gh_edit_link: true # show or hide edit this page link
+gh_edit_link_text: "Edit this page on GitHub."
+gh_edit_repository: "https://github.com/LawssssCat/LawssssCat.github.io" # the github URL for your repo
+gh_edit_branch: "main" # the branch that your docs is served from
+# gh_edit_source: docs # the source that your files originate from
+gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
+
+# Google Analytics Tracking (optional)
+##############################
+# e.g, UA-1234567-89
+#ga_tracking: UA-5555555-55
+ga_tracking: G-TXHZ92TQ8Q
+ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true by default)
+
+# Build settings settings
+##############################
+# remote_theme: just-the-docs/just-the-docs
+# theme: minima
+theme: just-the-docs
 plugins:
   - jekyll-feed
 #  - jekyll-paginate
