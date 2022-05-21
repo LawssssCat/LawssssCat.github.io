@@ -3,11 +3,12 @@
 name: build-docs-deploy-gh-pages
 
 on:
-  push:
-    branches:
-      - 'main'
-    paths-ignore:
-          - '**.md'
+  pull_request
+#  push:
+#    branches:
+#      - 'main'
+#    paths-ignore:
+#          - '**.md'
           
 jobs:
   publish:
