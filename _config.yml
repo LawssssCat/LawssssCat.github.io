@@ -1,1 +1,4 @@
-theme: jekyll-theme-minimal
+title: LawssssCat's Blog
+
+exclude: 
+  - '/README.md'
