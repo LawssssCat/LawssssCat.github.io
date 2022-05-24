@@ -1,0 +1,12 @@
+<h1>
+    {%- if page.url != '/' -%}
+    <!--todo front page-->
+    <a href="{{ '/' | relative_url }}">..</a>/
+    {%- endif -%}
+    {{ include.title }}
+    {%- if site.github-button.show -%}
+    <div class="github-buttons">
+        <a class="github-button" href="{{ site.github-button.url }}" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a>
+    </div>
+    {%- endif -%}
+</h1>

@@ -1,0 +1,12 @@
+{%- comment -%}
+
+function to get post attribute
+
+{%- endcomment -%}
+{%- case include.attribute -%}
+{%- when 'name' -%}
+{{- post.title | default: post_file_name -}}
+{% assign post_file_name  = include.post | split: '/' | last %}
+{%- else -%}
+{% include error-can-not-case-include.attribute-in-get_post_attribute %}
+{%- endcase -%}

@@ -1,0 +1,20 @@
+<footer class="site-footer">
+
+    <!-- Third-Party JS -->
+
+    <!-- My JS -->
+    <script type="text/javascript" src="{% include tools/get_site_url file_name='common.js' type='js' %}"></script>
+
+    {% for js in layout.js %}
+    <script type="text/javascript" src="{% include tools/get_site_url file_name=js type='js' %}"></script>
+    {% endfor %}
+
+    {% for js in page.js %}
+    <script type="text/javascript" src="{% include tools/get_site_url file_name=js type='js' %}"></script>
+    {% endfor %}
+
+    <!--todo google analysis-->
+    <!--todo search e.g. lunr.js-->
+    <!--todo seo-->
+
+</footer>

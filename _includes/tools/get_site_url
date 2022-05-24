@@ -1,0 +1,13 @@
+{%- comment -%}
+
+uniformly manage site-url
+
+{%- endcomment -%}
+{%- case include.type -%}
+{%- when 'js' -%}
+{{ '/assets/js/' | append: include.file_name | relative_url }}
+{%- when 'css' -%}
+{{ '/assets/css/' | append: include.file_name | relative_url }}
+{%- else -%}
+{% include error-can-not-case-include.type-in-get_site_url %}
+{%- endcase -%}

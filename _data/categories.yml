@@ -1,0 +1,15 @@
+---
+# this is the rendering order of categories.
+
+docs:
+  show: false
+
+guide:
+  label: Guild
+  description: |
+    Guide how to use this project. 
+    such as 'How-to-write-Markdown-in-site'
+
+test:
+  label: Test
+  description: Use to test after development.
