@@ -1,0 +1,7 @@
+@media (min-width: 1000px) { body { width: 800px; margin: 40px auto; } p { text-align: justify; } }
+
+body { font-family: sans, sans-serif; }
+
+code { padding: 0.15em 0.25em; border-radius: 0.25em; }
+
+/*# sourceMappingURL=common.css.map */
