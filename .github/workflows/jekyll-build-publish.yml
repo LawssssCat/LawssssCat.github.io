@@ -23,7 +23,7 @@ jobs:
         run: |
           gem install bundler
           bundle install
-          bundle exec jekyll build
+          bundle exec jekyll build -d _site/blog
         
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
