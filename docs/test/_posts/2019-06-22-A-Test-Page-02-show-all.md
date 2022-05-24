@@ -12,10 +12,6 @@ site {{ site }}
 
 ---
 
-this page 
-
-{{ page }}
-
 ---
 
 pages {{ site.pages.size }}

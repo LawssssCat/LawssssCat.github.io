@@ -3,9 +3,9 @@
 function to get category attribute
 
 {%- endcomment -%}
+{%- assign category_data = site.data.categories[category_id] -%}
 {%- case include.attribute -%}
 {%- when 'label' -%}
-{% assign category_data = site.data.categories[category_id] %}
 {{ category_data.label | default: include.category_id }}
 {%- when 'description' -%}
 {{ category_data.description | replace: '\n', ' ' }}

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: home page
+title: 
 ---
 
 ![logo]({{ site.favicon | relative_url }}){:.logo}
@@ -15,7 +15,7 @@ Welcome to my Blog. Below are some of my articles.
           {% assign category = category[1] %}
           {% capture category_label %}{% include tools/get_category_attribute attribute='label' category_id=category_id %}{% endcapture %}
           {% capture category_description %}{% include tools/get_category_attribute attribute='description' category_id=category_id %}{% endcapture %}
-          {% if category_data and category_data.show != false %}
+          {% if site.data.categories[category_id].show != false %}
             <li><a href="#+{{ category_label | downcase }}" 
             data-description="{{ category_description }}">
             {{ category_label }}</a></li>
@@ -37,14 +37,16 @@ Welcome to my Blog. Below are some of my articles.
         <tbody>
             {% for post in site.posts %}
             <tr>
-                <td><a href="{{ post.url | relative_url}}" class="post-name">{% include tools/get_post_attribute attribute='name'%}</a></td>
+                <td><a href="{{ post.url | relative_url}}" class="post-title">{% include tools/get_post_attribute attribute='title' post=post %}</a></td>
                 <td>
                   <ul class="category-list">
                       {% for category_id in post.categories %}
-                        {% capture category_description %}{% include tools/get_category_attribute attribute='description' category_id=category_id %}{% endcapture %}
-                        {% capture category_label %}{% include tools/get_category_attribute attribute='label' category_id=category_id %}{% endcapture %}
-                        <li><a href="#+{{ category_label | downcase }}" 
-                        data-description="{{ category_description }}">{{ category_label }}</a></li>
+                        {% if site.data.categories[category_id].show != false %}
+                          {% capture category_description %}{% include tools/get_category_attribute attribute='description' category_id=category_id %}{% endcapture %}
+                          {% capture category_label %}{% include tools/get_category_attribute attribute='label' category_id=category_id %}{% endcapture %}
+                          <li><a href="#+{{ category_label | downcase }}" 
+                          data-description="{{ category_description }}">{{ category_label }}</a></li>
+                        {% endif %}
                       {% endfor %}
                   </ul>
                 </td>
@@ -83,7 +85,7 @@ Welcome to my Blog. Below are some of my articles.
     document.querySelectorAll('#post-table tbody tr').forEach(function (row) {
         var show = true;
 
-        var postName = row.getElementsByClassName('post-name')[0].innerHTML.toLowerCase();
+        var postName = row.getElementsByClassName('post-title')[0].innerHTML.toLowerCase();
         if (postName.indexOf(postPattern) == -1) {
             show = false;
         }
@@ -144,21 +146,21 @@ Welcome to my Blog. Below are some of my articles.
         applyFilter();
     });
 
-    // // handle shortcuts
-    // addEventListener('keydown', function (event) {
-    //     // focus search box on valid keydown
-    //     if (event.key.toLowerCase().match(/^[+a-z]$/) &&
-    //         !(event.ctrlKey || event.altKey || event.metaKey)) {
-    //         searchBox.focus();
-    //         searchBox.parentElement.scrollIntoView();
-    //     }
-    //     // clear filter on escape
-    //     else if (event.key === 'Escape') {
-    //         location.hash = searchBox.value = '';
-    //         searchBox.focus();
-    //         searchBox.parentElement.scrollIntoView();
-    //     }
-    // });
+    // handle shortcuts
+    addEventListener('keydown', function (event) {
+        // focus search box on valid keydown
+        if (event.key.toLowerCase().match(/^[+a-z]$/) &&
+            !(event.ctrlKey || event.altKey || event.metaKey)) {
+            searchBox.focus();
+            searchBox.parentElement.scrollIntoView();
+        }
+        // clear filter on escape
+        else if (event.key === 'Escape') {
+            location.hash = searchBox.value = '';
+            searchBox.focus();
+            searchBox.parentElement.scrollIntoView();
+        }
+    });
 
     // handle URL changes
     window.onhashchange = applyFilter;
