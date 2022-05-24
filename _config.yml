@@ -26,9 +26,8 @@ exclude:
   - '/README.md'
   - '/script'
   - '/node_modules'
-  - '/.vscode'
 #   - .sass-cache/
-#   - .jekyll-cache/
+#  - .jekyll-cache/
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/

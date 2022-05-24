@@ -5,7 +5,7 @@ docs:
   show: false
 
 guide:
-  label: Guild
+  label: Guide
   description: |
     Guide how to use this project. 
     such as 'How-to-write-Markdown-in-site'
