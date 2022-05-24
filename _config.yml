@@ -54,11 +54,16 @@ lang: en
 
 baseurl:  /blog # the subpath of your site, e.g. /blog
 # see https://jekyllrb.com/docs/permalinks/#built-in-formats
-permalink: none
+permalink: none # default: pretty
 
 # --------------
 # variables custom
 # --------------
+
+# 主题颜色
+# see post What-is-the-structure-of-this-project #样式
+color_scheme: 
+
 # 小图标
 favicon: /assets/favicon.ico
 

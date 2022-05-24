@@ -1,0 +1,41 @@
+//
+// Base element style overrides
+//
+// stylelint-disable selector-no-type, selector-max-type
+
+// layout
+
+$column-width: 800px;
+$grace-space: 200px;
+$layout-break: "(min-width: #{$column-width + $grace-space})";
+
+@media #{$layout-break} {
+  body {
+    width: $column-width;
+    margin: 40px auto;
+  }
+
+  p {
+    text-align: justify;
+  }
+}
+
+// @media not all and #{$layout-break} {
+//   .github-corner {
+//     display: none;
+//   }
+// }
+
+// common tags
+
+body {
+  font-family: sans, sans-serif;
+}
+
+a:link, a:visited {
+  color: $link-color;
+}
+
+a:hover {
+  color: $link-hover;
+}

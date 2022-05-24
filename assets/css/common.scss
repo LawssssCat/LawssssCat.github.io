@@ -1,37 +1,9 @@
 ---
 ---
-{% include css/cat-theme.scss.liquid color_scheme="red" %}
 
-// layout
-
-$column-width: 800px;
-$grace-space: 200px;
-$layout-break: "(min-width: #{$column-width + $grace-space})";
-
-@media #{$layout-break} {
-  body {
-    width: $column-width;
-    margin: 40px auto;
-  }
-
-  p {
-    text-align: justify;
-  }
-}
-
-// @media not all and #{$layout-break} {
-//   .github-corner {
-//     display: none;
-//   }
-// }
-
-// common tags
-
-body {
-  font-family: sans, sans-serif;
-}
-
-code {
-  padding: 0.15em 0.25em;
-  border-radius: 0.25em;
-}
+{% if site.color_scheme and site.color_scheme != "nil" %}
+  {% assign color_scheme = site.color_scheme %}
+{% else %}
+  {% assign color_scheme = "red" %}
+{% endif %}
+{% include css/cat-theme.scss.liquid color_scheme=color_scheme %}
