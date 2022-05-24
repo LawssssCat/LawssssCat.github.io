@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "common.css",
+	"sources": [
+		"common.scss"
+	],
+	"sourcesContent": [
+		".a {\n    \n}"
+	],
+	"names": [],
+	"mappings": ""
+}
