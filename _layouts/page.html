@@ -1,17 +1,15 @@
 ---
 layout: default
 ---
-
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: 'en-US' }}">
-    {%- include head.html -%}
-    <body>
-        {%- include header.html -%}
-        <div class="site-content">
-        {% include page_title.html page=page %}
-        {{ content }}
-        </div>
-        {%- include footer.html -%}
-    </body>
+{%- include head.html -%}
+<body>
+{%- include header.html -%}
+<div class="site-content">
+{%- include page_title.html page=page -%}
+{{ content }}
+</div>
+{%- include footer.html -%}
+</body>
 </html>
-

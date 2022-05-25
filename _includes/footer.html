@@ -1,24 +1,14 @@
 <footer class="site-footer">
-
-    <!-- Third-Party JS -->
-
-    <!-- My JS -->
-    <script type="text/javascript" src="{% include tools/get_site_url.liquid file_name='common.js' type='js' %}"></script>
-
-    {% for module in layout.modules %}
-    <script type="text/javascript" src="{% include tools/get_site_url.liquid file_name=module type='module/js' %}"></script>
-    {% endfor %}
-
-    {% for js in layout.js %}
-    <script type="text/javascript" src="{% include tools/get_site_url.liquid file_name=js type='js' %}"></script>
-    {% endfor %}
-
-    {% for js in page.js %}
-    <script type="text/javascript" src="{% include tools/get_site_url.liquid file_name=js type='js' %}"></script>
-    {% endfor %}
-
-    <!--todo google analysis-->
-    <!--todo search e.g. lunr.js-->
-    <!--todo seo-->
-
+{%- for module in layout.modules -%}
+<script type="module" src="{% include tools/get_site_url.liquid file_name=module type='module/js' %}"></script>
+{%- endfor -%}
+{%- for js in layout.js -%}
+<script type="module" src="{% include tools/get_site_url.liquid file_name=js type='js' %}"></script>
+{%- endfor -%}
+{%- for js in page.js -%}
+<script type="module" src="{% include tools/get_site_url.liquid file_name=js type='js' %}"></script>
+{%- endfor -%}
+<!--todo google analysis-->
+<!--todo search e.g. lunr.js-->
+<!--todo seo-->
 </footer>
