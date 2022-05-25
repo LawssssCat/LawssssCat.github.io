@@ -57,6 +57,7 @@ var regularUrl = function (url,key,value) {
 var appendQueryString = function(key, value) {
   var reglaredUrl = regularUrl(location.href, key, value);
   history.replaceState(null, null, reglaredUrl);
+  // history.pushState(null, null, reglaredUrl);
 }
 
 export default {

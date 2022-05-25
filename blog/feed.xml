@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://lawsssscat.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lawsssscat.github.io/blog/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-05-25T11:00:41+00:00</updated><id>https://lawsssscat.github.io/blog/feed.xml</id><title type="html">LawssssCat’s Blog</title><entry><title type="html">What Is The Structure Of This Project</title><link href="https://lawsssscat.github.io/blog/docs/guide/What-is-the-structure-of-this-project.html" rel="alternate" type="text/html" title="What Is The Structure Of This Project" /><published>2019-07-11T00:00:00+00:00</published><updated>2019-07-11T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/guide/What-is-the-structure-of-this-project</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/guide/What-is-the-structure-of-this-project.html"><![CDATA[<h2 id="默认的目录结构">默认的目录结构</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://lawsssscat.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lawsssscat.github.io/blog/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-05-25T13:02:50+00:00</updated><id>https://lawsssscat.github.io/blog/feed.xml</id><title type="html">LawssssCat’s Blog</title><entry><title type="html">What Is The Structure Of This Project</title><link href="https://lawsssscat.github.io/blog/docs/guide/2019/07/11/What-is-the-structure-of-this-project/" rel="alternate" type="text/html" title="What Is The Structure Of This Project" /><published>2019-07-11T00:00:00+00:00</published><updated>2019-07-11T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/guide/2019/07/11/What-is-the-structure-of-this-project</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/guide/2019/07/11/What-is-the-structure-of-this-project/"><![CDATA[<h2 id="默认的目录结构">默认的目录结构</h2>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">.</span>
 ├── _config.yml
@@ -61,8 +61,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
 
-    <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
-
     <p><!-- My CSS --></p>
     <link rel="stylesheet" type="text/css" href="/blog/assets/css/common.css" id="common_css" />
 
@@ -104,7 +102,7 @@ _sass
   <li><code class="language-plaintext highlighter-rouge">support</code> - 最底层样式（基本不要动）</li>
   <li><code class="language-plaintext highlighter-rouge">modules</code> - theme 不同组件样式</li>
   <li><code class="language-plaintext highlighter-rouge">custom</code> - 自定义</li>
-</ul>]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="guide" /><category term="this project structure" /><category term="guide" /><summary type="html"><![CDATA[默认的目录结构]]></summary></entry><entry><title type="html">A Test Page 02 Show All</title><link href="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-02-show-all.html" rel="alternate" type="text/html" title="A Test Page 02 Show All" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/test/A-Test-Page-02-show-all</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-02-show-all.html"><![CDATA[<ul id="toc" class="section-nav">
+</ul>]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="guide" /><category term="this project structure" /><category term="guide" /><summary type="html"><![CDATA[默认的目录结构]]></summary></entry><entry><title type="html">A Test Page 02 Show All</title><link href="https://lawsssscat.github.io/blog/docs/test/2019/06/22/A-Test-Page-02-show-all/" rel="alternate" type="text/html" title="A Test Page 02 Show All" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/test/2019/06/22/A-Test-Page-02-show-all</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/test/2019/06/22/A-Test-Page-02-show-all/"><![CDATA[<ul id="toc" class="section-nav">
 <li class="toc-entry toc-h1"><a href="#latest-posts">Latest Posts</a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#-posttitle-">{{ post.title }}</a></li>
@@ -116,7 +114,7 @@ _sass
 
 <hr />
 
-<p>site time 2022-05-25 11:00:41 +0000</p>
+<p>site time 2022-05-25 13:02:50 +0000</p>
 
 <p>site Jekyll::Drops::SiteDrop</p>
 
@@ -137,57 +135,57 @@ _sass
 <ul>
   
     <li>
-      <h2><a href="/blog/docs/guide/What-is-the-structure-of-this-project.html">What Is The Structure Of This Project</a></h2>
+      <h2><a href="/blog/docs/guide/2019/07/11/What-is-the-structure-of-this-project/">What Is The Structure Of This Project</a></h2>
       <h2 id="默认的目录结构">默认的目录结构</h2>
 
     </li>
   
     <li>
-      <h2><a href="/blog/docs/test/A-Test-Page-05-css.html">A Test Page 05 Css</a></h2>
+      <h2><a href="/blog/docs/test/2019/06/22/A-Test-Page-05-css/">A Test Page 05 Css</a></h2>
       
 <h2 id="code">code</h2>
 
     </li>
   
     <li>
-      <h2><a href="/blog/docs/test/A-Test-Page-04-page-attributes.html">A Test Page 04 Page Attributes</a></h2>
+      <h2><a href="/blog/docs/test/2019/06/22/A-Test-Page-04-page-attributes/">A Test Page 04 Page Attributes</a></h2>
       
 
     </li>
   
     <li>
-      <h2><a href="/blog/docs/test/A-Test-Page-03-empty-copy-6.html">A Test Page 03 Empty copy 6</a></h2>
+      <h2><a href="/blog/docs/test/2019/06/22/A-Test-Page-03-empty-copy-6/">A Test Page 03 Empty copy 6</a></h2>
       
 
     </li>
   
     <li>
-      <h2><a href="/blog/docs/test/A-Test-Page-03-empty-copy-5.html">A Test Page 03 Empty copy 5</a></h2>
+      <h2><a href="/blog/docs/test/2019/06/22/A-Test-Page-03-empty-copy-5/">A Test Page 03 Empty copy 5</a></h2>
       
 
     </li>
   
     <li>
-      <h2><a href="/blog/docs/test/A-Test-Page-03-empty-copy-4.html">A Test Page 03 Empty copy 4</a></h2>
+      <h2><a href="/blog/docs/test/2019/06/22/A-Test-Page-03-empty-copy-4/">A Test Page 03 Empty copy 4</a></h2>
       
 
     </li>
   
     <li>
-      <h2><a href="/blog/docs/test/%E6%B5%8B%E8%AF%95:%E6%88%91%E6%98%AF%E4%B8%80%E4%B8%AA%E4%B8%AD%E6%96%87%E7%B1%BB%E5%88%AB/A-Test-Page-03-chinese.html">我是一个中文标题！</a></h2>
+      <h2><a href="/blog/docs/test/%E6%B5%8B%E8%AF%95:%E6%88%91%E6%98%AF%E4%B8%80%E4%B8%AA%E4%B8%AD%E6%96%87%E7%B1%BB%E5%88%AB/2019/06/22/A-Test-Page-03-chinese/">我是一个中文标题！</a></h2>
       <p>Generated by <a href="https://github.com/menzi11/BullshitGenerator">https://github.com/menzi11/BullshitGenerator</a></p>
 
     </li>
   
     <li>
-      <h2><a href="/blog/docs/test/A-Test-Page-02-show-all.html">A Test Page 02 Show All</a></h2>
+      <h2><a href="/blog/docs/test/2019/06/22/A-Test-Page-02-show-all/">A Test Page 02 Show All</a></h2>
       <ul id="toc" class="section-nav">
 </ul>
 
     </li>
   
     <li>
-      <h2><a href="/blog/docs/test/A-Test-Page-01.html">A Test Page 01</a></h2>
+      <h2><a href="/blog/docs/test/2019/06/21/A-Test-Page-01/">A Test Page 01</a></h2>
       <h1 id="h1">H1</h1>
 <h2 id="h2">H2</h2>
 <h3 id="h3">H3</h3>
@@ -198,7 +196,7 @@ _sass
     </li>
   
     <li>
-      <h2><a href="/blog/docs/guide/How-to-write-Markdown-in-site.html">How to write Markdown in site</a></h2>
+      <h2><a href="/blog/docs/guide/2019/05/21/How-to-write-Markdown-in-site/">How to write Markdown in site</a></h2>
       <ul id="toc" class="section-nav">
 </ul>
 
@@ -216,57 +214,57 @@ _sass
 <ul>
   
     <li>
-      <h2><a href="/blog/docs/guide/What-is-the-structure-of-this-project.html">What Is The Structure Of This Project</a></h2>
+      <h2><a href="/blog/docs/guide/2019/07/11/What-is-the-structure-of-this-project/">What Is The Structure Of This Project</a></h2>
       <h2 id="默认的目录结构">默认的目录结构</h2>
 
     </li>
   
     <li>
-      <h2><a href="/blog/docs/test/A-Test-Page-05-css.html">A Test Page 05 Css</a></h2>
+      <h2><a href="/blog/docs/test/2019/06/22/A-Test-Page-05-css/">A Test Page 05 Css</a></h2>
       
 <h2 id="code">code</h2>
 
     </li>
   
     <li>
-      <h2><a href="/blog/docs/test/A-Test-Page-04-page-attributes.html">A Test Page 04 Page Attributes</a></h2>
+      <h2><a href="/blog/docs/test/2019/06/22/A-Test-Page-04-page-attributes/">A Test Page 04 Page Attributes</a></h2>
       
 
     </li>
   
     <li>
-      <h2><a href="/blog/docs/test/A-Test-Page-03-empty-copy-6.html">A Test Page 03 Empty copy 6</a></h2>
+      <h2><a href="/blog/docs/test/2019/06/22/A-Test-Page-03-empty-copy-6/">A Test Page 03 Empty copy 6</a></h2>
       
 
     </li>
   
     <li>
-      <h2><a href="/blog/docs/test/A-Test-Page-03-empty-copy-5.html">A Test Page 03 Empty copy 5</a></h2>
+      <h2><a href="/blog/docs/test/2019/06/22/A-Test-Page-03-empty-copy-5/">A Test Page 03 Empty copy 5</a></h2>
       
 
     </li>
   
     <li>
-      <h2><a href="/blog/docs/test/A-Test-Page-03-empty-copy-4.html">A Test Page 03 Empty copy 4</a></h2>
+      <h2><a href="/blog/docs/test/2019/06/22/A-Test-Page-03-empty-copy-4/">A Test Page 03 Empty copy 4</a></h2>
       
 
     </li>
   
     <li>
-      <h2><a href="/blog/docs/test/%E6%B5%8B%E8%AF%95:%E6%88%91%E6%98%AF%E4%B8%80%E4%B8%AA%E4%B8%AD%E6%96%87%E7%B1%BB%E5%88%AB/A-Test-Page-03-chinese.html">我是一个中文标题！</a></h2>
+      <h2><a href="/blog/docs/test/%E6%B5%8B%E8%AF%95:%E6%88%91%E6%98%AF%E4%B8%80%E4%B8%AA%E4%B8%AD%E6%96%87%E7%B1%BB%E5%88%AB/2019/06/22/A-Test-Page-03-chinese/">我是一个中文标题！</a></h2>
       <p>Generated by <a href="https://github.com/menzi11/BullshitGenerator">https://github.com/menzi11/BullshitGenerator</a></p>
 
     </li>
   
     <li>
-      <h2><a href="/blog/docs/test/A-Test-Page-02-show-all.html">A Test Page 02 Show All</a></h2>
+      <h2><a href="/blog/docs/test/2019/06/22/A-Test-Page-02-show-all/">A Test Page 02 Show All</a></h2>
       <ul id="toc" class="section-nav">
 </ul>
 
     </li>
   
     <li>
-      <h2><a href="/blog/docs/test/A-Test-Page-01.html">A Test Page 01</a></h2>
+      <h2><a href="/blog/docs/test/2019/06/21/A-Test-Page-01/">A Test Page 01</a></h2>
       <h1 id="h1">H1</h1>
 <h2 id="h2">H2</h2>
 <h3 id="h3">H3</h3>
@@ -277,7 +275,7 @@ _sass
     </li>
   
     <li>
-      <h2><a href="/blog/docs/guide/How-to-write-Markdown-in-site.html">How to write Markdown in site</a></h2>
+      <h2><a href="/blog/docs/guide/2019/05/21/How-to-write-Markdown-in-site/">How to write Markdown in site</a></h2>
       <ul id="toc" class="section-nav">
 </ul>
 
@@ -285,7 +283,7 @@ _sass
   
   </ul>
 
-<hr />]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="test" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">我是一个中文标题！</title><link href="https://lawsssscat.github.io/blog/docs/test/%E6%B5%8B%E8%AF%95:%E6%88%91%E6%98%AF%E4%B8%80%E4%B8%AA%E4%B8%AD%E6%96%87%E7%B1%BB%E5%88%AB/A-Test-Page-03-chinese.html" rel="alternate" type="text/html" title="我是一个中文标题！" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/test/%E6%B5%8B%E8%AF%95:%E6%88%91%E6%98%AF%E4%B8%80%E4%B8%AA%E4%B8%AD%E6%96%87%E7%B1%BB%E5%88%AB/A-Test-Page-03-chinese</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/test/%E6%B5%8B%E8%AF%95:%E6%88%91%E6%98%AF%E4%B8%80%E4%B8%AA%E4%B8%AD%E6%96%87%E7%B1%BB%E5%88%AB/A-Test-Page-03-chinese.html"><![CDATA[<p>Generated by <a href="https://github.com/menzi11/BullshitGenerator">https://github.com/menzi11/BullshitGenerator</a></p>
+<hr />]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="test" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">我是一个中文标题！</title><link href="https://lawsssscat.github.io/blog/docs/test/%E6%B5%8B%E8%AF%95:%E6%88%91%E6%98%AF%E4%B8%80%E4%B8%AA%E4%B8%AD%E6%96%87%E7%B1%BB%E5%88%AB/2019/06/22/A-Test-Page-03-chinese/" rel="alternate" type="text/html" title="我是一个中文标题！" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/test/%E6%B5%8B%E8%AF%95:%E6%88%91%E6%98%AF%E4%B8%80%E4%B8%AA%E4%B8%AD%E6%96%87%E7%B1%BB%E5%88%AB/2019/06/22/A-Test-Page-03-chinese</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/test/%E6%B5%8B%E8%AF%95:%E6%88%91%E6%98%AF%E4%B8%80%E4%B8%AA%E4%B8%AD%E6%96%87%E7%B1%BB%E5%88%AB/2019/06/22/A-Test-Page-03-chinese/"><![CDATA[<p>Generated by <a href="https://github.com/menzi11/BullshitGenerator">https://github.com/menzi11/BullshitGenerator</a></p>
 
 <p>既然如何， base_word，到底应该如何实现。 既然如此， 马克思在不经意间这样说过，一切节省，归根到底都归结为时间的节省。这启发了我， 就我个人来说，base_word对我的意义，不能不说非常重大。 莎士比亚曾经说过，人的一生是短的，但如果卑劣地过这一生，就太长了。这启发了我， 现在，解决base_word的问题，是非常非常重要的。 所以， 从这个角度来看， 杰纳勒尔·乔治·S·巴顿说过一句富有哲理的话，接受挑战，就可以享受胜利的喜悦。这句话语虽然很短，但令我浮想联翩。 亚伯拉罕·林肯说过一句富有哲理的话，你活了多少岁不算什么，重要的是你是如何度过这些岁月的。带着这句话，我们还要更加慎重的审视这个问题： 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 每个人都不得不面对这些问题。 在面对这种问题时， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 贝多芬在不经意间这样说过，卓越的人一大优点是：在不利与艰难的遭遇里百折不饶。这不禁令我深思。 问题的关键究竟为何？ 带着这些问题，我们来审视一下base_word。 经过上述讨论， 所谓base_word，关键是base_word需要如何写。 一般来说， 经过上述讨论， 这样看来， 现在，解决base_word的问题，是非常非常重要的。 所以， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 我们都知道，只要有意义，那么就必须慎重考虑。 莫扎特曾经说过，谁和我一样用功，谁就会和我一样成功。这句话语虽然很短，但令我浮想联翩。 base_word因何而发生？ 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 马克思曾经提到过，一切节省，归根到底都归结为时间的节省。这似乎解答了我的疑惑。 那么， base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 维龙在不经意间这样说过，要成功不需要什么特别的才能，只要把你能做的小事做得好就行了。这启发了我， 经过上述讨论， 问题的关键究竟为何？ 现在，解决base_word的问题，是非常非常重要的。 所以， 既然如此， 孔子曾经说过，知之者不如好之者，好之者不如乐之者。这似乎解答了我的疑惑。 base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 每个人都不得不面对这些问题。 在面对这种问题时， 既然如此。</p>
 
@@ -333,7 +331,7 @@ _sass
 
 <p>我认为， 问题的关键究竟为何？ 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 可是，即使是这样，base_word的出现仍然代表了一定的意义。 卡耐基在不经意间这样说过，一个不注意小事情的人，永远不会成就大事业。我希望诸位也能好好地体会这句话。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 吉格·金克拉曾经说过，如果你能做梦，你就能实现它。这似乎解答了我的疑惑。 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 维龙曾经说过，要成功不需要什么特别的才能，只要把你能做的小事做得好就行了。这句话语虽然很短，但令我浮想联翩。</p>
 
-<p>我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 俾斯麦曾经提到过，失败是坚忍的最后考验。这句话语虽然很短，但令我浮想联翩。 黑塞说过一句富有哲理的话，有勇气承担命运这才是英雄好汉。我希望诸位也能好好地体会这句话。 base_word，到底应该如何实现。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 我们不得不面对一个非常尴尬的事实，那就是， 就我个人来说，base_word对我的意义，不能不说非常重大。 日本谚语说过一句富有哲理的话，不幸可能成为通向幸福的桥梁。我希望诸位也能好好地体会这句话。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 吉姆·罗恩曾经说过，要么你主宰生活，要么你被生活主宰。带着这句话，我们还要更加慎重的审视这个问题： base_word因何而发生？ 从这个角度来看， 经过上述讨论， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。</p>]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="test" /><category term="测试：我是一个中文类别" /><category term="测试：我是一个中文标签" /><summary type="html"><![CDATA[Generated by https://github.com/menzi11/BullshitGenerator]]></summary></entry><entry><title type="html">A Test Page 03 Empty copy 4</title><link href="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-03-empty-copy-4.html" rel="alternate" type="text/html" title="A Test Page 03 Empty copy 4" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/test/A-Test-Page-03-empty%20copy%204</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-03-empty-copy-4.html"><![CDATA[]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="test" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">A Test Page 03 Empty copy 5</title><link href="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-03-empty-copy-5.html" rel="alternate" type="text/html" title="A Test Page 03 Empty copy 5" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/test/A-Test-Page-03-empty%20copy%205</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-03-empty-copy-5.html"><![CDATA[]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="test" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">A Test Page 03 Empty copy 6</title><link href="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-03-empty-copy-6.html" rel="alternate" type="text/html" title="A Test Page 03 Empty copy 6" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/test/A-Test-Page-03-empty%20copy%206</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-03-empty-copy-6.html"><![CDATA[]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="test" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">A Test Page 04 Page Attributes</title><link href="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-04-page-attributes.html" rel="alternate" type="text/html" title="A Test Page 04 Page Attributes" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/test/A-Test-Page-04-page-attributes</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-04-page-attributes.html"><![CDATA[<p>content <code class="language-plaintext highlighter-rouge">&lt;below&gt;</code></p>
+<p>我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 俾斯麦曾经提到过，失败是坚忍的最后考验。这句话语虽然很短，但令我浮想联翩。 黑塞说过一句富有哲理的话，有勇气承担命运这才是英雄好汉。我希望诸位也能好好地体会这句话。 base_word，到底应该如何实现。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 我们不得不面对一个非常尴尬的事实，那就是， 就我个人来说，base_word对我的意义，不能不说非常重大。 日本谚语说过一句富有哲理的话，不幸可能成为通向幸福的桥梁。我希望诸位也能好好地体会这句话。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 吉姆·罗恩曾经说过，要么你主宰生活，要么你被生活主宰。带着这句话，我们还要更加慎重的审视这个问题： base_word因何而发生？ 从这个角度来看， 经过上述讨论， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。</p>]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="test" /><category term="测试：我是一个中文类别" /><category term="测试：我是一个中文标签" /><summary type="html"><![CDATA[Generated by https://github.com/menzi11/BullshitGenerator]]></summary></entry><entry><title type="html">A Test Page 03 Empty copy 4</title><link href="https://lawsssscat.github.io/blog/docs/test/2019/06/22/A-Test-Page-03-empty-copy-4/" rel="alternate" type="text/html" title="A Test Page 03 Empty copy 4" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/test/2019/06/22/A-Test-Page-03-empty%20copy%204</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/test/2019/06/22/A-Test-Page-03-empty-copy-4/"><![CDATA[]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="test" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">A Test Page 03 Empty copy 5</title><link href="https://lawsssscat.github.io/blog/docs/test/2019/06/22/A-Test-Page-03-empty-copy-5/" rel="alternate" type="text/html" title="A Test Page 03 Empty copy 5" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/test/2019/06/22/A-Test-Page-03-empty%20copy%205</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/test/2019/06/22/A-Test-Page-03-empty-copy-5/"><![CDATA[]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="test" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">A Test Page 03 Empty copy 6</title><link href="https://lawsssscat.github.io/blog/docs/test/2019/06/22/A-Test-Page-03-empty-copy-6/" rel="alternate" type="text/html" title="A Test Page 03 Empty copy 6" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/test/2019/06/22/A-Test-Page-03-empty%20copy%206</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/test/2019/06/22/A-Test-Page-03-empty-copy-6/"><![CDATA[]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="test" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">A Test Page 04 Page Attributes</title><link href="https://lawsssscat.github.io/blog/docs/test/2019/06/22/A-Test-Page-04-page-attributes/" rel="alternate" type="text/html" title="A Test Page 04 Page Attributes" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/test/2019/06/22/A-Test-Page-04-page-attributes</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/test/2019/06/22/A-Test-Page-04-page-attributes/"><![CDATA[<p>content <code class="language-plaintext highlighter-rouge">&lt;below&gt;</code></p>
 
 <p>{{ page.content }}</p>
 
@@ -349,7 +347,7 @@ _sass
 
 <p>url</p>
 
-<p>/docs/test/A-Test-Page-04-page-attributes.html</p>
+<p>/docs/test/2019/06/22/A-Test-Page-04-page-attributes/</p>
 
 <hr />
 
@@ -359,7 +357,7 @@ _sass
 
 <p>id</p>
 
-<p>/docs/test/A-Test-Page-04-page-attributes</p>
+<p>/docs/test/2019/06/22/A-Test-Page-04-page-attributes</p>
 
 <hr />
 
@@ -486,7 +484,6 @@ _sass
     <title>A Test Page 03 Empty copy 6 |LawssssCat's Blog
     </title><link rel="icon" href="/blog/assets/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
-    <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
     <!-- My CSS -->
     <link rel="stylesheet" type="text/css" href="/blog/assets/css/common.css" id="common_css" />
     <!-- CSS set in module --><!-- CSS set in layout --><!-- CSS set in page --><!-- 显示MathJax公式 see https://www.codecogs.com/latex/eqneditor.php -->
@@ -495,18 +492,18 @@ _sass
 <div class="site-content"><h1><!--todo front page-->
 <a href="/blog/">..</a>/A Test Page 03 Empty copy 6<div class="github-buttons">
     <a class="github-button" href="https://github.com/LawssssCat/lawsssscat.github.io" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a>
-</div></h1>
-<ul id="toc" class="section-nav">
+</div></h1><ul id="toc" class="section-nav">
 </ul>
 
 
-</div><footer class="site-footer"><!--todo google analysis-->
+</div><footer class="site-footer">
+<script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
+<!--todo google analysis-->
 <!--todo search e.g. lunr.js-->
-<!--todo seo-->
-</footer></body>
+<!--todo seo--></footer></body>
 </html>
 
-<hr />]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="test" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">A Test Page 05 Css</title><link href="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-05-css.html" rel="alternate" type="text/html" title="A Test Page 05 Css" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/test/A-Test-Page-05-css</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-05-css.html"><![CDATA[<h2 id="code">code</h2>
+<hr />]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="test" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">A Test Page 05 Css</title><link href="https://lawsssscat.github.io/blog/docs/test/2019/06/22/A-Test-Page-05-css/" rel="alternate" type="text/html" title="A Test Page 05 Css" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/test/2019/06/22/A-Test-Page-05-css</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/test/2019/06/22/A-Test-Page-05-css/"><![CDATA[<h2 id="code">code</h2>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">function</span> <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
     <span class="c1">// handle user input</span>
@@ -593,7 +590,7 @@ _sass
 
 <p>我认为， 问题的关键究竟为何？ 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 可是，即使是这样，base_word的出现仍然代表了一定的意义。 卡耐基在不经意间这样说过，一个不注意小事情的人，永远不会成就大事业。我希望诸位也能好好地体会这句话。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 吉格·金克拉曾经说过，如果你能做梦，你就能实现它。这似乎解答了我的疑惑。 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 维龙曾经说过，要成功不需要什么特别的才能，只要把你能做的小事做得好就行了。这句话语虽然很短，但令我浮想联翩。</p>
 
-<p>我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 俾斯麦曾经提到过，失败是坚忍的最后考验。这句话语虽然很短，但令我浮想联翩。 黑塞说过一句富有哲理的话，有勇气承担命运这才是英雄好汉。我希望诸位也能好好地体会这句话。 base_word，到底应该如何实现。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 我们不得不面对一个非常尴尬的事实，那就是， 就我个人来说，base_word对我的意义，不能不说非常重大。 日本谚语说过一句富有哲理的话，不幸可能成为通向幸福的桥梁。我希望诸位也能好好地体会这句话。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 吉姆·罗恩曾经说过，要么你主宰生活，要么你被生活主宰。带着这句话，我们还要更加慎重的审视这个问题： base_word因何而发生？ 从这个角度来看， 经过上述讨论， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。</p>]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="test" /><summary type="html"><![CDATA[code]]></summary></entry><entry><title type="html">A Test Page 01</title><link href="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-01.html" rel="alternate" type="text/html" title="A Test Page 01" /><published>2019-06-21T00:00:00+00:00</published><updated>2019-06-21T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/test/A-Test-Page-01</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-01.html"><![CDATA[<h1 id="h1">H1</h1>
+<p>我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 俾斯麦曾经提到过，失败是坚忍的最后考验。这句话语虽然很短，但令我浮想联翩。 黑塞说过一句富有哲理的话，有勇气承担命运这才是英雄好汉。我希望诸位也能好好地体会这句话。 base_word，到底应该如何实现。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 我们不得不面对一个非常尴尬的事实，那就是， 就我个人来说，base_word对我的意义，不能不说非常重大。 日本谚语说过一句富有哲理的话，不幸可能成为通向幸福的桥梁。我希望诸位也能好好地体会这句话。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 吉姆·罗恩曾经说过，要么你主宰生活，要么你被生活主宰。带着这句话，我们还要更加慎重的审视这个问题： base_word因何而发生？ 从这个角度来看， 经过上述讨论， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。</p>]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="test" /><summary type="html"><![CDATA[code]]></summary></entry><entry><title type="html">A Test Page 01</title><link href="https://lawsssscat.github.io/blog/docs/test/2019/06/21/A-Test-Page-01/" rel="alternate" type="text/html" title="A Test Page 01" /><published>2019-06-21T00:00:00+00:00</published><updated>2019-06-21T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/test/2019/06/21/A-Test-Page-01</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/test/2019/06/21/A-Test-Page-01/"><![CDATA[<h1 id="h1">H1</h1>
 <h2 id="h2">H2</h2>
 <h3 id="h3">H3</h3>
 <h4 id="h4">H4</h4>
@@ -683,7 +680,7 @@ _sass
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />b</li>
 </ul>
 
-<p>:star: :ok: :+1:</p>]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="test" /><category term="test" /><category term="" /><summary type="html"><![CDATA[H1 H2 H3 H4 H5 H6]]></summary></entry><entry><title type="html">How to write Markdown in site</title><link href="https://lawsssscat.github.io/blog/docs/guide/How-to-write-Markdown-in-site.html" rel="alternate" type="text/html" title="How to write Markdown in site" /><published>2019-05-21T00:00:00+00:00</published><updated>2019-05-21T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/guide/How-to-write-Markdown-in-site</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/guide/How-to-write-Markdown-in-site.html"><![CDATA[<ul id="toc" class="section-nav">
+<p>:star: :ok: :+1:</p>]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="test" /><category term="test" /><category term="" /><summary type="html"><![CDATA[H1 H2 H3 H4 H5 H6]]></summary></entry><entry><title type="html">How to write Markdown in site</title><link href="https://lawsssscat.github.io/blog/docs/guide/2019/05/21/How-to-write-Markdown-in-site/" rel="alternate" type="text/html" title="How to write Markdown in site" /><published>2019-05-21T00:00:00+00:00</published><updated>2019-05-21T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/guide/2019/05/21/How-to-write-Markdown-in-site</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/guide/2019/05/21/How-to-write-Markdown-in-site/"><![CDATA[<ul id="toc" class="section-nav">
 </ul>
 
 <h2 id="how-to-write-markdown">How to write markdown</h2>
