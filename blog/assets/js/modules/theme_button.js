@@ -14,7 +14,7 @@ function changeTheme(color) {
     var b = a.cloneNode();
     b.href=href;
     a.after(b);
-    setTimeout(function() {
+    var t = setTimeout(function(event) {
       a.remove();
     }, 100);
     sessionStorage.setItem(key_theme_css_cur, color);
