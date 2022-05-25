@@ -54,7 +54,8 @@ lang: en
 
 baseurl:  /blog # the subpath of your site, e.g. /blog
 # see https://jekyllrb.com/docs/permalinks/#built-in-formats
-permalink: pretty # default: pretty other: none
+# # there are problem that chinese make path of post error when permalink is pretty
+permalink: none # default: pretty other: none 
 
 # --------------
 # variables custom

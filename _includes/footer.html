@@ -1,4 +1,8 @@
 <footer class="site-footer">
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!--todo google analysis-->
+<!--todo search e.g. lunr.js-->
+<!--todo seo-->
 {%- for module in layout.modules -%}
 <script type="module" src="{% include tools/get_site_url.liquid file_name=module type='module/js' %}"></script>
 {%- endfor -%}
@@ -8,7 +12,4 @@
 {%- for js in page.js -%}
 <script type="module" src="{% include tools/get_site_url.liquid file_name=js type='js' %}"></script>
 {%- endfor -%}
-<!--todo google analysis-->
-<!--todo search e.g. lunr.js-->
-<!--todo seo-->
 </footer>
