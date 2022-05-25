@@ -20,6 +20,8 @@
 
 # 使这文件生效，需要重新执行 'bundle exec jekyll serve'
 
+verbose: true
+
 exclude: 
   - '/Gemfile'
   - '/Gemfile.lock'

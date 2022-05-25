@@ -10,6 +10,8 @@ uniformly manage site-url by include.type
 {{ '/assets/js/modules/' | append: include.file_name | append: '.js' | relative_url }}
 {%- when 'css' -%}
 {{ '/assets/css/' | append: include.file_name | relative_url }}
+{%- when 'base/css' -%}
+{{ '/assets/css/' | relative_url }}
 {%- when 'module/css' -%}
 {{ '/assets/css/modules/' | append: include.file_name | append: '.css' | relative_url }}
 {%- else -%}
