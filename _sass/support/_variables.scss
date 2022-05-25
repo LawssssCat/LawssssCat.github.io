@@ -157,3 +157,8 @@ $media-queries: (
   lg: $content-width + $nav-width,
   xl: 1400px,
 ) !default;
+
+// 
+// toc
+// 
+$toc-target-border-color: unset !default;
