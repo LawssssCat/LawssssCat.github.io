@@ -5,6 +5,10 @@
     <!-- My JS -->
     <script type="text/javascript" src="{% include tools/get_site_url.liquid file_name='common.js' type='js' %}"></script>
 
+    {% for module in layout.modules %}
+    <script type="text/javascript" src="{% include tools/get_site_url.liquid file_name=module type='module/js' %}"></script>
+    {% endfor %}
+
     {% for js in layout.js %}
     <script type="text/javascript" src="{% include tools/get_site_url.liquid file_name=js type='js' %}"></script>
     {% endfor %}

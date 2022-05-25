@@ -13,8 +13,13 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     
     <!-- My CSS -->
-    <link rel="stylesheet" type="text/css" href="{% include tools/get_site_url.liquid file_name='common.css' type='css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% include tools/get_site_url.liquid file_name='common.css' type='css' %}" id='common_css'/>
     
+    <!-- CSS set in module -->
+    {% for module in layout.modules %}
+    <link rel="stylesheet" type="text/css" href="{% include tools/get_site_url.liquid file_name=module type='module/css' %}">
+    {% endfor %}
+
     <!-- CSS set in layout -->
     {% for css in layout.css %}
     <link rel="stylesheet" type="text/css" href="{% include tools/get_site_url.liquid file_name=css type='css' %}">

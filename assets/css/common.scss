@@ -4,6 +4,6 @@
 {% if site.color_scheme and site.color_scheme != "nil" %}
   {% assign color_scheme = site.color_scheme %}
 {% else %}
-  {% assign color_scheme = "red" %}
+  {% assign color_scheme = "none" %}
 {% endif %}
 {% include css/cat-theme.scss.liquid color_scheme=color_scheme %}
