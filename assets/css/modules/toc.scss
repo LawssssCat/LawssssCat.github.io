@@ -1,0 +1,5 @@
+---
+---
+
+{% capture color_scheme %}{%- include tools/get_site_attribute.liquid attribute='scheme/color' -%}{% endcapture %}
+{% include css/modules-theme.scss.liquid color_scheme=color_scheme module='toc' %}
