@@ -57,6 +57,7 @@ var tools = function() {
 
     var patternMode = '';
     split.forEach(pattern => {
+      pattern = pattern.trim();
       // add as match pattern if pre step save patternMode
       if(patternMode) {
         for(var key in env.patternMode) {
@@ -76,7 +77,10 @@ var tools = function() {
         }
       }
       // add 
-      result[env.patternModePostName].push(pattern);
+      pattern.split(/\s+/g).forEach(spattern => {
+        if(spattern!='')
+          result[env.patternModePostName].push(spattern);
+      });
     });
     return result;
   }
@@ -115,7 +119,9 @@ var tools = function() {
         try{
         var patterns =  classifiedPatterns[key];
         var handler = patternModeHandlers[key];
-        handler(patterns);
+        if(handler) 
+          handler(patterns);
+        else console.error('lack handler for ['+key+']');
       } catch(err) {
         console.error(err);
       }
@@ -141,21 +147,19 @@ var tools = function() {
 var patternModeHandlers =  function() {
   function handle2filterByPost(patterns) {
     var rows = document.querySelectorAll('#post-table tbody tr');
-    patterns.every(pattern => {
+    patterns.forEach(pattern => {
       rows.forEach(row => {
         if(row.style.display == 'none') return true;
         var postName = row.getElementsByClassName('post-title')[0].innerHTML.toLowerCase();
         if (postName.indexOf(pattern.toLowerCase()) == -1) {
           row.style.display = 'none';
-          return false;
         } 
-        return true;
       });
     });
   }
   return {
-    category: handle2filterByPost, // todo
-    tag: handle2filterByPost, // todo
+    category: null, // todo
+    tag: null, // todo
     post: handle2filterByPost,
   }
 }();
@@ -188,6 +192,22 @@ var patternModeHandlers =  function() {
     _SB.filter();
   }
 
+  _SB.existSearchPattern = function(value) {
+    var pattern = _SB.getSearchPattern();
+    return pattern.indexOf(value)>-1;
+  }
+
+  _SB.appendSearchPattern = function(value) {
+    // exist => delete | no exist => add 
+    if(_SB.existSearchPattern(value)) {
+      var pattern = _SB.getSearchPattern().replaceAll(value, ' ');
+      _SB.setSearchPattern(pattern);
+    } else {
+      var pattern = _SB.getSearchPattern();
+      _SB.setSearchPattern(pattern.trim() + ' ' + value);
+    }
+  }
+
   _SB.setup = function () {
     console.debug("search setting up");
     // handle user input
@@ -209,10 +229,17 @@ var patternModeHandlers =  function() {
         _SB.searchInput.parentElement.scrollIntoView();
       }
     });
-
+    // handle user click 
+    document.querySelectorAll(".category-list .category-item").forEach((item) => {
+      item.addEventListener('click', () => {
+        var label = env.patternMode.category+'('+item.getAttribute('data-label')+')';
+        _SB.appendSearchPattern(label);
+      })
+    });
     // filter once on load
     _SB.filter();
   }
+
 
   _SB.init = function () {
     _SB.searchInput = document.getElementById(env.search_input_id);
