@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://lawsssscat.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lawsssscat.github.io/blog/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-05-26T15:20:24+00:00</updated><id>https://lawsssscat.github.io/blog/feed.xml</id><title type="html">LawssssCat’s Blog</title><entry><title type="html">【未完】/post_file_name/g</title><link href="https://lawsssscat.github.io/blog/docs/guide/48-tips-for-jekyll-you-should-know.html" rel="alternate" type="text/html" title="【未完】/post_file_name/g" /><published>2022-05-25T00:00:00+00:00</published><updated>2022-05-25T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/guide/48-tips-for-jekyll-you-should-know</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/guide/48-tips-for-jekyll-you-should-know.html"><![CDATA[<p>原文：<a href="https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html">https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html</a></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://lawsssscat.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lawsssscat.github.io/blog/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-05-26T18:29:49+00:00</updated><id>https://lawsssscat.github.io/blog/feed.xml</id><title type="html">LawssssCat’s Blog</title><entry><title type="html">【未完】/post_file_name/g</title><link href="https://lawsssscat.github.io/blog/docs/guide/48-tips-for-jekyll-you-should-know.html" rel="alternate" type="text/html" title="【未完】/post_file_name/g" /><published>2022-05-25T00:00:00+00:00</published><updated>2022-05-25T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/guide/48-tips-for-jekyll-you-should-know</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/guide/48-tips-for-jekyll-you-should-know.html"><![CDATA[<p>原文：<a href="https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html">https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html</a></p>
 
 <h3 id="_configyml">_config.yml</h3>
 
@@ -140,11 +140,12 @@
 
     <p><!-- My CSS --></p>
     <link rel="stylesheet" type="text/css" href="/blog/assets/css/common.css" id="common_css" />
+    <!--custom head-->
+    <!-- 显示MathJax公式 see https://www.codecogs.com/latex/eqneditor.php -->
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-    <p><!-- CSS set in module --><link rel="stylesheet" type="text/css" href="/blog/assets/css/modules/theme_button.css" /><link rel="stylesheet" type="text/css" href="/blog/assets/css/modules/toc.css" /><!-- CSS set in layout --><!-- CSS set in page --><!--custom head-->
-<!-- 显示MathJax公式 see https://www.codecogs.com/latex/eqneditor.php -->
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<!--custom head end-->&lt;/head&gt;`</p>
+    <!--custom head end-->
+    <p>&lt;/head&gt;`</p>
   </li>
   <li><del><code class="language-plaintext highlighter-rouge">_posts</code>（博客文章页面）</del></li>
   <li><code class="language-plaintext highlighter-rouge">assets</code>（原生的资源文件）</li>
@@ -193,7 +194,7 @@ _sass
 
 <hr />
 
-<p>site time 2022-05-26 15:20:24 +0000</p>
+<p>site time 2022-05-26 18:29:49 +0000</p>
 
 <p>site Jekyll::Drops::SiteDrop</p>
 
@@ -205,7 +206,7 @@ _sass
 
 <hr />
 
-<p>pages 8</p>
+<p>pages 7</p>
 
 <p>posts 11</p>
 
@@ -576,8 +577,7 @@ _sass
     </title><link rel="icon" href="/blog/assets/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
     <!-- My CSS -->
-    <link rel="stylesheet" type="text/css" href="/blog/assets/css/common.css" id="common_css" />
-    <!-- CSS set in module --><link rel="stylesheet" type="text/css" href="/blog/assets/css/modules/theme_button.css" /><link rel="stylesheet" type="text/css" href="/blog/assets/css/modules/toc.css" /><!-- CSS set in layout --><!-- CSS set in page --><!--custom head-->
+    <link rel="stylesheet" type="text/css" href="/blog/assets/css/common.css" id="common_css" /><!--custom head-->
 <!-- 显示MathJax公式 see https://www.codecogs.com/latex/eqneditor.php -->
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <!--custom head end--></head><body><header class="site-header"><a href="https://github.com/LawssssCat/lawsssscat.github.io" class="github-corner" aria-label="View source on Github" target="_blank" rel="noopener noreferrer">

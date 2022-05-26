@@ -204,6 +204,6 @@ h2:hover .permalink, h3:hover .permalink, h4:hover .permalink, h5:hover .permali
 
 .category-list li a:link, .category-list li a:visited { text-decoration: none; }
 
-.category-list li a:hover, .category-list li.match a { color: #7253ed; border-color: #7253ed; background: #ddd5fd; }
+.category-list li a:hover, .category-list li a.match { color: #7253ed; border-color: #7253ed; background: #ddd5fd; }
 
 /*# sourceMappingURL=common-none.css.map */
