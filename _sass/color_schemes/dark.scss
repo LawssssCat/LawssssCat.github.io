@@ -8,10 +8,17 @@ $nav-child-link-color: $grey-dk-000;
 $search-result-preview-color: $grey-dk-000;
 
 $link-color: $blue-000;
+$link-hover: $blue-100;
 $btn-primary-color: $blue-200;
 $base-button-color: $grey-dk-250;
 
-$code-background-color: $grey-dk-250;
+// $code-background-color: $grey-dk-250;
 $search-background-color: $grey-dk-250;
 $table-background-color: $grey-dk-250;
 $feedback-color: darken($sidebar-color, 3%);
+
+// -----------
+
+$toc-permalink-border-left-color-target: $grey-dk-300;
+
+$post-search-wrapper-category-background: $grey-lt-000;

@@ -1,0 +1,110 @@
+// binary list and search
+
+$post-search-wrapper-category-background: unset !default;
+$post-search-wrapper-category-description-color: $grey-lt-000 !default;
+$post-search-wrapper-post-search-border: unset !default;
+$post-search-wrapper-post-search-outline-color: unset !default;
+$post-table-tr-background-hover: $grey-lt-000 !default;
+
+#post-search-wrapper {
+    margin: 50px 0;
+    padding: 10px 0;
+    position: relative; // XXX needed for tooltip sizing
+
+    #category-list {
+        text-align: center;
+
+        a {
+            font-size: initial;
+            border-radius: 0.25em;
+
+            &:hover:before {
+                content: attr(data-description);
+                color: $post-search-wrapper-category-description-color;
+                font-size: 0.8rem;
+                display: block;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin-top: 1.75rem; // XXX below the button
+                margin-left: 10%;
+                margin-right: 10%;
+                padding: 1em;
+                border-radius: 1em;
+                background: rgba(0, 0, 0, 0.75);
+                z-index: 1;
+                pointer-events: none;
+            }
+        }
+    }
+
+    #post-search {
+        margin-top: 25px;
+        padding: 1em;
+        font-size: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid $post-search-wrapper-post-search-border;
+        outline-color: $post-search-wrapper-post-search-outline-color;
+    }
+}
+
+#post-table {
+    width: 100%;
+
+    th, td {
+        padding: 0.2em 1em;
+    }
+
+    th {
+        text-align: left;
+    }
+
+    tbody tr:hover {
+        background: $post-table-tr-background-hover;
+    }
+
+    #search-message-no-result {
+        display: none;
+        text-align: center;
+        padding: 1em;
+    }
+}
+
+
+// category description
+
+$category-item-color: $purple-lt-100 !default;
+$category-item-color-hover: $purple-000 !default;
+$category-item-background-hover: $purple-lt-000 !default;
+
+.category-list {
+    font-size: 0.8rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        display: inline-block;
+
+        a {
+            // background: $post-search-wrapper-category-background;
+            display: inline-block;
+            color: $category-item-color;
+            padding: 0.25em 0.5em;
+            margin: 0.2em 0;
+            border: 1px solid $category-item-color;
+        }
+
+        a:link, a:visited {
+            text-decoration: none;
+        }
+
+        a:hover, &.match a {
+            color: $category-item-color-hover;
+            border-color: $category-item-color-hover;
+            background: $category-item-background-hover;
+        }
+
+    }
+}

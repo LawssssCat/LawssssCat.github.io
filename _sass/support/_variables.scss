@@ -45,6 +45,9 @@ $grey-lt-100: #eeebee !default;
 $grey-lt-200: #ecebed !default;
 $grey-lt-300: #e6e1e8 !default;
 
+$purple-lt-000: #ddd5fd !default;
+$purple-lt-100: #a38dfc !default;
+
 $purple-000: #7253ed !default;
 $purple-100: #5e41d0 !default;
 $purple-200: #4e26af !default;
@@ -65,7 +68,7 @@ $yellow-100: #fadf50 !default;
 $yellow-200: #f7d12e !default;
 $yellow-300: #e7af06 !default;
 
-$red-lt-300: #fff4f4 !default;
+$red-lt-000: #fff4f4 !default;
 
 $red-000: #f77e7e !default;
 $red-100: #f96e65 !default;
@@ -158,7 +161,3 @@ $media-queries: (
   xl: 1400px,
 ) !default;
 
-// 
-// toc
-// 
-$toc-target-border-color: unset !default;
