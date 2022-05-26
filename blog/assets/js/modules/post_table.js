@@ -232,6 +232,7 @@ var patternModeHandlers =  function() {
   }
 
   _SB.setSearchPattern = function(value) {
+    if(value) value = value.trim();
     _SB.searchInput.value=value;
     sessionStorage.setItem(_SB.key_searchPattern, value);
     _SB.filter();
