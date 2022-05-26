@@ -1,14 +1,14 @@
 var core = {
-  notIn: function(value, array) {
-    var notIn = true;
+  in: function(value, array) {
+    var flag = false;
     array.every(element => {
       if(value===element) {
-        notIn = false;
+        flag = true;
         return false;
       }
       return true;
     });
-    return notIn;
+    return flag;
   }
 }
 
