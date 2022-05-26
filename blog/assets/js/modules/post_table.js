@@ -1,3 +1,4 @@
+import common from '../common.js';
 import common_url from '../common_url.js';
 
 var env = {
@@ -119,7 +120,7 @@ var tools = function() {
       try{
         var patterns =  classifiedPatterns[key];
         var handlerMatter = patternModeHandlers[key];
-        if(patterns.length>0 || handlerMatter.force) {
+        if(patterns.length>0 || (handlerMatter && handlerMatter.force)) {
           var handler = handlerMatter.handler;
           if(handler) 
             handler(patterns);
@@ -225,7 +226,9 @@ var patternModeHandlers =  function() {
   }
 
   _SB.getSearchPattern = function() {
-    return sessionStorage.getItem(_SB.key_searchPattern);
+    var pattern = sessionStorage.getItem(_SB.key_searchPattern); 
+    if(common.in(pattern, [null, 'null'])) pattern = '';
+    return pattern;
   }
 
   _SB.setSearchPattern = function(value) {

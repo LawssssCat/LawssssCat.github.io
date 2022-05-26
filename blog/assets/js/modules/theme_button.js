@@ -9,7 +9,7 @@ function changeTheme(color) {
     sessionStorage.removeItem(key_theme_css_cur);
   } else {
     var _color;
-    if (common.notIn(color, [null, '', 'null'])) {
+    if (!common.in(color, [null, '', 'null'])) {
       _color='-'+color;
     } else {
       _color='';
