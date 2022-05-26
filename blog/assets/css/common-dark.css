@@ -4,23 +4,23 @@ body { font-family: sans, sans-serif; }
 
 a:link, a:visited { color: #2c84fa; }
 
-a:hover { color: unset; }
+a:hover { color: #2869e6; }
 
-code { padding: 0.2em 0.15em; font-weight: 400; color: unset; background-color: #302d36; border: 1px solid #44434d; border-radius: 4px; }
+code { padding: 0.2em 0.15em; font-weight: 400; color: unset; background-color: #f5f6fa; border: 1px solid #44434d; border-radius: 4px; }
 
 a:visited code { border-color: #44434d; }
 
-div.highlighter-rouge { padding: 0.75rem; margin-top: 0; margin-bottom: 0.75rem; overflow-x: auto; background-color: #302d36; border-radius: 4px; box-shadow: none; -webkit-overflow-scrolling: touch; }
+div.highlighter-rouge { padding: 0.75rem; margin-top: 0; margin-bottom: 0.75rem; overflow-x: auto; background-color: #f5f6fa; border-radius: 4px; box-shadow: none; -webkit-overflow-scrolling: touch; }
 
 div.highlighter-rouge div.highlight, div.highlighter-rouge pre.highlight, div.highlighter-rouge code { padding: 0; margin: 0; border: 0; }
 
-figure.highlight { padding: 0.75rem; margin-top: 0; margin-bottom: 0.75rem; background-color: #302d36; border-radius: 4px; box-shadow: none; -webkit-overflow-scrolling: touch; }
+figure.highlight { padding: 0.75rem; margin-top: 0; margin-bottom: 0.75rem; background-color: #f5f6fa; border-radius: 4px; box-shadow: none; -webkit-overflow-scrolling: touch; }
 
 figure.highlight pre, figure.highlight code { padding: 0; margin: 0; border: 0; }
 
 .highlight .table-wrapper { padding: 0; margin: 0; border: 0; box-shadow: none; }
 
-.highlight .table-wrapper td, .highlight .table-wrapper pre { font-size: 11px !important; min-width: 0; padding: 0; background-color: #302d36; border: 0; }
+.highlight .table-wrapper td, .highlight .table-wrapper pre { font-size: 11px !important; min-width: 0; padding: 0; background-color: #f5f6fa; border: 0; }
 
 @media (min-width: 31.25rem) { .highlight .table-wrapper td, .highlight .table-wrapper pre { font-size: 12px !important; } }
 
@@ -167,5 +167,43 @@ figure.highlight pre, figure.highlight code { padding: 0; margin: 0; border: 0; 
 .code-example { padding: 0.75rem; margin-bottom: 0.75rem; overflow: auto; border: 1px solid #44434d; border-radius: 4px; }
 
 .code-example + .highlighter-rouge, .code-example + figure.highlight { position: relative; margin-top: -1rem; border-right: 1px solid #44434d; border-bottom: 1px solid #44434d; border-left: 1px solid #44434d; border-top-left-radius: 0; border-top-right-radius: 0; }
+
+h2 .permalink, h3 .permalink, h4 .permalink, h5 .permalink, h5 .permalink { margin-left: 5px; text-decoration: none; visibility: hidden; }
+
+h2 .permalink::before, h3 .permalink::before, h4 .permalink::before, h5 .permalink::before, h5 .permalink::before { content: "#"; }
+
+h2:target, h3:target, h4:target, h5:target, h5:target { border-left: 5px solid #27262b; padding-left: 5px; }
+
+h2:hover .permalink, h3:hover .permalink, h4:hover .permalink, h5:hover .permalink, h5:hover .permalink { visibility: visible; }
+
+#post-search-wrapper { margin: 50px 0; padding: 10px 0; position: relative; }
+
+#post-search-wrapper #category-list { text-align: center; }
+
+#post-search-wrapper #category-list a { font-size: initial; border-radius: 0.25em; }
+
+#post-search-wrapper #category-list a:hover:before { content: attr(data-description); color: #f5f6fa; font-size: 0.8rem; display: block; position: absolute; left: 0; right: 0; margin-top: 1.75rem; margin-left: 10%; margin-right: 10%; padding: 1em; border-radius: 1em; background: rgba(0, 0, 0, 0.75); z-index: 1; pointer-events: none; }
+
+#post-search-wrapper #post-search { margin-top: 25px; padding: 1em; font-size: 1rem; width: 100%; box-sizing: border-box; border: 1px solid unset; outline-color: unset; }
+
+#post-table { width: 100%; }
+
+#post-table th, #post-table td { padding: 0.2em 1em; }
+
+#post-table th { text-align: left; }
+
+#post-table tbody tr:hover { background: #f5f6fa; }
+
+#post-table #search-message-no-result { display: none; text-align: center; padding: 1em; }
+
+.category-list { font-size: 0.8rem; list-style: none; padding: 0; margin: 0; }
+
+.category-list li { display: inline-block; }
+
+.category-list li a { display: inline-block; color: #a38dfc; padding: 0.25em 0.5em; margin: 0.2em 0; border: 1px solid #a38dfc; }
+
+.category-list li a:link, .category-list li a:visited { text-decoration: none; }
+
+.category-list li a:hover, .category-list li.match a { color: #7253ed; border-color: #7253ed; background: #ddd5fd; }
 
 /*# sourceMappingURL=common-dark.css.map */

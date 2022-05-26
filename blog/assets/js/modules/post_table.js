@@ -1,161 +1,226 @@
 import common_url from '../common_url.js';
 
-var searchBox = document.getElementById('post-search');
-document.querySelectorAll("category-list category-item")
-var searchPatternKey = 'search_text';
+var env = {
+  search_input_id: 'post-search',
+  category_list_class: 'category-list',
+  category_item_class: 'category-item',
+  patternMode: { // core env
+    category: '+',
+    tag: '*',
+  },
+  patternModePostName: 'post',
+  // ====================================
+  search: {
+    patternKey: 'search_text',
+    inputBox: document.getElementById('post-search'),
+  },
 
-function searchBoxUpdate(query) {
-  searchBox.value = query;
-  applyFilter(searchBox.value);
+  category: {
+    listClass: 'category-list',
+    itemClass: 'category-item',
+    dataAttribute: 'data-label',
+    mode: '+',
+  } ,
+
+  tag: '-'
 }
 
-function parseQuery(query) {
-  var queryArray = query.toLowerCase().trim().split(/ *(\+|\*)/);
-  var postPattern = queryArray[0];
-  var categoryPatterns = [];
-  var mode;
-  queryArray.splice(1).forEach((item) => {
-    switch(item) {
-      case '+': mode = '+'; break;
-      // case '*': mode = '*'; break; // todo 
-      default:
-        switch (mode) {
-            case '+': categoryPatterns.push(item);break;
-            default:throw Error("Cannot find mode: "+mode);
+var tools = function() {
+  var _TOOL = {};
+
+  _TOOL.getRegx4parseQuery = function() {
+    // see https://c.runoob.com/front-end/854/?optionGlobl=global
+    // regx /(\+|\*)\((.*?)\)/gi
+    // new RegExp(`\(\\\+\|\\\*\)\\\(\(\.\*\?\)\\\)`, 'gi')
+    // e.g.
+    // aaaa+aaaa*aa+(bb+bbb#bbbb) *(c*cccc?ccc)dd *(zzzzzz z[]zzz【zzz)ee ff=】ffff gggg hh iiiiiiiiiii             +(jjjjjj)kkkkkkk+()kkkkkk
+    // result 
+    // aaaa+aaaa*aa   dd s ee ff=】ffff gggg hh iiiiiiiiiii              kkkkkkk kkkkkk
+    var regx = '\(';
+    var back = false;
+    for(var key in env.patternMode) {
+      regx+='\\'+env.patternMode[key]+'\|';
+      back=true;
+    }
+    if(back) regx = regx.slice(0, regx.length-1);
+    regx+='\)\\\(\(\.\*\?\)\\\)';
+    // console.log(regx);
+    return new RegExp(regx, 'gi');
+  }
+
+  _TOOL.classifyPattern4parseQuery = function(split) {
+    var result = {}; 
+    for(var key in env.patternMode) {
+      result[key] = [];
+    }
+    result[env.patternModePostName] = [];
+
+    var patternMode = '';
+    split.forEach(pattern => {
+      // add as match pattern if pre step save patternMode
+      if(patternMode) {
+        for(var key in env.patternMode) {
+          if(env.patternMode[key] === patternMode) {
+            result[key].push(pattern);
+            patternMode = '';
+            return ;
+          }
         }
-        mode = '';
-        break;
-    }
-  });
-  return {
-    postPattern,categoryPatterns
-  }
-}
-
-function existPattern(str) {
-  str = str.toLowerCase().trim();
-  var mode = str.slice(0,1);
-  var newPattern = str.slice(1);
-  var {categoryPatterns} = parseQuery(searchBox.value);
-  var existPatternArray;
-  switch(mode) {
-    case '+': existPatternArray = categoryPatterns; break;
-    // case '*': mode = '*'; break; // todo 
-    default:throw Error("Cannot find mode: "+mode);
-  }
-  var exist = false;
-  existPatternArray.every((existPattern) => {
-    if(existPattern === newPattern) {
-      exist = true;
-      return false;
-    }
-      return true;
-  });
-  return exist;
-}
-
-function filter(query) {
-  var {postPattern,categoryPatterns} = parseQuery(query);
-  
-  // filter rows
-  var noResults = true;
-  document.querySelectorAll('#post-table tbody tr').forEach(function (row) {
-      var show = true;
-
-      var postName = row.getElementsByClassName('post-title')[0].innerHTML.toLowerCase();
-      if (postName.indexOf(postPattern) == -1) {
-          show = false;
+        throw new Error('error patternMode['+patternMode+'] with query['+query+'].');
       }
-
-      if (show) { 
-          var categoryElems = Array.from(row.getElementsByClassName('category-list')[0].children);
-          categoryPatterns.forEach((pattern) => {
-              // skip empty filters
-              if (!pattern) {
-                  return;
-              }
-              // check against the pattern
-              var match = false;
-              categoryElems.forEach((item) => {
-                  if (item.innerText.trim().toLowerCase().startsWith(pattern.trim().toLowerCase())) {
-                      item.classList.add('match');
-                      match = true;
-                  } else {
-                      item.classList.remove('match');
-                  }
-              });
-              // pattern against
-              if(!match) {
-                show = false;
-              }
-          });
+      // check if is patternMode
+      for(var key in env.patternMode) {
+        if(env.patternMode[key] === pattern) {
+          patternMode = pattern;
+          return ;
+        }
       }
+      // add 
+      result[env.patternModePostName].push(pattern);
+    });
+    return result;
+  }
 
-      if (show) {
-          row.style.display = '';
-          noResults = false;
-      } else {
+  _TOOL.parseQuery = function(query) {
+    // before split:
+    // aaaa+aaaa*aa+(bb+bbb#bbbb) *(c*cccc?ccc)dd *(zzzzzz z[]zzz【zzz)ee ff=】ffff gggg hh iiiiiiiiiii             +(jjjjjj)kkkkkkk+()kkkkkk
+    // after split:
+    // 0: "aaaa+aaaa*aa" ==> post pattern
+    // 1: "+"
+    // 2: "bb+bbb#bbbb" ==> category pattern
+    // 3: " "           ==> post pattern
+    // 4: "*"
+    // 5: "c*cccc?ccc"  ==> tag pattern
+    // 6: "dd "         ==> post pattern
+    // 7: "*"
+    // 8: "zzzzzz z[]zzz【zzz"     ==> tag pattern
+    // 9: "ee ff=】ffff gggg hh iiiiiiiiiii             "   ==> post pattern
+    // 10: "+"
+    // 11: "jjjjjj"     ==> category pattern
+    // 12: "kkkkkkk"    ==> post pattern
+    // 13: "+"
+    // 14: ""           ==> category pattern
+    // 15: "kkkkkk"     ==> post pattern
+    var split = query.split(_TOOL.getRegx4parseQuery());
+    return _TOOL.classifyPattern4parseQuery(split);
+  }
+
+  _TOOL.filterByClassifiedPatterns = function(classifiedPatterns) {
+    var rows = Array.from(document.querySelectorAll('#post-table tbody tr'));
+    rows.forEach(row => row.style.display = '');
+    // classifiedPatterns 
+    // e.g.
+    // '{"category":["bb+bbb#bbbb","jjjjjj",""],"tag":["c*cccc?ccc","zzzzzz z[]zzz【zzz"],"post":["aaaa+aaaa*aa+"," ","dd ","ee ff=】ffff gggg hh iiiiiiiiiii             ","kkkkkkk","kkkkkk"]}'
+    for(var key in classifiedPatterns) {
+        try{
+        var patterns =  classifiedPatterns[key];
+        var handler = patternModeHandlers[key];
+        handler(patterns);
+      } catch(err) {
+        console.error(err);
+      }
+    }
+    // detect table if empty 
+    var empty = true;
+    rows.every(row => {
+        if(row.style.display === 'none') {
+          return true;
+        } else {
+          empty =false;
+          return false;
+        }
+    });
+    // update the search message visibility
+    var searchMessage = document.getElementById('search-message-no-result');
+    searchMessage.style.display = empty ? 'table-cell' : 'none';
+  }
+
+  return _TOOL;
+}();
+
+var patternModeHandlers =  function() {
+  function handle2filterByPost(patterns) {
+    var rows = document.querySelectorAll('#post-table tbody tr');
+    patterns.every(pattern => {
+      rows.forEach(row => {
+        if(row.style.display == 'none') return true;
+        var postName = row.getElementsByClassName('post-title')[0].innerHTML.toLowerCase();
+        if (postName.indexOf(pattern.toLowerCase()) == -1) {
           row.style.display = 'none';
-      }
-  });
+          return false;
+        } 
+        return true;
+      });
+    });
+  }
+  return {
+    category: handle2filterByPost, // todo
+    tag: handle2filterByPost, // todo
+    post: handle2filterByPost,
+  }
+}();
 
-  // update the search message visibility
-  var searchMessage = document.getElementById('search-message-no-result');
-  searchMessage.style.display = noResults ? 'table-cell' : 'none';
-}
+// two-way-binding 
+// search box
+(function() {
+  var _SB = {
+    key_searchPattern: 'key_searchPattern',
+    searchInput: null,
+  }
 
-function applyFilter(query) {
-  common_url.appendQueryString(searchPatternKey, encodeURIComponent(query));
-  filter(query);
-}
+  _SB.filter = function() {
+    var queryPattern = _SB.getSearchPattern();
+    var classifiedPatterns = tools.parseQuery(queryPattern);
+    tools.filterByClassifiedPatterns(classifiedPatterns);
+  }
 
-function setup() {
-  // handle user click 
-  document.querySelectorAll(".category-list .category-item").forEach((item) => {
-    item.addEventListener('click', () => {
-      var label = item.getAttribute('data-label');
-      // exist => delete | no exist => add 
-      if(existPattern(label)) {
-        var pattern = searchBox.value.replaceAll(label, '');
-        searchBoxUpdate(pattern);
-      } else {
-        searchBoxUpdate(searchBox.value + label);
-      }
-    })
-  });
+  _SB.initSearchPattern = function() {
+    _SB.setSearchPattern(_SB.getSearchPattern());
+  }
 
-  // handle user input
-  searchBox.addEventListener('input', function (event) {
-    applyFilter(searchBox.value);
-  });
+  _SB.getSearchPattern = function() {
+    return sessionStorage.getItem(_SB.key_searchPattern);
+  }
 
-  // handle shortcuts
-  addEventListener('keydown', function (event) {
+  _SB.setSearchPattern = function(value) {
+    _SB.searchInput.value=value;
+    sessionStorage.setItem(_SB.key_searchPattern, value);
+    _SB.filter();
+  }
+
+  _SB.setup = function () {
+    console.debug("search setting up");
+    // handle user input
+    _SB.searchInput.addEventListener("keyup", (event) => {
+      _SB.setSearchPattern(event.target.value);
+    });
+    // handle shortcuts
+    addEventListener("keydown", function (event) {
       // focus search box on valid keydown
       if (event.key.toLowerCase().match(/^[+a-z]$/) &&
-          !(event.ctrlKey || event.altKey || event.metaKey)) {
-          searchBox.focus();
-          searchBox.parentElement.scrollIntoView();
+        !(event.ctrlKey || event.altKey || event.metaKey)) {
+          _SB.searchInput.focus();
+          _SB.searchInput.parentElement.scrollIntoView();
       }
       // clear filter on escape
-      else if (event.key === 'Escape') {
-          searchBoxUpdate('');
-          searchBox.focus();
-          searchBox.parentElement.scrollIntoView();
+      else if (event.key === "Escape") {
+        _SB.setSearchPattern(''); // clear pattern
+        _SB.searchInput.focus();
+        _SB.searchInput.parentElement.scrollIntoView();
       }
-  });
-  
-  // trigger filter on page load
-  var pattern = common_url.getQueryStringByName(searchPatternKey);
-  pattern = decodeURIComponent(pattern);
-  searchBoxUpdate(pattern);
+    });
 
-  // trigger filter on history popstate
-  // window.addEventListener("popstate", function (evt) {
-  //   var pattern = common_url.getQueryStringByName(searchPatternKey);
-  //   pattern = decodeURIComponent(pattern);
-  //   searchBoxUpdate(pattern);
-  // })
-}
+    // filter once on load
+    _SB.filter();
+  }
 
-setup();
+  _SB.init = function () {
+    _SB.searchInput = document.getElementById(env.search_input_id);
+    _SB.initSearchPattern();
+    return _SB;
+  }
+
+  return _SB;
+}()
+.init()
+.setup());

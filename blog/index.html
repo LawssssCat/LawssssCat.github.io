@@ -23,15 +23,15 @@
 <p><button class="theme_button" theme-color="red">red</button><button class="theme_button" theme-color="dark">dark</button><button class="theme_button" theme-color="none">none</button><button class="theme_button" theme-color="reset">reset</button></p>
 <!--todo tag filter-->
 <!--posts filter-->
-<div id="search-wrapper">
-  <ul id="category-list" class="category-list"><li><a data-label="+guide" class="category-item"
+<div id="post-search-wrapper">
+  <ul id="category-list" class="category-list"><li><a data-label="guide" class="category-item category-item-guide"
           data-description="Guide how to use this project. 
 such as 'How-to-write-Markdown-in-site'
 ">
-          Guide</a></li><li><a data-label="+test" class="category-item"
+          Guide</a></li><li><a data-label="test" class="category-item category-item-test"
           data-description="Use to test after development.">
           Test</a></li></ul>
-  <input id="post-search" type="text" placeholder="Search among 11 posts: <title> +<category> ..."/>
+  <input id="post-search" type="text" placeholder="Search among 11 posts: [title] +([category]) ..."/>
 </div>
 <!--posts shower-->
 <div id="post-table-wrapper">
@@ -45,7 +45,7 @@ such as 'How-to-write-Markdown-in-site'
       <tbody><tr>
               <td><a href="/blog/docs/guide/48-tips-for-jekyll-you-should-know.html" class="post-title">【未完】48-tips-for-jekyll-you-should-know</a></td>
               <td>
-                <ul class="category-list"><li><a data-label="+guide" class="category-item"
+                <ul class="category-list"><li><a data-label="guide" class="category-item"
                         data-description="Guide how to use this project. 
 such as 'How-to-write-Markdown-in-site'
 ">Guide</a></li></ul>
@@ -53,7 +53,7 @@ such as 'How-to-write-Markdown-in-site'
           </tr><tr>
               <td><a href="/blog/docs/guide/What-is-the-structure-of-this-project.html" class="post-title">What Is The Structure Of This Project</a></td>
               <td>
-                <ul class="category-list"><li><a data-label="+guide" class="category-item"
+                <ul class="category-list"><li><a data-label="guide" class="category-item"
                         data-description="Guide how to use this project. 
 such as 'How-to-write-Markdown-in-site'
 ">Guide</a></li></ul>
@@ -61,55 +61,55 @@ such as 'How-to-write-Markdown-in-site'
           </tr><tr>
               <td><a href="/blog/docs/test/A-Test-Page-05-css.html" class="post-title">A Test Page 05 Css</a></td>
               <td>
-                <ul class="category-list"><li><a data-label="+test" class="category-item"
+                <ul class="category-list"><li><a data-label="test" class="category-item"
                         data-description="Use to test after development.">Test</a></li></ul>
               </td>
           </tr><tr>
               <td><a href="/blog/docs/test/A-Test-Page-04-page-attributes.html" class="post-title">A Test Page 04 Page Attributes</a></td>
               <td>
-                <ul class="category-list"><li><a data-label="+test" class="category-item"
+                <ul class="category-list"><li><a data-label="test" class="category-item"
                         data-description="Use to test after development.">Test</a></li></ul>
               </td>
           </tr><tr>
               <td><a href="/blog/docs/test/A-Test-Page-03-empty-copy-6.html" class="post-title">A Test Page 03 Empty copy 6</a></td>
               <td>
-                <ul class="category-list"><li><a data-label="+test" class="category-item"
+                <ul class="category-list"><li><a data-label="test" class="category-item"
                         data-description="Use to test after development.">Test</a></li></ul>
               </td>
           </tr><tr>
               <td><a href="/blog/docs/test/A-Test-Page-03-empty-copy-5.html" class="post-title">A Test Page 03 Empty copy 5</a></td>
               <td>
-                <ul class="category-list"><li><a data-label="+test" class="category-item"
+                <ul class="category-list"><li><a data-label="test" class="category-item"
                         data-description="Use to test after development.">Test</a></li></ul>
               </td>
           </tr><tr>
               <td><a href="/blog/docs/test/A-Test-Page-03-empty-copy-4.html" class="post-title">A Test Page 03 Empty copy 4</a></td>
               <td>
-                <ul class="category-list"><li><a data-label="+test" class="category-item"
+                <ul class="category-list"><li><a data-label="test" class="category-item"
                         data-description="Use to test after development.">Test</a></li></ul>
               </td>
           </tr><tr>
               <td><a href="/blog/docs/test/A-Test-Page-03-chinese.html" class="post-title">我是一个中文标题！</a></td>
               <td>
-                <ul class="category-list"><li><a data-label="+test" class="category-item"
+                <ul class="category-list"><li><a data-label="test" class="category-item"
                         data-description="Use to test after development.">Test</a></li></ul>
               </td>
           </tr><tr>
               <td><a href="/blog/docs/test/A-Test-Page-02-show-all.html" class="post-title">A Test Page 02 Show All</a></td>
               <td>
-                <ul class="category-list"><li><a data-label="+test" class="category-item"
+                <ul class="category-list"><li><a data-label="test" class="category-item"
                         data-description="Use to test after development.">Test</a></li></ul>
               </td>
           </tr><tr>
               <td><a href="/blog/docs/test/A-Test-Page-01.html" class="post-title">A Test Page 01</a></td>
               <td>
-                <ul class="category-list"><li><a data-label="+test" class="category-item"
+                <ul class="category-list"><li><a data-label="test" class="category-item"
                         data-description="Use to test after development.">Test</a></li></ul>
               </td>
           </tr><tr>
               <td><a href="/blog/docs/guide/How-to-write-Markdown-in-site.html" class="post-title">How to write Markdown in site</a></td>
               <td>
-                <ul class="category-list"><li><a data-label="+guide" class="category-item"
+                <ul class="category-list"><li><a data-label="guide" class="category-item"
                         data-description="Guide how to use this project. 
 such as 'How-to-write-Markdown-in-site'
 ">Guide</a></li></ul>

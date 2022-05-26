@@ -7,8 +7,14 @@ function changeTheme(color) {
   if(color==='reset') {
     document.getElementById(key_common_css_id).href = herf_raw;
     sessionStorage.removeItem(key_theme_css_cur);
-  } else if(common.notIn(color, [null, '', 'null'])) {
-    var href = '/blog/assets/css/common-'+color+'.css';
+  } else {
+    var _color;
+    if (common.notIn(color, [null, '', 'null'])) {
+      _color='-'+color;
+    } else {
+      _color='';
+    }
+    var href = `/blog/assets/css/common${_color}.css`;
     // document.getElementById(key_common_css_id).href = href; // 页面抖动
     var a = document.getElementById(key_common_css_id);
     var b = a.cloneNode();
@@ -18,8 +24,6 @@ function changeTheme(color) {
       a.remove();
     }, 100);
     sessionStorage.setItem(key_theme_css_cur, color);
-  }else {
-    throw new Error('error color:'+color);
   }
 }
 
