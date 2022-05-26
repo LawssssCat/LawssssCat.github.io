@@ -251,3 +251,8 @@ var patternModeHandlers =  function() {
 }()
 .init()
 .setup());
+
+// css
+// ensure height during filtering
+var tableWrapper = document.getElementById('post-table-wrapper');
+tableWrapper.style.height = tableWrapper.clientHeight + 'px';
