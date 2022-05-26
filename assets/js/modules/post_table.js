@@ -118,10 +118,12 @@ var tools = function() {
     for(var key in classifiedPatterns) {
         try{
         var patterns =  classifiedPatterns[key];
-        var handler = patternModeHandlers[key];
-        if(handler) 
-          handler(patterns);
-        else console.error('lack handler for ['+key+']');
+        if(patterns.length>0) {
+          var handler = patternModeHandlers[key];
+          if(handler) 
+            handler(patterns);
+          else console.error('lack handler for ['+key+']');
+        }
       } catch(err) {
         console.error(err);
       }

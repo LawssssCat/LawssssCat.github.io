@@ -11,6 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"/>
     <!-- My CSS -->
     <link rel="stylesheet" type="text/css" href="{% include tools/get_site_url.liquid file_name='common.css' type='css' %}" id='common_css'/>
+{%- comment -%}
+
+modules css haved been included in common.css.
+
     <!-- CSS set in module -->
     {%- for module in layout.modules -%}
     <link rel="stylesheet" type="text/css" href="{% include tools/get_site_url.liquid file_name=module type='module/css' %}">
@@ -26,5 +30,6 @@
     {%- for css in page.css -%}
     <link rel="stylesheet" type="text/css" href="{% include tools/get_site_url.liquid file_name=css type='css' %}">
     {%- endfor -%}
+{%- endcomment -%}
     {%- include head_custom.html -%}
 </head>

@@ -3,6 +3,26 @@
 <!--todo google analysis-->
 <!--todo search e.g. lunr.js-->
 <!--todo seo-->
+{%- comment -%}
+
+Add unique modules.
+
+{%- endcomment -%}
+{%- for layout_name in site.data.layout.name -%}
+{%- assign layout_modules_key = layout_name | append: '_modules' -%}
+{%- for module in layout[layout_modules_key] -%}
+{%- assign modules_str = modules_str | append: ',' | append: module -%}
+{%- endfor -%}
+{%- endfor -%}
+{%- assign modules_str = modules_str | remove_first: ',' -%}
+{%- assign modules = modules_str | split: ',' | uniq -%}
+{%- for module in modules -%}
+<script type="module" src="{% include tools/get_site_url.liquid file_name=module type='module/js' %}"></script>
+{%- endfor -%}
+{%- comment -%}
+
+There is no need to add js seperately to the page, after using '_data/layout.yml' above.
+
 {%- for module in layout.modules -%}
 <script type="module" src="{% include tools/get_site_url.liquid file_name=module type='module/js' %}"></script>
 {%- endfor -%}
@@ -15,4 +35,5 @@
 {%- for js in page.js -%}
 <script type="module" src="{% include tools/get_site_url.liquid file_name=js type='js' %}"></script>
 {%- endfor -%}
+{%- endcomment -%}
 </footer>
