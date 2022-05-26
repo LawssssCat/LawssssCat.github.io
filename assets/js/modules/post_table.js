@@ -116,10 +116,11 @@ var tools = function() {
     // e.g.
     // '{"category":["bb+bbb#bbbb","jjjjjj",""],"tag":["c*cccc?ccc","zzzzzz z[]zzz【zzz"],"post":["aaaa+aaaa*aa+"," ","dd ","ee ff=】ffff gggg hh iiiiiiiiiii             ","kkkkkkk","kkkkkk"]}'
     for(var key in classifiedPatterns) {
-        try{
+      try{
         var patterns =  classifiedPatterns[key];
-        if(patterns.length>0) {
-          var handler = patternModeHandlers[key];
+        var handlerMatter = patternModeHandlers[key];
+        if(patterns.length>0 || handlerMatter.force) {
+          var handler = handlerMatter.handler;
           if(handler) 
             handler(patterns);
           else console.error('lack handler for ['+key+']');
@@ -147,22 +148,61 @@ var tools = function() {
 }();
 
 var patternModeHandlers =  function() {
-  function handle2filterByPost(patterns) {
-    var rows = document.querySelectorAll('#post-table tbody tr');
+  var rows = document.querySelectorAll('#post-table tbody tr');
+
+  function handle(patterns, hook_01, hook_02, hook_03) {
+    if(hook_03) hook_03(patterns);
     patterns.forEach(pattern => {
+      if(hook_02) hook_02(pattern, rows);
       rows.forEach(row => {
         if(row.style.display == 'none') return true;
-        var postName = row.getElementsByClassName('post-title')[0].innerHTML.toLowerCase();
-        if (postName.indexOf(pattern.toLowerCase()) == -1) {
-          row.style.display = 'none';
-        } 
+        if(hook_01) hook_01(pattern, row);
       });
     });
   }
+
+  function handle2filterByPost(patterns) {
+    handle(patterns, (pattern, row) => { // func01
+      var postName = row.getElementsByClassName('post-title')[0].innerHTML.toLowerCase();
+      if (postName.indexOf(pattern.toLowerCase()) == -1) {
+        row.style.display = 'none';
+      } 
+    });
+  }
+
+  function handle2FilterByCategory(patterns) {
+    handle(patterns, 
+      (pattern, row) => { // func01
+        var match = false;
+        row.querySelectorAll('.category-list .category-item').forEach(cat => {
+          if(cat.getAttribute('data-label')===pattern) {
+            match = true;
+          }
+        })
+        if(!match) row.style.display = 'none';
+      }, 
+      (pattern, rows) => { // func02
+        document.querySelectorAll('.category-item-'+pattern).forEach(cat => {
+          cat.classList.remove('match');
+          cat.classList.add('match');
+        });
+      }, 
+      (patterns) => { // func03
+        document.querySelectorAll('.category-list .category-item').forEach(cat => {
+          cat.classList.remove('match');
+        });
+      });
+  }
+
   return {
-    category: null, // todo
+    category: {
+      handler: handle2FilterByCategory,
+      force: true
+    },
     tag: null, // todo
-    post: handle2filterByPost,
+    post: {
+      handler: handle2filterByPost,
+    }
   }
 }();
 

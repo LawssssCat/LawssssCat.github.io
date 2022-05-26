@@ -35,7 +35,7 @@
                       {%- if site.data.categories[category_id].show != false -%}
                         {%- capture category_description -%}{%- include tools/get_category_attribute.liquid attribute='description' category_id=category_id -%}{%- endcapture -%}
                         {%- capture category_label -%}{%- include tools/get_category_attribute.liquid attribute='label' category_id=category_id -%}{%- endcapture -%}
-                        <li><a data-label="{{ category_label | downcase }}" class="category-item"
+                        <li><a data-label="{{ category_label | downcase }}" class="category-item category-item-{{ category_label | downcase }}"
                         data-description="{{ category_description }}">{{ category_label }}</a></li>
                       {%- endif -%}
                     {%- endfor -%}

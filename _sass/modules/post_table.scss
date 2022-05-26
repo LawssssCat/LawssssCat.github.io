@@ -100,7 +100,7 @@ $category-item-background-hover: $purple-lt-000 !default;
             text-decoration: none;
         }
 
-        a:hover, &.match a {
+        a:hover, a.match {
             color: $category-item-color-hover;
             border-color: $category-item-color-hover;
             background: $category-item-background-hover;
