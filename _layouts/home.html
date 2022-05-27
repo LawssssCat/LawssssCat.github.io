@@ -4,4 +4,9 @@ home_modules: ["post_table"]
 ---
 {{ site.layouts }}
 {{ content }}
+
+themes: 
+
+{% include modules/theme_button.html %}
+
 {%- include modules/post_table.html -%}

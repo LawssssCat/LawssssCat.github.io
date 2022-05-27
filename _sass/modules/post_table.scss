@@ -5,6 +5,11 @@ $post-search-wrapper-category-description-color: $grey-lt-000 !default;
 $post-search-wrapper-post-search-border: unset !default;
 $post-search-wrapper-post-search-outline-color: unset !default;
 $post-table-tr-background-hover: $grey-lt-000 !default;
+$post-table-wrapper-background: unset !default;
+
+#post-table-wrapper {
+    background: $post-table-wrapper-background;
+}
 
 #post-search-wrapper {
     margin: 50px 0;

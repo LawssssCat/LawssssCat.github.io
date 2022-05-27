@@ -54,7 +54,7 @@ tags: ["this project structure", "guide"]
 
 + `_includes` （可以复用在其它页面被include的html页面）
 
-    `{% include head.html %}`
+    {% raw %}`{% include head.html %}`{% endraw %}
 
 + ~~`_posts`（博客文章页面）~~
 + `assets`（原生的资源文件）
