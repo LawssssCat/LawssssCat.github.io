@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://lawsssscat.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lawsssscat.github.io/blog/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-05-26T18:58:07+00:00</updated><id>https://lawsssscat.github.io/blog/feed.xml</id><title type="html">LawssssCat’s Blog</title><entry><title type="html">【未完】/post_file_name/g</title><link href="https://lawsssscat.github.io/blog/docs/guide/48-tips-for-jekyll-you-should-know.html" rel="alternate" type="text/html" title="【未完】/post_file_name/g" /><published>2022-05-25T00:00:00+00:00</published><updated>2022-05-25T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/guide/48-tips-for-jekyll-you-should-know</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/guide/48-tips-for-jekyll-you-should-know.html"><![CDATA[<p>原文：<a href="https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html">https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html</a></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://lawsssscat.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lawsssscat.github.io/blog/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-05-27T17:30:36+00:00</updated><id>https://lawsssscat.github.io/blog/feed.xml</id><title type="html">LawssssCat’s Blog</title><entry><title type="html">【未完】/post_file_name/g</title><link href="https://lawsssscat.github.io/blog/docs/guide/48-tips-for-jekyll-you-should-know.html" rel="alternate" type="text/html" title="【未完】/post_file_name/g" /><published>2022-05-25T00:00:00+00:00</published><updated>2022-05-25T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/guide/48-tips-for-jekyll-you-should-know</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/guide/48-tips-for-jekyll-you-should-know.html"><![CDATA[<p>原文：<a href="https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html">https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html</a></p>
 
 <h3 id="_configyml">_config.yml</h3>
 
@@ -75,7 +75,75 @@
   <span class="na">input</span><span class="pi">:</span>          <span class="s">GFM</span>
   <span class="na">hard_wrap</span><span class="pi">:</span>      <span class="no">false</span>
   <span class="na">footnote_nr</span><span class="pi">:</span>    <span class="m">1</span>
-</code></pre></div></div>]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="guide" /><summary type="html"><![CDATA[原文：https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html]]></summary></entry><entry><title type="html">What Is The Structure Of This Project</title><link href="https://lawsssscat.github.io/blog/docs/guide/What-is-the-structure-of-this-project.html" rel="alternate" type="text/html" title="What Is The Structure Of This Project" /><published>2019-07-11T00:00:00+00:00</published><updated>2019-07-11T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/guide/What-is-the-structure-of-this-project</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/guide/What-is-the-structure-of-this-project.html"><![CDATA[<h2 id="默认的目录结构">默认的目录结构</h2>
+</code></pre></div></div>]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="guide" /><category term="jekyll" /><summary type="html"><![CDATA[原文：https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html]]></summary></entry><entry><title type="html">How To Add A Module In Site</title><link href="https://lawsssscat.github.io/blog/docs/guide/How-to-add-a-module-in-site.html" rel="alternate" type="text/html" title="How To Add A Module In Site" /><published>2019-07-25T00:00:00+00:00</published><updated>2019-07-25T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/guide/How-to-add-a-module-in-site</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/guide/How-to-add-a-module-in-site.html"><![CDATA[<h2 id="some-path">some path</h2>
+<p>tags: [‘rules for this project’]
+—</p>
+
+<p>step: code</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">./_include/modules/</code> - write the <code class="language-plaintext highlighter-rouge">html code</code> of modules.</li>
+  <li><code class="language-plaintext highlighter-rouge">./_sass/modules/</code> - write the <code class="language-plaintext highlighter-rouge">scss code</code> of modules. (first, you should <code class="language-plaintext highlighter-rouge">@import(...)</code> the new sass file in <code class="language-plaintext highlighter-rouge">./_sass/modules/modules-list.scss</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">./assets/js/modules/</code> - write the <code class="language-plaintext highlighter-rouge">js code</code> of modules.</li>
+</ol>
+
+<p>step: use</p>
+
+<ol>
+  <li>
+    <p>if you plan to use the html of the module, you should just use <code class="language-plaintext highlighter-rouge">{%- include your_module.html -%}</code>.</p>
+
+    <p>if you alse plan to use <code class="language-plaintext highlighter-rouge">js/css</code>, you should add a front matter with the name equals layout name and the value equals the name that the module name that you plan to use append <code class="language-plaintext highlighter-rouge">_modules</code>. And then add the layout name into <code class="language-plaintext highlighter-rouge">_data/layout.yml</code>.</p>
+  </li>
+</ol>
+
+<p>e.g.</p>
+
+<p>you can take the module <code class="language-plaintext highlighter-rouge">post_table</code> as an example.</p>
+
+<p>the module <code class="language-plaintext highlighter-rouge">post_table</code> is used in <code class="language-plaintext highlighter-rouge">home</code> layout</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+.... other front matter ....
+home_modules: ["post_table"]
+.... other front matter ....
+---
+
+.... other content ....
+{%- include modules/post_table.html -%}
+.... other content ....
+</code></pre></div></div>
+
+<p>and add <code class="language-plaintext highlighter-rouge">home</code> into <code class="language-plaintext highlighter-rouge">_data/layout.yml</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name:
+...........other
+  - home
+...........other
+</code></pre></div></div>]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="guide" /><summary type="html"><![CDATA[some path tags: [‘rules for this project’] —]]></summary></entry><entry><title type="html">How To Add A Category In Site</title><link href="https://lawsssscat.github.io/blog/docs/guide/How-to-add-a-category-in-site.html" rel="alternate" type="text/html" title="How To Add A Category In Site" /><published>2019-07-15T00:00:00+00:00</published><updated>2019-07-15T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/guide/How-to-add-a-category-in-site</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/guide/How-to-add-a-category-in-site.html"><![CDATA[<h2 id="method-one">method one</h2>
+
+<p>just create a folder with the same name as category in <code class="language-plaintext highlighter-rouge">./docs</code>.</p>
+
+<p>and write post in <code class="language-plaintext highlighter-rouge">./docs/{new folder}/_posts</code>.</p>
+
+<p>e.g.</p>
+
+<p>ceate a category <code class="language-plaintext highlighter-rouge">test</code> and a post <code class="language-plaintext highlighter-rouge">How to add a category in site</code> with category <code class="language-plaintext highlighter-rouge">test</code> at a certain time.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./docs
+└── <span class="nb">test</span>
+    └── _posts
+          └── 2019-07-15-How-to-add-a-category-in-site.md
+</code></pre></div></div>
+
+<h2 id="method-two">method two</h2>
+
+<p>just add a front matter.</p>
+
+<p>e.g.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>categories: <span class="o">[</span><span class="s2">"category_001"</span>, <span class="s2">"category_002"</span><span class="o">]</span>
+</code></pre></div></div>]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="guide" /><category term="rules for this project" /><summary type="html"><![CDATA[method one]]></summary></entry><entry><title type="html">What Is The Structure Of This Project</title><link href="https://lawsssscat.github.io/blog/docs/guide/What-is-the-structure-of-this-project.html" rel="alternate" type="text/html" title="What Is The Structure Of This Project" /><published>2019-07-11T00:00:00+00:00</published><updated>2019-07-11T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/guide/What-is-the-structure-of-this-project</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/guide/What-is-the-structure-of-this-project.html"><![CDATA[<h2 id="默认的目录结构">默认的目录结构</h2>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">.</span>
 ├── _config.yml
@@ -129,23 +197,7 @@
   <li>
     <p><code class="language-plaintext highlighter-rouge">_includes</code> （可以复用在其它页面被include的html页面）</p>
 
-    <p>`&lt;head&gt;</p>
-    <meta charset="UTF-8" />
-
-    <title>What Is The Structure Of This Project |LawssssCat's Blog
-  </title>
-    <link rel="icon" href="/blog/assets/favicon.ico" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
-
-    <p><!-- My CSS --></p>
-    <link rel="stylesheet" type="text/css" href="/blog/assets/css/common.css" id="common_css" />
-    <!--custom head-->
-    <!-- 显示MathJax公式 see https://www.codecogs.com/latex/eqneditor.php -->
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-    <!--custom head end-->
-    <p>&lt;/head&gt;`</p>
+    <p><code class="language-plaintext highlighter-rouge">{% include head.html %}</code></p>
   </li>
   <li><del><code class="language-plaintext highlighter-rouge">_posts</code>（博客文章页面）</del></li>
   <li><code class="language-plaintext highlighter-rouge">assets</code>（原生的资源文件）</li>
@@ -182,7 +234,7 @@ _sass
   <li><code class="language-plaintext highlighter-rouge">support</code> - 最底层样式（基本不要动）</li>
   <li><code class="language-plaintext highlighter-rouge">modules</code> - theme 不同组件样式</li>
   <li><code class="language-plaintext highlighter-rouge">custom</code> - 自定义</li>
-</ul>]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="guide" /><category term="this project structure" /><category term="guide" /><summary type="html"><![CDATA[默认的目录结构]]></summary></entry><entry><title type="html">A Test Page 02 Show All</title><link href="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-02-show-all.html" rel="alternate" type="text/html" title="A Test Page 02 Show All" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/test/A-Test-Page-02-show-all</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-02-show-all.html"><![CDATA[<ul id="toc" class="section-nav">
+</ul>]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="guide" /><category term="this project structure" /><category term="rules for this project" /><summary type="html"><![CDATA[默认的目录结构]]></summary></entry><entry><title type="html">A Test Page 02 Show All</title><link href="https://lawsssscat.github.io/blog/docs/test/error/A-Test-Page-02-show-all.html" rel="alternate" type="text/html" title="A Test Page 02 Show All" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/test/error/A-Test-Page-02-show-all</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/test/error/A-Test-Page-02-show-all.html"><![CDATA[<ul id="toc" class="section-nav">
 <li class="toc-entry toc-h1"><a href="#latest-posts">Latest Posts</a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#-posttitle-">{{ post.title }}</a></li>
@@ -194,7 +246,7 @@ _sass
 
 <hr />
 
-<p>site time 2022-05-26 18:58:07 +0000</p>
+<p>site time 2022-05-27 17:30:36 +0000</p>
 
 <p>site Jekyll::Drops::SiteDrop</p>
 
@@ -208,7 +260,7 @@ _sass
 
 <p>pages 7</p>
 
-<p>posts 11</p>
+<p>posts 13</p>
 
 <h1 id="see-httpsjekyllrbcomdocsstep-by-step08-blogging">see <a href="https://jekyllrb.com/docs/step-by-step/08-blogging/">https://jekyllrb.com/docs/step-by-step/08-blogging/</a></h1>
 <h1>Latest Posts</h1>
@@ -217,6 +269,20 @@ _sass
     <li>
       <h2><a href="/blog/docs/guide/48-tips-for-jekyll-you-should-know.html">【未完】/post_file_name/g</a></h2>
       <p>原文：<a href="https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html">https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html</a></p>
+
+    </li>
+  
+    <li>
+      <h2><a href="/blog/docs/guide/How-to-add-a-module-in-site.html">How To Add A Module In Site</a></h2>
+      <h2 id="some-path">some path</h2>
+<p>tags: [‘rules for this project’]
+—</p>
+
+    </li>
+  
+    <li>
+      <h2><a href="/blog/docs/guide/How-to-add-a-category-in-site.html">How To Add A Category In Site</a></h2>
+      <h2 id="method-one">method one</h2>
 
     </li>
   
@@ -264,7 +330,7 @@ _sass
     </li>
   
     <li>
-      <h2><a href="/blog/docs/test/A-Test-Page-02-show-all.html">A Test Page 02 Show All</a></h2>
+      <h2><a href="/blog/docs/test/error/A-Test-Page-02-show-all.html">A Test Page 02 Show All</a></h2>
       <ul id="toc" class="section-nav">
 </ul>
 
@@ -290,7 +356,7 @@ _sass
   
 </ul>
 
-<p>collections [#&lt;Jekyll::Document docs/guide/_posts/2019-05-21-How-to-write-Markdown-in-site.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-21-A-Test-Page-01.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-02-show-all.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-03-chinese.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-03-empty copy 4.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-03-empty copy 5.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-03-empty copy 6.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-04-page-attributes.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-05-css.md collection=posts&gt;, #&lt;Jekyll::Document docs/guide/_posts/2019-07-11-What-is-the-structure-of-this-project.md collection=posts&gt;, #&lt;Jekyll::Document docs/guide/_posts/2022-05-25-48-tips-for-jekyll-you-should-know.md collection=posts&gt;]</p>
+<p>collections [#&lt;Jekyll::Document docs/guide/_posts/2019-05-21-How-to-write-Markdown-in-site.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-21-A-Test-Page-01.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-02-show-all.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-03-chinese.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-03-empty copy 4.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-03-empty copy 5.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-03-empty copy 6.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-04-page-attributes.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-05-css.md collection=posts&gt;, #&lt;Jekyll::Document docs/guide/_posts/2019-07-11-What-is-the-structure-of-this-project.md collection=posts&gt;, #&lt;Jekyll::Document docs/guide/_posts/2019-07-15-How-to-add-a-category-in-site.md collection=posts&gt;, #&lt;Jekyll::Document docs/guide/_posts/2019-07-25-How-to-add-a-module-in-site.md collection=posts&gt;, #&lt;Jekyll::Document docs/guide/_posts/2022-05-25-48-tips-for-jekyll-you-should-know.md collection=posts&gt;]</p>
 
 <hr />
 
@@ -302,6 +368,20 @@ _sass
     <li>
       <h2><a href="/blog/docs/guide/48-tips-for-jekyll-you-should-know.html">【未完】/post_file_name/g</a></h2>
       <p>原文：<a href="https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html">https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html</a></p>
+
+    </li>
+  
+    <li>
+      <h2><a href="/blog/docs/guide/How-to-add-a-module-in-site.html">How To Add A Module In Site</a></h2>
+      <h2 id="some-path">some path</h2>
+<p>tags: [‘rules for this project’]
+—</p>
+
+    </li>
+  
+    <li>
+      <h2><a href="/blog/docs/guide/How-to-add-a-category-in-site.html">How To Add A Category In Site</a></h2>
+      <h2 id="method-one">method one</h2>
 
     </li>
   
@@ -349,7 +429,7 @@ _sass
     </li>
   
     <li>
-      <h2><a href="/blog/docs/test/A-Test-Page-02-show-all.html">A Test Page 02 Show All</a></h2>
+      <h2><a href="/blog/docs/test/error/A-Test-Page-02-show-all.html">A Test Page 02 Show All</a></h2>
       <ul id="toc" class="section-nav">
 </ul>
 
@@ -375,7 +455,7 @@ _sass
   
   </ul>
 
-<hr />]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="test" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">我是一个中文标题！</title><link href="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-03-chinese.html" rel="alternate" type="text/html" title="我是一个中文标题！" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/test/A-Test-Page-03-chinese</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-03-chinese.html"><![CDATA[<p>Generated by <a href="https://github.com/menzi11/BullshitGenerator">https://github.com/menzi11/BullshitGenerator</a></p>
+<hr />]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="test" /><category term="error" /><category term="" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">我是一个中文标题！</title><link href="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-03-chinese.html" rel="alternate" type="text/html" title="我是一个中文标题！" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/test/A-Test-Page-03-chinese</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-03-chinese.html"><![CDATA[<p>Generated by <a href="https://github.com/menzi11/BullshitGenerator">https://github.com/menzi11/BullshitGenerator</a></p>
 
 <p>既然如何， base_word，到底应该如何实现。 既然如此， 马克思在不经意间这样说过，一切节省，归根到底都归结为时间的节省。这启发了我， 就我个人来说，base_word对我的意义，不能不说非常重大。 莎士比亚曾经说过，人的一生是短的，但如果卑劣地过这一生，就太长了。这启发了我， 现在，解决base_word的问题，是非常非常重要的。 所以， 从这个角度来看， 杰纳勒尔·乔治·S·巴顿说过一句富有哲理的话，接受挑战，就可以享受胜利的喜悦。这句话语虽然很短，但令我浮想联翩。 亚伯拉罕·林肯说过一句富有哲理的话，你活了多少岁不算什么，重要的是你是如何度过这些岁月的。带着这句话，我们还要更加慎重的审视这个问题： 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 每个人都不得不面对这些问题。 在面对这种问题时， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 贝多芬在不经意间这样说过，卓越的人一大优点是：在不利与艰难的遭遇里百折不饶。这不禁令我深思。 问题的关键究竟为何？ 带着这些问题，我们来审视一下base_word。 经过上述讨论， 所谓base_word，关键是base_word需要如何写。 一般来说， 经过上述讨论， 这样看来， 现在，解决base_word的问题，是非常非常重要的。 所以， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 我们都知道，只要有意义，那么就必须慎重考虑。 莫扎特曾经说过，谁和我一样用功，谁就会和我一样成功。这句话语虽然很短，但令我浮想联翩。 base_word因何而发生？ 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 马克思曾经提到过，一切节省，归根到底都归结为时间的节省。这似乎解答了我的疑惑。 那么， base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 维龙在不经意间这样说过，要成功不需要什么特别的才能，只要把你能做的小事做得好就行了。这启发了我， 经过上述讨论， 问题的关键究竟为何？ 现在，解决base_word的问题，是非常非常重要的。 所以， 既然如此， 孔子曾经说过，知之者不如好之者，好之者不如乐之者。这似乎解答了我的疑惑。 base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 每个人都不得不面对这些问题。 在面对这种问题时， 既然如此。</p>
 
@@ -585,7 +665,8 @@ _sass
 <div class="site-content"><h1><!--todo front page-->
 <a href="/blog/">..</a>/A Test Page 03 Empty copy 6<div class="github-buttons">
     <a class="github-button" href="https://github.com/LawssssCat/lawsssscat.github.io" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a>
-</div></h1><ul id="toc" class="section-nav">
+</div>
+</h1><ul class="category-list"><li><a data-label="test" class="category-item category-item-test" data-description="Use to test after development.">Test</a></li></ul><ul id="toc" class="section-nav">
 </ul>
 
 
@@ -593,184 +674,7 @@ _sass
 <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
 <!--todo google analysis-->
 <!--todo search e.g. lunr.js-->
-<!--todo seo--><script type="module" src="/blog/assets/js/modules/theme_button.js"></script><script type="module" src="/blog/assets/js/modules/toc.js"></script></footer></body>
+<!--todo seo--><script type="module" src="/blog/assets/js/modules/theme_button.js"></script><script type="module" src="/blog/assets/js/modules/toc.js"></script><script type="module" src="/blog/assets/js/modules/github_button.js"></script></footer></body>
 </html>
 
-<hr />]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="test" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">A Test Page 05 Css</title><link href="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-05-css.html" rel="alternate" type="text/html" title="A Test Page 05 Css" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/test/A-Test-Page-05-css</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-05-css.html"><![CDATA[<h2 id="code">code</h2>
-
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">function</span> <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">// handle user input</span>
-    <span class="kd">var</span> <span class="nx">searchBox</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">post-search</span><span class="dl">'</span><span class="p">);</span>
-    <span class="nx">searchBox</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">input</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-        <span class="kd">var</span> <span class="nx">query</span> <span class="o">=</span> <span class="nx">searchBox</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
-        <span class="nx">history</span><span class="p">.</span><span class="nx">replaceState</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="nb">encodeURI</span><span class="p">(</span><span class="dl">'</span><span class="s1">#</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">query</span><span class="p">));</span>
-        <span class="nx">applyFilter</span><span class="p">();</span>
-    <span class="p">});</span>
-
-    <span class="c1">// handle shortcuts</span>
-    <span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">keydown</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">// focus search box on valid keydown</span>
-        <span class="k">if</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">key</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">().</span><span class="nx">match</span><span class="p">(</span><span class="sr">/^</span><span class="se">[</span><span class="sr">+a-z</span><span class="se">]</span><span class="sr">$/</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
-            <span class="o">!</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">ctrlKey</span> <span class="o">||</span> <span class="nx">event</span><span class="p">.</span><span class="nx">altKey</span> <span class="o">||</span> <span class="nx">event</span><span class="p">.</span><span class="nx">metaKey</span><span class="p">))</span> <span class="p">{</span>
-            <span class="nx">searchBox</span><span class="p">.</span><span class="nx">focus</span><span class="p">();</span>
-            <span class="nx">searchBox</span><span class="p">.</span><span class="nx">parentElement</span><span class="p">.</span><span class="nx">scrollIntoView</span><span class="p">();</span>
-        <span class="p">}</span>
-        <span class="c1">// clear filter on escape</span>
-        <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">key</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">Escape</span><span class="dl">'</span><span class="p">)</span> <span class="p">{</span>
-            <span class="nx">location</span><span class="p">.</span><span class="nx">hash</span> <span class="o">=</span> <span class="nx">searchBox</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="dl">''</span><span class="p">;</span>
-            <span class="nx">searchBox</span><span class="p">.</span><span class="nx">focus</span><span class="p">();</span>
-            <span class="nx">searchBox</span><span class="p">.</span><span class="nx">parentElement</span><span class="p">.</span><span class="nx">scrollIntoView</span><span class="p">();</span>
-        <span class="p">}</span>
-    <span class="p">});</span>
-
-    <span class="c1">// handle URL changes</span>
-    <span class="nb">window</span><span class="p">.</span><span class="nx">onhashchange</span> <span class="o">=</span> <span class="nx">applyFilter</span><span class="p">;</span>
-
-    <span class="c1">// trigger filter on page load</span>
-    <span class="nx">applyFilter</span><span class="p">();</span>
-  <span class="p">}</span>
-
- <span class="nx">setup</span><span class="p">();</span>
-</code></pre></div></div>
-
-<h2 id="chinese">chinese</h2>
-
-<p>Generated by <a href="https://github.com/menzi11/BullshitGenerator">https://github.com/menzi11/BullshitGenerator</a></p>
-
-<p>既然如何， base_word，到底应该如何实现。 既然如此， 马克思在不经意间这样说过，一切节省，归根到底都归结为时间的节省。这启发了我， 就我个人来说，base_word对我的意义，不能不说非常重大。 莎士比亚曾经说过，人的一生是短的，但如果卑劣地过这一生，就太长了。这启发了我， 现在，解决base_word的问题，是非常非常重要的。 所以， 从这个角度来看， 杰纳勒尔·乔治·S·巴顿说过一句富有哲理的话，接受挑战，就可以享受胜利的喜悦。这句话语虽然很短，但令我浮想联翩。 亚伯拉罕·林肯说过一句富有哲理的话，你活了多少岁不算什么，重要的是你是如何度过这些岁月的。带着这句话，我们还要更加慎重的审视这个问题： 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 每个人都不得不面对这些问题。 在面对这种问题时， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 贝多芬在不经意间这样说过，卓越的人一大优点是：在不利与艰难的遭遇里百折不饶。这不禁令我深思。 问题的关键究竟为何？ 带着这些问题，我们来审视一下base_word。 经过上述讨论， 所谓base_word，关键是base_word需要如何写。 一般来说， 经过上述讨论， 这样看来， 现在，解决base_word的问题，是非常非常重要的。 所以， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 我们都知道，只要有意义，那么就必须慎重考虑。 莫扎特曾经说过，谁和我一样用功，谁就会和我一样成功。这句话语虽然很短，但令我浮想联翩。 base_word因何而发生？ 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 马克思曾经提到过，一切节省，归根到底都归结为时间的节省。这似乎解答了我的疑惑。 那么， base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 维龙在不经意间这样说过，要成功不需要什么特别的才能，只要把你能做的小事做得好就行了。这启发了我， 经过上述讨论， 问题的关键究竟为何？ 现在，解决base_word的问题，是非常非常重要的。 所以， 既然如此， 孔子曾经说过，知之者不如好之者，好之者不如乐之者。这似乎解答了我的疑惑。 base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 每个人都不得不面对这些问题。 在面对这种问题时， 既然如此。</p>
-
-<p>带着这些问题，我们来审视一下base_word。 富兰克林在不经意间这样说过，你热爱生命吗？那么别浪费时间，因为时间是组成生命的材料。这启发了我， 俾斯麦在不经意间这样说过，失败是坚忍的最后考验。这似乎解答了我的疑惑。 那么， base_word，发生了会如何，不发生又会如何。 base_word，到底应该如何实现。 对我个人而言，base_word不仅仅是一个重大的事件，还可能会改变我的人生。 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 而这些并不是完全重要，更加重要的问题是， 亚伯拉罕·林肯说过一句富有哲理的话，我这个人走得很慢，但是我从不后退。这不禁令我深思。 要想清楚，base_word，到底是一种怎么样的存在。 总结的来说， base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 就我个人来说，base_word对我的意义，不能不说非常重大。 从这个角度来看， 我们不得不面对一个非常尴尬的事实，那就是， 黑塞曾经说过，有勇气承担命运这才是英雄好汉。这句话语虽然很短，但令我浮想联翩。 带着这些问题，我们来审视一下base_word。 既然如何， 我认为， base_word，到底应该如何实现。 从这个角度来看， 所谓base_word，关键是base_word需要如何写。 现在，解决base_word的问题，是非常非常重要的。 所以， 在这种困难的抉择下，本人思来想去，寝食难安。 问题的关键究竟为何？ base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 而这些并不是完全重要，更加重要的问题是。</p>
-
-<p>base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 带着这些问题，我们来审视一下base_word。 塞涅卡曾经说过，真正的人生，只有在经过艰难卓绝的斗争之后才能实现。我希望诸位也能好好地体会这句话。 斯宾诺莎在不经意间这样说过，最大的骄傲于最大的自卑都表示心灵的最软弱无力。这句话语虽然很短，但令我浮想联翩。 每个人都不得不面对这些问题。 在面对这种问题时， 从这个角度来看， 罗曼·罗兰曾经说过，只有把抱怨环境的心情，化为上进的力量，才是成功的保证。这不禁令我深思。 培根曾经提到过，要知道对好事的称颂过于夸大，也会招来人们的反感轻蔑和嫉妒。这句话语虽然很短，但令我浮想联翩。 那么， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 在这种困难的抉择下，本人思来想去，寝食难安。 base_word因何而发生？ 那么， 叔本华曾经说过，普通人只想到如何度过时间，有才能的人设法利用时间。带着这句话，我们还要更加慎重的审视这个问题： 对我个人而言，base_word不仅仅是一个重大的事件，还可能会改变我的人生。 要想清楚，base_word，到底是一种怎么样的存在。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 base_word因何而发生？ 吉格·金克拉在不经意间这样说过，如果你能做梦，你就能实现它。这句话语虽然很短，但令我浮想联翩。 歌德说过一句富有哲理的话，没有人事先了解自己到底有多大的力量，直到他试过以后才知道。这启发了我， 就我个人来说，base_word对我的意义，不能不说非常重大。 每个人都不得不面对这些问题。 在面对这种问题时， 从这个角度来看， 现在，解决base_word的问题，是非常非常重要的。 所以， 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 要想清楚，base_word，到底是一种怎么样的存在。 对我个人而言，base_word不仅仅是一个重大的事件，还可能会改变我的人生。 我认为， 带着这些问题，我们来审视一下base_word。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 经过上述讨论， 那么， 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 叔本华曾经说过，普通人只想到如何度过时间，有才能的人设法利用时间。这启发了我， 总结的来说， 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 可是，即使是这样，base_word的出现仍然代表了一定的意义。</p>
-
-<p>所谓base_word，关键是base_word需要如何写。 base_word，发生了会如何，不发生又会如何。 那么， 一般来说， 经过上述讨论， 要想清楚，base_word，到底是一种怎么样的存在。 史美尔斯在不经意间这样说过，书籍把我们引入最美好的社会，使我们认识各个时代的伟大智者。带着这句话，我们还要更加慎重的审视这个问题： 这样看来， 莎士比亚曾经提到过，那脑袋里的智慧，就像打火石里的火花一样，不去打它是不肯出来的。带着这句话，我们还要更加慎重的审视这个问题： 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 我们不得不面对一个非常尴尬的事实，那就是， 冯学峰在不经意间这样说过，当一个人用工作去迎接光明，光明很快就会来照耀着他。带着这句话，我们还要更加慎重的审视这个问题： 西班牙说过一句富有哲理的话，自知之明是最难得的知识。这不禁令我深思。 达·芬奇说过一句富有哲理的话，大胆和坚定的决心能够抵得上武器的精良。这似乎解答了我的疑惑。 一般来说， 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 那么， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 维龙说过一句富有哲理的话，要成功不需要什么特别的才能，只要把你能做的小事做得好就行了。我希望诸位也能好好地体会这句话。 base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。</p>
-
-<p>莎士比亚曾经提到过，人的一生是短的，但如果卑劣地过这一生，就太长了。带着这句话，我们还要更加慎重的审视这个问题： 这样看来， 王阳明曾经提到过，故立志者，为学之心也；为学者，立志之事也。这似乎解答了我的疑惑。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 富兰克林曾经提到过，读书是易事，思索是难事，但两者缺一，便全无用处。带着这句话，我们还要更加慎重的审视这个问题： 要想清楚，base_word，到底是一种怎么样的存在。 我认为， base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 达尔文在不经意间这样说过，敢于浪费哪怕一个钟头时间的人，说明他还不懂得珍惜生命的全部价值。这启发了我， 既然如何， 而这些并不是完全重要，更加重要的问题是， 我们都知道，只要有意义，那么就必须慎重考虑。 base_word，发生了会如何，不发生又会如何。 洛克曾经提到过，学到很多东西的诀窍，就是一下子不要学很多。我希望诸位也能好好地体会这句话。 base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 那么， base_word，到底应该如何实现。 总结的来说。</p>
-
-<p>所谓base_word，关键是base_word需要如何写。 对我个人而言，base_word不仅仅是一个重大的事件，还可能会改变我的人生。 对我个人而言，base_word不仅仅是一个重大的事件，还可能会改变我的人生。 每个人都不得不面对这些问题。 在面对这种问题时， 既然如何， 带着这些问题，我们来审视一下base_word。 每个人都不得不面对这些问题。 在面对这种问题时， 一般来讲，我们都必须务必慎重的考虑考虑。 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。</p>
-
-<p>现在，解决base_word的问题，是非常非常重要的。 所以， 经过上述讨论， 就我个人来说，base_word对我的意义，不能不说非常重大。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 笛卡儿曾经说过，阅读一切好书如同和过去最杰出的人谈话。这启发了我， 培根在不经意间这样说过，深窥自己的心，而后发觉一切的奇迹在你自己。这不禁令我深思。 现在，解决base_word的问题，是非常非常重要的。 所以， 总结的来说， 我们不得不面对一个非常尴尬的事实，那就是， 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。</p>
-
-<p>要想清楚，base_word，到底是一种怎么样的存在。 就我个人来说，base_word对我的意义，不能不说非常重大。 总结的来说， 维龙曾经提到过，要成功不需要什么特别的才能，只要把你能做的小事做得好就行了。我希望诸位也能好好地体会这句话。 现在，解决base_word的问题，是非常非常重要的。 所以， base_word因何而发生？ base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 我们不得不面对一个非常尴尬的事实，那就是， 既然如此， 老子说过一句富有哲理的话，知人者智，自知者明。胜人者有力，自胜者强。带着这句话，我们还要更加慎重的审视这个问题： 这样看来， 要想清楚，base_word，到底是一种怎么样的存在。 我们都知道，只要有意义，那么就必须慎重考虑。 对我个人而言，base_word不仅仅是一个重大的事件，还可能会改变我的人生。 经过上述讨论。</p>
-
-<p>文森特·皮尔在不经意间这样说过，改变你的想法，你就改变了自己的世界。这似乎解答了我的疑惑。 问题的关键究竟为何？ 一般来说， 在这种困难的抉择下，本人思来想去，寝食难安。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 我们都知道，只要有意义，那么就必须慎重考虑。 我们都知道，只要有意义，那么就必须慎重考虑。 老子在不经意间这样说过，知人者智，自知者明。胜人者有力，自胜者强。带着这句话，我们还要更加慎重的审视这个问题： 一般来说， 而这些并不是完全重要，更加重要的问题是， 我们都知道，只要有意义，那么就必须慎重考虑。 既然如何， 要想清楚，base_word，到底是一种怎么样的存在。 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 我们不得不面对一个非常尴尬的事实，那就是， base_word，发生了会如何，不发生又会如何。 总结的来说， 这样看来， 可是，即使是这样，base_word的出现仍然代表了一定的意义。</p>
-
-<p>从这个角度来看， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 那么， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 杰纳勒尔·乔治·S·巴顿曾经说过，接受挑战，就可以享受胜利的喜悦。带着这句话，我们还要更加慎重的审视这个问题： 这样看来， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 而这些并不是完全重要，更加重要的问题是， 从这个角度来看， 就我个人来说，base_word对我的意义，不能不说非常重大。</p>
-
-<p>生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 总结的来说， 这样看来， 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 我们不得不面对一个非常尴尬的事实，那就是， 洛克说过一句富有哲理的话，学到很多东西的诀窍，就是一下子不要学很多。这不禁令我深思。 我们都知道，只要有意义，那么就必须慎重考虑。 一般来讲，我们都必须务必慎重的考虑考虑。 马云说过一句富有哲理的话，最大的挑战和突破在于用人，而用人最大的突破在于信任人。这句话语虽然很短，但令我浮想联翩。 亚伯拉罕·林肯曾经说过，我这个人走得很慢，但是我从不后退。我希望诸位也能好好地体会这句话。 带着这些问题，我们来审视一下base_word。 每个人都不得不面对这些问题。 在面对这种问题时， base_word，发生了会如何，不发生又会如何。 我们不得不面对一个非常尴尬的事实，那就是， 从这个角度来看， 培根在不经意间这样说过，合理安排时间，就等于节约时间。这似乎解答了我的疑惑。 西班牙曾经说过，自知之明是最难得的知识。这句话语虽然很短，但令我浮想联翩。 base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 对我个人而言，base_word不仅仅是一个重大的事件，还可能会改变我的人生。 一般来讲，我们都必须务必慎重的考虑考虑。 而这些并不是完全重要，更加重要的问题是， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。</p>
-
-<p>总结的来说， 那么， 在这种困难的抉择下，本人思来想去，寝食难安。 在这种困难的抉择下，本人思来想去，寝食难安。 既然如此， 黑格尔曾经提到过，只有永远躺在泥坑里的人，才不会再掉进坑里。我希望诸位也能好好地体会这句话。 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 在这种困难的抉择下，本人思来想去，寝食难安。 这样看来， 马云说过一句富有哲理的话，最大的挑战和突破在于用人，而用人最大的突破在于信任人。这句话语虽然很短，但令我浮想联翩。 所谓base_word，关键是base_word需要如何写。 所谓base_word，关键是base_word需要如何写。 base_word，到底应该如何实现。 对我个人而言，base_word不仅仅是一个重大的事件，还可能会改变我的人生。 美华纳曾经提到过，勿问成功的秘诀为何，且尽全力做你应该做的事吧。这不禁令我深思。</p>
-
-<p>带着这些问题，我们来审视一下base_word。 培根曾经说过，阅读使人充实，会谈使人敏捷，写作使人精确。我希望诸位也能好好地体会这句话。 对我个人而言，base_word不仅仅是一个重大的事件，还可能会改变我的人生。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 既然如此， 老子曾经说过，知人者智，自知者明。胜人者有力，自胜者强。这似乎解答了我的疑惑。 可是，即使是这样，base_word的出现仍然代表了一定的意义。 base_word，发生了会如何，不发生又会如何。 一般来讲，我们都必须务必慎重的考虑考虑。 一般来说， 总结的来说， 总结的来说， 富兰克林说过一句富有哲理的话，你热爱生命吗？那么别浪费时间，因为时间是组成生命的材料。这不禁令我深思。 而这些并不是完全重要，更加重要的问题是， base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 要想清楚，base_word，到底是一种怎么样的存在。 总结的来说。</p>
-
-<p>了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 既然如何， 歌德曾经提到过，决定一个人的一生，以及整个命运的，只是一瞬之间。这似乎解答了我的疑惑。 卡莱尔曾经提到过，过去一切时代的精华尽在书中。带着这句话，我们还要更加慎重的审视这个问题： 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 笛卡儿曾经说过，读一切好书，就是和许多高尚的人谈话。这句话语虽然很短，但令我浮想联翩。 希腊曾经提到过，最困难的事情就是认识自己。这不禁令我深思。 吉格·金克拉说过一句富有哲理的话，如果你能做梦，你就能实现它。这启发了我， 每个人都不得不面对这些问题。 在面对这种问题时， 培根说过一句富有哲理的话，合理安排时间，就等于节约时间。这启发了我， 一般来讲，我们都必须务必慎重的考虑考虑。 既然如何， 问题的关键究竟为何？ 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 就我个人来说，base_word对我的意义，不能不说非常重大。 一般来讲，我们都必须务必慎重的考虑考虑。 我们不得不面对一个非常尴尬的事实，那就是， 这样看来， 一般来说， 每个人都不得不面对这些问题。 在面对这种问题时， base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 对我个人而言，base_word不仅仅是一个重大的事件，还可能会改变我的人生。</p>
-
-<p>既然如此， 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 卡耐基在不经意间这样说过，我们若已接受最坏的，就再没有什么损失。带着这句话，我们还要更加慎重的审视这个问题： 既然如此， 每个人都不得不面对这些问题。 在面对这种问题时， 问题的关键究竟为何？ base_word，到底应该如何实现。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 从这个角度来看， 可是，即使是这样，base_word的出现仍然代表了一定的意义。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 总结的来说， 既然如何， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 从这个角度来看， 要想清楚，base_word，到底是一种怎么样的存在。 我们不得不面对一个非常尴尬的事实，那就是， 那么， 一般来讲，我们都必须务必慎重的考虑考虑。</p>
-
-<p>我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 要想清楚，base_word，到底是一种怎么样的存在。 就我个人来说，base_word对我的意义，不能不说非常重大。 笛卡儿说过一句富有哲理的话，读一切好书，就是和许多高尚的人谈话。这启发了我， 现在，解决base_word的问题，是非常非常重要的。 所以， 那么， 总结的来说， 要想清楚，base_word，到底是一种怎么样的存在。 一般来讲，我们都必须务必慎重的考虑考虑。 而这些并不是完全重要，更加重要的问题是， 我认为， 经过上述讨论。</p>
-
-<p>base_word因何而发生？ 从这个角度来看， 从这个角度来看， base_word，发生了会如何，不发生又会如何。 叔本华在不经意间这样说过，意志是一个强壮的盲人，倚靠在明眼的跛子肩上。带着这句话，我们还要更加慎重的审视这个问题： 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 一般来说， base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 带着这些问题，我们来审视一下base_word。 一般来说， 这样看来， 左拉曾经提到过，生活的道路一旦选定，就要勇敢地走到底，决不回头。这句话语虽然很短，但令我浮想联翩。 每个人都不得不面对这些问题。 在面对这种问题时， 我们都知道，只要有意义，那么就必须慎重考虑。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 莎士比亚曾经说过，本来无望的事，大胆尝试，往往能成功。这似乎解答了我的疑惑。 米歇潘曾经说过，生命是一条艰险的峡谷，只有勇敢的人才能通过。这句话语虽然很短，但令我浮想联翩。 base_word，发生了会如何，不发生又会如何。 base_word，到底应该如何实现。 一般来说， 每个人都不得不面对这些问题。 在面对这种问题时， 问题的关键究竟为何？ 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 俾斯麦曾经说过，对于不屈不挠的人来说，没有失败这回事。这句话语虽然很短，但令我浮想联翩。 这样看来， 吉格·金克拉说过一句富有哲理的话，如果你能做梦，你就能实现它。这不禁令我深思。 base_word因何而发生？ 我们不得不面对一个非常尴尬的事实，那就是。</p>
-
-<p>base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 既然如何， base_word因何而发生？ 苏轼曾经说过，古之立大事者，不惟有超世之才，亦必有坚忍不拔之志。我希望诸位也能好好地体会这句话。 要想清楚，base_word，到底是一种怎么样的存在。 塞涅卡说过一句富有哲理的话，真正的人生，只有在经过艰难卓绝的斗争之后才能实现。这启发了我， 经过上述讨论， 博曾经提到过，一次失败，只是证明我们成功的决心还够坚强。 维这启发了我， 所谓base_word，关键是base_word需要如何写。 那么， 经过上述讨论， 而这些并不是完全重要，更加重要的问题是， 在这种困难的抉择下，本人思来想去，寝食难安。 总结的来说， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。</p>
-
-<p>一般来讲，我们都必须务必慎重的考虑考虑。 可是，即使是这样，base_word的出现仍然代表了一定的意义。 总结的来说， 可是，即使是这样，base_word的出现仍然代表了一定的意义。 吉姆·罗恩曾经提到过，要么你主宰生活，要么你被生活主宰。我希望诸位也能好好地体会这句话。 带着这些问题，我们来审视一下base_word。 所谓base_word，关键是base_word需要如何写。 俾斯麦说过一句富有哲理的话，对于不屈不挠的人来说，没有失败这回事。我希望诸位也能好好地体会这句话。 现在，解决base_word的问题，是非常非常重要的。 所以。</p>
-
-<p>base_word，发生了会如何，不发生又会如何。 孔子曾经说过，知之者不如好之者，好之者不如乐之者。这句话语虽然很短，但令我浮想联翩。 而这些并不是完全重要，更加重要的问题是， base_word，发生了会如何，不发生又会如何。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 那么， 我们不得不面对一个非常尴尬的事实，那就是， 这样看来， 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 这样看来， 一般来讲，我们都必须务必慎重的考虑考虑。 在这种困难的抉择下，本人思来想去，寝食难安。 经过上述讨论， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 问题的关键究竟为何？ 带着这些问题，我们来审视一下base_word。 这样看来， 带着这些问题，我们来审视一下base_word。 我们都知道，只要有意义，那么就必须慎重考虑。 一般来讲，我们都必须务必慎重的考虑考虑。 而这些并不是完全重要，更加重要的问题是， 就我个人来说，base_word对我的意义，不能不说非常重大。 总结的来说， 问题的关键究竟为何？ 对我个人而言，base_word不仅仅是一个重大的事件，还可能会改变我的人生。 所谓base_word，关键是base_word需要如何写。 一般来讲，我们都必须务必慎重的考虑考虑。</p>
-
-<p>这样看来， 一般来讲，我们都必须务必慎重的考虑考虑。 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 base_word，到底应该如何实现。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 裴斯泰洛齐说过一句富有哲理的话，今天应做的事没有做，明天再早也是耽误了。这似乎解答了我的疑惑。 一般来讲，我们都必须务必慎重的考虑考虑。 base_word因何而发生？ base_word，发生了会如何，不发生又会如何。 每个人都不得不面对这些问题。 在面对这种问题时， 在这种困难的抉择下，本人思来想去，寝食难安。 一般来说， 一般来讲，我们都必须务必慎重的考虑考虑。 我认为。</p>
-
-<p>这样看来， 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 base_word，到底应该如何实现。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 我们都知道，只要有意义，那么就必须慎重考虑。 问题的关键究竟为何？ 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 对我个人而言，base_word不仅仅是一个重大的事件，还可能会改变我的人生。 每个人都不得不面对这些问题。 在面对这种问题时， 现在，解决base_word的问题，是非常非常重要的。 所以， 可是，即使是这样，base_word的出现仍然代表了一定的意义。 现在，解决base_word的问题，是非常非常重要的。 所以， 所谓base_word，关键是base_word需要如何写。 一般来说， 所谓base_word，关键是base_word需要如何写。 base_word，发生了会如何，不发生又会如何。 问题的关键究竟为何？ 经过上述讨论， 问题的关键究竟为何？ 从这个角度来看， 每个人都不得不面对这些问题。 在面对这种问题时。</p>
-
-<p>我认为， 问题的关键究竟为何？ 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 可是，即使是这样，base_word的出现仍然代表了一定的意义。 卡耐基在不经意间这样说过，一个不注意小事情的人，永远不会成就大事业。我希望诸位也能好好地体会这句话。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 吉格·金克拉曾经说过，如果你能做梦，你就能实现它。这似乎解答了我的疑惑。 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 维龙曾经说过，要成功不需要什么特别的才能，只要把你能做的小事做得好就行了。这句话语虽然很短，但令我浮想联翩。</p>
-
-<p>我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 俾斯麦曾经提到过，失败是坚忍的最后考验。这句话语虽然很短，但令我浮想联翩。 黑塞说过一句富有哲理的话，有勇气承担命运这才是英雄好汉。我希望诸位也能好好地体会这句话。 base_word，到底应该如何实现。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 我们不得不面对一个非常尴尬的事实，那就是， 就我个人来说，base_word对我的意义，不能不说非常重大。 日本谚语说过一句富有哲理的话，不幸可能成为通向幸福的桥梁。我希望诸位也能好好地体会这句话。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 吉姆·罗恩曾经说过，要么你主宰生活，要么你被生活主宰。带着这句话，我们还要更加慎重的审视这个问题： base_word因何而发生？ 从这个角度来看， 经过上述讨论， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。</p>]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="test" /><summary type="html"><![CDATA[code]]></summary></entry><entry><title type="html">A Test Page 01</title><link href="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-01.html" rel="alternate" type="text/html" title="A Test Page 01" /><published>2019-06-21T00:00:00+00:00</published><updated>2019-06-21T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/test/A-Test-Page-01</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-01.html"><![CDATA[<h1 id="h1">H1</h1>
-<h2 id="h2">H2</h2>
-<h3 id="h3">H3</h3>
-<h4 id="h4">H4</h4>
-<h5 id="h5"><font color="red">H5</font></h5>
-<h6 id="h6">H6</h6>
-
-<p><em>Italic</em></p>
-
-<p><strong>Bold</strong></p>
-
-<p><del>false</del></p>
-
-<style>
-    .test-link {
-        color: red
-    }
-    .test-image {
-        background: yellow
-    }
-</style>
-
-<p><a href="/blog/" class="test-link">Link to home</a></p>
-
-<p><img src="/blog/assets/favicon.ico" alt="Image to icon" class="test-image" /></p>
-
-<table>
-  <thead>
-    <tr>
-      <th>aaa</th>
-      <th style="text-align: right">bbb</th>
-      <th style="text-align: left">ccc</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>111</td>
-      <td style="text-align: right">222</td>
-      <td style="text-align: left">333</td>
-    </tr>
-    <tr>
-      <td>444</td>
-      <td style="text-align: right">666</td>
-      <td style="text-align: left">777</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><code class="language-plaintext highlighter-rouge">Inline code</code></p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hello world
-</code></pre></div></div>
-
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">hello world</span><span class="dl">'</span><span class="p">);</span>
-</code></pre></div></div>
-
-<hr />
-
-<ul>
-  <li>a
-    <ul>
-      <li>b</li>
-    </ul>
-  </li>
-  <li>
-    <p>c</p>
-  </li>
-  <li>d
-    <ul>
-      <li>e</li>
-    </ul>
-  </li>
-  <li>f</li>
-</ul>
-
-<ol>
-  <li>g
-    <ol>
-      <li>h
- b</li>
-    </ol>
-  </li>
-  <li>i</li>
-</ol>
-
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />a</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />b</li>
-</ul>
-
-<p>:star: :ok: :+1:</p>]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="test" /><category term="test" /><category term="" /><summary type="html"><![CDATA[H1 H2 H3 H4 H5 H6]]></summary></entry></feed>
+<hr />]]></content><author><name>LawssssCat</name></author><category term="docs" /><category term="test" /><summary type="html"><![CDATA[]]></summary></entry></feed>

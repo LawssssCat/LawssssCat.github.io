@@ -1,10 +1,12 @@
 @media (min-width: 1000px) { body { width: 800px; margin: 40px auto; } p { text-align: justify; } }
 
-body { font-family: sans, sans-serif; }
+body { font-family: sans, sans-serif; background: #fff; }
 
-a:link, a:visited { color: #2c84fa; }
+a:link, a:visited { color: #959396; }
 
-a:hover { color: #2869e6; }
+a:hover { color: #171618; }
+
+.logo { float: right; width: 100px; height: 100px; margin-left: 20px; margin-bottom: 20px; }
 
 code { padding: 0.2em 0.15em; font-weight: 400; color: unset; background-color: #f5f6fa; border: 1px solid #44434d; border-radius: 4px; }
 
@@ -176,6 +178,8 @@ h2:target, h3:target, h4:target, h5:target, h5:target { border-left: 5px solid #
 
 h2:hover .permalink, h3:hover .permalink, h4:hover .permalink, h5:hover .permalink, h5:hover .permalink { visibility: visible; }
 
+#post-table-wrapper { background: unset; }
+
 #post-search-wrapper { margin: 50px 0; padding: 10px 0; position: relative; }
 
 #post-search-wrapper #category-list { text-align: center; }
@@ -192,18 +196,26 @@ h2:hover .permalink, h3:hover .permalink, h4:hover .permalink, h5:hover .permali
 
 #post-table th { text-align: left; }
 
-#post-table tbody tr:hover { background: #f5f6fa; }
+#post-table tbody tr:hover { background: #e6e1e8; }
+
+#post-table tbody tr:hover a { text-decoration-line: none; color: #171618; }
 
 #post-table #search-message-no-result { display: none; text-align: center; padding: 1em; }
+
+.post-title { font-size: 1.2rem; }
+
+.github-buttons { display: inline-block; margin-left: 10px; }
+
+.github-buttons a.github-button { visibility: hidden; }
 
 .category-list { font-size: 0.8rem; list-style: none; padding: 0; margin: 0; }
 
 .category-list li { display: inline-block; }
 
-.category-list li a { display: inline-block; color: #a38dfc; padding: 0.25em 0.5em; margin: 0.2em 0; border: 1px solid #a38dfc; }
+.category-list li a { display: inline-block; color: #959396; padding: 0.25em 0.5em; margin: 0.2em 0.1em; border: 1px solid #959396; }
 
 .category-list li a:link, .category-list li a:visited { text-decoration: none; }
 
-.category-list li a:hover, .category-list li a.match { color: #7253ed; border-color: #7253ed; background: #ddd5fd; }
+.category-list li a:hover, .category-list li a.match { color: #171618; border-color: #171618; background: #e6e1e8; }
 
 /*# sourceMappingURL=common-dark.css.map */
