@@ -1,6 +1,6 @@
 ---
 layout: default
-page_modules: ["theme_button", "toc"]
+page_modules: ["theme_button", "toc", "github_button"]
 ---
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: 'en-US' }}">
@@ -8,7 +8,8 @@ page_modules: ["theme_button", "toc"]
 <body>
 {%- include header.html -%}
 <div class="site-content">
-{%- include page_title.html page=page -%}
+{%- capture github_button -%}{%- include modules/github_button.html -%}{%- endcapture -%}
+{%- include modules/page_title.html github_button=github_button -%}
 {{ content }}
 </div>
 {%- include footer.html -%}

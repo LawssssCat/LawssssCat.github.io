@@ -1,6 +1,6 @@
 ---
 title: How to write Markdown in site
-tags: ["markdown", "guide", ]
+tags: ["markdown", 'rules for this project']
 ---
 
 {% toc %}

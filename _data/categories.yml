@@ -13,3 +13,9 @@ guide:
 test:
   label: Test
   description: Use to test after development.
+
+jekyll:
+  label: jekyll
+
+error:
+  description: Error category.

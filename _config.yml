@@ -69,6 +69,7 @@ color_scheme:
 
 # 小图标
 favicon: /assets/favicon.ico
+# favicon: /assets/octo.gif
 
 # 右上角图标
 github-corner: 

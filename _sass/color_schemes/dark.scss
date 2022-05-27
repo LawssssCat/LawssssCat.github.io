@@ -7,8 +7,8 @@ $body-heading-color: $grey-lt-000;
 $nav-child-link-color: $grey-dk-000;
 $search-result-preview-color: $grey-dk-000;
 
-$link-color: $blue-000;
-$link-hover: $blue-100;
+$link-color: $grey-dk-000;
+$link-hover: $grey-dk-400;
 $btn-primary-color: $blue-200;
 $base-button-color: $grey-dk-250;
 
@@ -24,9 +24,6 @@ $toc-permalink-border-left-color-target: $grey-dk-300;
 $post-search-wrapper-category-background: $grey-lt-000;
 $post-table-tr-background-hover: $grey-lt-300;
 // $post-table-wrapper-background: $grey-dk-000;
-$category-item-color: $grey-dk-000;
-$category-item-color-hover: $grey-dk-400;
-$category-item-background-hover: $grey-lt-400;
-
-$link-color: $grey-dk-000;
-$link-hover: $grey-dk-300;
+$category-item-color: $link-color;
+$category-item-color-hover: $link-hover;
+$category-item-background-hover: $grey-lt-300;

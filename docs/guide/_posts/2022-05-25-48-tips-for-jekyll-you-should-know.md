@@ -1,5 +1,6 @@
 ---
 title: 【未完】/post_file_name/g
+tags: ['jekyll']
 ---
 原文：<https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html>
 

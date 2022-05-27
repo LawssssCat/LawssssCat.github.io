@@ -1,0 +1,8 @@
+<h1>
+{%- if page.url != '/' -%}
+<!--todo front page-->
+<a href="{{ '/' | relative_url }}">..</a>/
+{%- endif -%}
+{%- include tools/get_post_attribute.liquid attribute='title' post=page -%}
+{{ include.github_button }}
+</h1>

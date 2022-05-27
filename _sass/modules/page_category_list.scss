@@ -1,0 +1,36 @@
+// category description
+
+$category-item-color: $purple-lt-100 !default;
+$category-item-color-hover: $purple-000 !default;
+$category-item-background-hover: $purple-lt-000 !default;
+
+.category-list {
+    font-size: 0.8rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        display: inline-block;
+
+        a {
+            // background: $post-search-wrapper-category-background;
+            display: inline-block;
+            color: $category-item-color;
+            padding: 0.25em 0.5em;
+            margin: 0.2em 0.1em;
+            border: 1px solid $category-item-color;
+        }
+
+        a:link, a:visited {
+            text-decoration: none;
+        }
+
+        a:hover, a.match {
+            color: $category-item-color-hover;
+            border-color: $category-item-color-hover;
+            background: $category-item-background-hover;
+        }
+
+    }
+}

@@ -1,0 +1,9 @@
+.github-buttons {
+  display: inline-block;
+  margin-left: 10px;
+
+  // avoid displaying the link text during loading
+  a.github-button {
+      visibility: hidden;
+  }
+}
