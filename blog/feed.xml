@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://lawsssscat.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lawsssscat.github.io/blog/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-05-28T04:05:14+00:00</updated><id>https://lawsssscat.github.io/blog/feed.xml</id><title type="html">LawssssCat’s Blog</title><entry><title type="html">【未完】/post_file_name/g</title><link href="https://lawsssscat.github.io/blog/docs/guide/48-tips-for-jekyll-you-should-know.html" rel="alternate" type="text/html" title="【未完】/post_file_name/g" /><published>2022-05-25T00:00:00+00:00</published><updated>2022-05-25T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/guide/48-tips-for-jekyll-you-should-know</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/guide/48-tips-for-jekyll-you-should-know.html"><![CDATA[<p>原文：<a href="https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html">https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html</a></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://lawsssscat.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lawsssscat.github.io/blog/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-05-28T07:02:31+00:00</updated><id>https://lawsssscat.github.io/blog/feed.xml</id><title type="html">LawssssCat’s Blog</title><entry><title type="html">【未完】/post_file_name/g</title><link href="https://lawsssscat.github.io/blog/docs/guide/48-tips-for-jekyll-you-should-know.html" rel="alternate" type="text/html" title="【未完】/post_file_name/g" /><published>2022-05-25T00:00:00+00:00</published><updated>2022-05-25T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/guide/48-tips-for-jekyll-you-should-know</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/guide/48-tips-for-jekyll-you-should-know.html"><![CDATA[<p>原文：<a href="https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html">https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html</a></p>
 
 <h3 id="_configyml">_config.yml</h3>
 
@@ -246,7 +246,7 @@ _sass
 
 <hr />
 
-<p>site time 2022-05-28 04:05:14 +0000</p>
+<p>site time 2022-05-28 07:02:31 +0000</p>
 
 <p>site Jekyll::Drops::SiteDrop</p>
 
@@ -666,7 +666,13 @@ _sass
 <a href="/blog/">..</a>/A Test Page 03 Empty copy 6<div class="github-buttons">
     <a class="github-button" href="https://github.com/LawssssCat/lawsssscat.github.io" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a>
 </div>
-</h1><ul class="category-list"><li><a data-label="test" class="category-item category-item-test" data-description="Use to test after development.">Test</a></li></ul><ul id="toc" class="section-nav">
+</h1><style type="text/css">
+#post-classified-list ul {
+  display: inline-block;
+}
+</style>
+<div id="post-classified-list"><ul class="category-list"><li><a data-label="test" class="category-item category-item-test" data-description="Use to test after development.">Test</a></li></ul><ul class="tag-list"></ul></div>
+<ul id="toc" class="section-nav">
 </ul>
 
 

@@ -15,9 +15,20 @@
     <a class="github-button" href="https://github.com/LawssssCat/lawsssscat.github.io" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a>
 </div>
 </h1>
-<p><img src="/blog/assets/favicon.ico" alt="logo" class="logo" /></p>
+<style type="text/css">#index_logo {
+  float: right;
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+</style>
+
+<p><img id="index_logo" src="/blog/assets/favicon.ico" /></p>
 
 <p>Welcome to my Blog. Below are some of my articles.</p>
+
+<p><img src="/blog/assets/images/coderman.gif" /></p>
 
 
 themes: 
@@ -25,15 +36,23 @@ themes:
 <!--todo--><button class="theme_button" theme-color="red">red</button><button class="theme_button" theme-color="dark">dark</button><button class="theme_button" theme-color="none">none</button><button class="theme_button" theme-color="reset">reset</button><!--todo tag filter-->
 <!--posts filter-->
 <div id="post-search-wrapper">
-  <ul id="category-list" class="category-list"><li><a data-label="guide" class="category-item category-item-guide"
-          data-description="Guide how to use this project. 
+  <ul class="tag-list post-search-tag-list"><li><a data-label="markdown" data-size="1" class="tag-item tag-item-markdown">markdown</a></li><li><a data-label="rules for this project" data-size="3" class="tag-item tag-item-rules for this project">rules for this project</a></li><li><a data-label="test" data-size="1" class="tag-item tag-item-test">test</a></li><li><a data-label="测试：我是一个中文标签" data-size="1" class="tag-item tag-item-测试：我是一个中文标签">测试：我是一个中文标签</a></li><li><a data-label="this project structure" data-size="1" class="tag-item tag-item-this project structure">this project structure</a></li><li><a data-label="jekyll" data-size="1" class="tag-item tag-item-jekyll">jekyll</a></li></ul>
+  <ul class="category-list post-search-category-list"><li>
+            <a data-label="guide" class="category-item category-item-guide">
+            Guide</a>
+            <div class="category-item-description">Guide how to use this project. 
 such as 'How-to-write-Markdown-in-site'
-">
-          Guide</a></li><li><a data-label="test" class="category-item category-item-test"
-          data-description="Use to test after development.">
-          Test</a></li><li><a data-label="error" class="category-item category-item-error"
-          data-description="Error category.">
-          error</a></li></ul>
+</div>
+        </li><li>
+            <a data-label="test" class="category-item category-item-test">
+            Test</a>
+            <div class="category-item-description">Use to test after development.</div>
+        </li><li>
+            <a data-label="error" class="category-item category-item-error">
+            error</a>
+            <div class="category-item-description">Error category. 
+eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrroooooooooooooooooorrrrrrrrrrrrrrrrrrrrrrrrrrrrr.</div>
+        </li></ul>
   <input id="post-search" type="text" placeholder="Search among 13 posts: [title] +([category]) ..."/>
 </div>
 <!--posts shower-->
@@ -42,7 +61,8 @@ such as 'How-to-write-Markdown-in-site'
       <thead>
           <tr>
               <th>Title</th>
-              <th>Category</th>
+              <th>Categories</th>
+              <th>Tags</th>
           </tr>
       </thead>
       <tbody><tr>
@@ -51,63 +71,77 @@ such as 'How-to-write-Markdown-in-site'
       data-description="Guide how to use this project. 
 such as 'How-to-write-Markdown-in-site'
 ">Guide</a></li></ul></td>
+              <td><ul class="tag-list"><li><a data-label="jekyll" class="tag-item tag-item-jekyll">jekyll</a></li></ul></td>
           </tr><tr>
               <td><a href="/blog/docs/guide/How-to-add-a-module-in-site.html" class="post-title">How To Add A Module In Site</a></td>
               <td><ul class="category-list"><li><a data-label="guide" class="category-item category-item-guide"
       data-description="Guide how to use this project. 
 such as 'How-to-write-Markdown-in-site'
 ">Guide</a></li></ul></td>
+              <td><ul class="tag-list"></ul></td>
           </tr><tr>
               <td><a href="/blog/docs/guide/How-to-add-a-category-in-site.html" class="post-title">How To Add A Category In Site</a></td>
               <td><ul class="category-list"><li><a data-label="guide" class="category-item category-item-guide"
       data-description="Guide how to use this project. 
 such as 'How-to-write-Markdown-in-site'
 ">Guide</a></li></ul></td>
+              <td><ul class="tag-list"><li><a data-label="rules for this project" class="tag-item tag-item-rules for this project">rules for this project</a></li></ul></td>
           </tr><tr>
               <td><a href="/blog/docs/guide/What-is-the-structure-of-this-project.html" class="post-title">What Is The Structure Of This Project</a></td>
               <td><ul class="category-list"><li><a data-label="guide" class="category-item category-item-guide"
       data-description="Guide how to use this project. 
 such as 'How-to-write-Markdown-in-site'
 ">Guide</a></li></ul></td>
+              <td><ul class="tag-list"><li><a data-label="this project structure" class="tag-item tag-item-this project structure">this project structure</a></li><li><a data-label="rules for this project" class="tag-item tag-item-rules for this project">rules for this project</a></li></ul></td>
           </tr><tr>
               <td><a href="/blog/docs/test/A-Test-Page-05-css.html" class="post-title">A Test Page 05 Css</a></td>
               <td><ul class="category-list"><li><a data-label="test" class="category-item category-item-test"
       data-description="Use to test after development.">Test</a></li></ul></td>
+              <td><ul class="tag-list"></ul></td>
           </tr><tr>
               <td><a href="/blog/docs/test/A-Test-Page-04-page-attributes.html" class="post-title">A Test Page 04 Page Attributes</a></td>
               <td><ul class="category-list"><li><a data-label="test" class="category-item category-item-test"
       data-description="Use to test after development.">Test</a></li></ul></td>
+              <td><ul class="tag-list"></ul></td>
           </tr><tr>
               <td><a href="/blog/docs/test/A-Test-Page-03-empty-copy-6.html" class="post-title">A Test Page 03 Empty copy 6</a></td>
               <td><ul class="category-list"><li><a data-label="test" class="category-item category-item-test"
       data-description="Use to test after development.">Test</a></li></ul></td>
+              <td><ul class="tag-list"></ul></td>
           </tr><tr>
               <td><a href="/blog/docs/test/A-Test-Page-03-empty-copy-5.html" class="post-title">A Test Page 03 Empty copy 5</a></td>
               <td><ul class="category-list"><li><a data-label="test" class="category-item category-item-test"
       data-description="Use to test after development.">Test</a></li></ul></td>
+              <td><ul class="tag-list"></ul></td>
           </tr><tr>
               <td><a href="/blog/docs/test/A-Test-Page-03-empty-copy-4.html" class="post-title">A Test Page 03 Empty copy 4</a></td>
               <td><ul class="category-list"><li><a data-label="test" class="category-item category-item-test"
       data-description="Use to test after development.">Test</a></li></ul></td>
+              <td><ul class="tag-list"></ul></td>
           </tr><tr>
               <td><a href="/blog/docs/test/A-Test-Page-03-chinese.html" class="post-title">我是一个中文标题！</a></td>
               <td><ul class="category-list"><li><a data-label="test" class="category-item category-item-test"
       data-description="Use to test after development.">Test</a></li></ul></td>
+              <td><ul class="tag-list"><li><a data-label="测试：我是一个中文标签" class="tag-item tag-item-测试：我是一个中文标签">测试：我是一个中文标签</a></li></ul></td>
           </tr><tr>
               <td><a href="/blog/docs/test/error/A-Test-Page-02-show-all.html" class="post-title">A Test Page 02 Show All</a></td>
               <td><ul class="category-list"><li><a data-label="test" class="category-item category-item-test"
       data-description="Use to test after development.">Test</a></li><li><a data-label="error" class="category-item category-item-error"
-      data-description="Error category.">error</a></li></ul></td>
+      data-description="Error category. 
+eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrroooooooooooooooooorrrrrrrrrrrrrrrrrrrrrrrrrrrrr.">error</a></li></ul></td>
+              <td><ul class="tag-list"></ul></td>
           </tr><tr>
               <td><a href="/blog/docs/test/A-Test-Page-01.html" class="post-title">A Test Page 01</a></td>
               <td><ul class="category-list"><li><a data-label="test" class="category-item category-item-test"
       data-description="Use to test after development.">Test</a></li></ul></td>
+              <td><ul class="tag-list"><li><a data-label="test" class="tag-item tag-item-test">test</a></li></ul></td>
           </tr><tr>
               <td><a href="/blog/docs/guide/How-to-write-Markdown-in-site.html" class="post-title">How to write Markdown in site</a></td>
               <td><ul class="category-list"><li><a data-label="guide" class="category-item category-item-guide"
       data-description="Guide how to use this project. 
 such as 'How-to-write-Markdown-in-site'
 ">Guide</a></li></ul></td>
+              <td><ul class="tag-list"><li><a data-label="markdown" class="tag-item tag-item-markdown">markdown</a></li><li><a data-label="rules for this project" class="tag-item tag-item-rules for this project">rules for this project</a></li></ul></td>
           </tr></tbody>
       <tfoot>
           <tr><td id="search-message-no-result" colspan="2">No post matches...</td></tr>
