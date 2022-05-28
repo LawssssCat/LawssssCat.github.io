@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8"/>
+    <title>/post_file_name/g |LawssssCat's Blog
+    </title><link rel="icon" href="/blog/assets/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"/>
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="/blog/assets/css/common.css" id='common_css'/><!--custom head-->
+<!-- 显示MathJax公式 see https://www.codecogs.com/latex/eqneditor.php -->
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" ></script>
+<!--feed-->
+<link type="application/atom+xml" rel="alternate" href="https://lawsssscat.github.io/blog/feed.xml" title="LawssssCat's Blog" />
+<!--custom head end--></head><body><header class="site-header"><a href="https://github.com/LawssssCat/lawsssscat.github.io" class="github-corner" aria-label="View source on Github" target="_blank" rel="noopener noreferrer">
+    <svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style></header>
+<div class="site-content">
+<h1>
+<!--todo front page-->
+<a href="/blog/">..</a>/some-tips-jekyll-site-you-should-know<div class="github-buttons">
+    <a class="github-button" href="https://github.com/LawssssCat/lawsssscat.github.io" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a>
+</div>
+</h1>
+<style type="text/css">
+#post-classified-list ul {
+  display: inline-block;
+}
+</style>
+<div id="post-classified-list">
+<ul class="category-list"><li><a data-label="guide" class="category-item category-item-guide" data-description="Guide how to use this project. 
+such as 'How-to-write-Markdown-in-site'
+">Guide</a></li></ul>
+<ul class="tag-list">
+<li><a data-label="jekyll" class="tag-item tag-item-jekyll">jekyll</a></li>
+<li><a data-label="markdown-📓" class="tag-item tag-item-markdown-📓">markdown 📓</a></li>
+<li><a data-label="tips-💡" class="tag-item tag-item-tips-💡">tips 💡</a></li>
+</ul>
+</div>
+<ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2">
+<a href="#%E5%85%B3%E4%BA%8E-jekyll">关于 jekyll</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#_configyml">_config.yml</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2">
+<a href="#%E5%85%B3%E4%BA%8E-markdown">关于 markdown</a>
+<ul>
+<li class="toc-entry toc-h3">
+<a href="#%E6%8C%87%E5%AE%9A-style">指定 style</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Attribute-List-Definitions">属性列表定义</a></li>
+<li class="toc-entry toc-h4"><a href="#Inline-Attribute-Lists">内联属性列表</a></li>
+<li class="toc-entry toc-h4"><a href="#span_ial">Span 内联属性列表</a></li>
+<li class="toc-entry toc-h4"><a href="#Extensions">扩展</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#Footnotes">脚注</a></li>
+<li class="toc-entry toc-h3"><a href="#Abbreviations">缩略语</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="关于-jekyll">
+<a class="anchor" href="#%E5%85%B3%E4%BA%8E-jekyll" aria-hidden="true"><span class="octicon octicon-link"></span></a>关于 jekyll</h2>
+
+<h3 id="_configyml">
+<a class="anchor" href="#_configyml" aria-hidden="true"><span class="octicon octicon-link"></span></a>_config.yml</h3>
+
+<p>_config.yml 是整个站点的整体配置，以下是所有配置项和默认值</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Where things are</span>
+<span class="na">source</span><span class="pi">:</span>       <span class="s">.</span>
+<span class="na">destination</span><span class="pi">:</span>  <span class="s">./_site</span>
+<span class="na">plugins_dir</span><span class="pi">:</span>  <span class="s">_plugins</span>
+<span class="na">layouts_dir</span><span class="pi">:</span>  <span class="s">_layouts</span>
+<span class="na">data_dir</span><span class="pi">:</span>     <span class="s">_data</span>
+<span class="na">includes_dir</span><span class="pi">:</span> <span class="s">_includes</span>
+<span class="na">collections</span><span class="pi">:</span>
+  <span class="na">posts</span><span class="pi">:</span>
+    <span class="na">output</span><span class="pi">:</span>   <span class="no">true</span>
+
+<span class="c1"># Handling Reading</span>
+<span class="na">safe</span><span class="pi">:</span>         <span class="no">false</span>
+<span class="na">include</span><span class="pi">:</span>      <span class="pi">[</span><span class="s2">"</span><span class="s">.htaccess"</span><span class="pi">]</span>
+<span class="na">exclude</span><span class="pi">:</span>      <span class="pi">[</span><span class="s2">"</span><span class="s">node_modules"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">vendor/bundle/"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">vendor/cache/"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">vendor/gems/"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">vendor/ruby/"</span><span class="pi">]</span>
+<span class="na">keep_files</span><span class="pi">:</span>   <span class="pi">[</span><span class="s2">"</span><span class="s">.git"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">.svn"</span><span class="pi">]</span>
+<span class="na">encoding</span><span class="pi">:</span>     <span class="s2">"</span><span class="s">utf-8"</span>
+<span class="na">markdown_ext</span><span class="pi">:</span> <span class="s2">"</span><span class="s">markdown,mkdown,mkdn,mkd,md"</span>
+
+<span class="c1"># Filtering Content</span>
+<span class="na">show_drafts</span><span class="pi">:</span> <span class="no">null</span>
+<span class="na">limit_posts</span><span class="pi">:</span> <span class="m">0</span>
+<span class="na">future</span><span class="pi">:</span>      <span class="no">false</span>
+<span class="na">unpublished</span><span class="pi">:</span> <span class="no">false</span>
+
+<span class="c1"># Plugins</span>
+<span class="na">whitelist</span><span class="pi">:</span> <span class="pi">[]</span>
+<span class="na">gems</span><span class="pi">:</span>      <span class="pi">[]</span>
+
+<span class="c1"># Conversion</span>
+<span class="na">markdown</span><span class="pi">:</span>    <span class="s">kramdown</span>
+<span class="na">highlighter</span><span class="pi">:</span> <span class="s">rouge</span>
+<span class="na">lsi</span><span class="pi">:</span>         <span class="no">false</span>
+<span class="na">excerpt_separator</span><span class="pi">:</span> <span class="s2">"</span><span class="se">\n\n</span><span class="s">"</span>
+<span class="na">incremental</span><span class="pi">:</span> <span class="no">false</span>
+
+<span class="c1"># Serving</span>
+<span class="na">detach</span><span class="pi">:</span>  <span class="no">false</span>
+<span class="na">port</span><span class="pi">:</span>    <span class="m">4000</span>
+<span class="na">host</span><span class="pi">:</span>    <span class="s">127.0.0.1</span>
+<span class="na">baseurl</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span> <span class="c1"># does not include hostname</span>
+<span class="na">show_dir_listing</span><span class="pi">:</span> <span class="no">false</span>
+
+<span class="c1"># Outputting</span>
+<span class="na">permalink</span><span class="pi">:</span>     <span class="s">date</span>
+<span class="na">paginate_path</span><span class="pi">:</span> <span class="s">/page:num</span>
+<span class="na">timezone</span><span class="pi">:</span>      <span class="no">null</span>
+
+<span class="na">quiet</span><span class="pi">:</span>    <span class="no">false</span>
+<span class="na">verbose</span><span class="pi">:</span>  <span class="no">false</span>
+<span class="na">defaults</span><span class="pi">:</span> <span class="pi">[]</span>
+
+<span class="na">liquid</span><span class="pi">:</span>
+  <span class="na">error_mode</span><span class="pi">:</span> <span class="s">warn</span>
+
+<span class="c1"># Markdown Processors</span>
+<span class="na">rdiscount</span><span class="pi">:</span>
+  <span class="na">extensions</span><span class="pi">:</span> <span class="pi">[]</span>
+
+<span class="na">redcarpet</span><span class="pi">:</span>
+  <span class="na">extensions</span><span class="pi">:</span> <span class="pi">[]</span>
+
+<span class="na">kramdown</span><span class="pi">:</span>
+  <span class="na">auto_ids</span><span class="pi">:</span>       <span class="no">true</span>
+  <span class="na">footnote_nr</span><span class="pi">:</span>    <span class="m">1</span>
+  <span class="na">entity_output</span><span class="pi">:</span>  <span class="s">as_char</span>
+  <span class="na">toc_levels</span><span class="pi">:</span>     <span class="s">1..6</span>
+  <span class="na">smart_quotes</span><span class="pi">:</span>   <span class="s">lsquo,rsquo,ldquo,rdquo</span>
+  <span class="na">input</span><span class="pi">:</span>          <span class="s">GFM</span>
+  <span class="na">hard_wrap</span><span class="pi">:</span>      <span class="no">false</span>
+  <span class="na">footnote_nr</span><span class="pi">:</span>    <span class="m">1</span>
+</code></pre></div></div>
+
+<h2 id="关于-markdown">
+<a class="anchor" href="#%E5%85%B3%E4%BA%8E-markdown" aria-hidden="true"><span class="octicon octicon-link"></span></a>关于 markdown</h2>
+
+<h3 id="指定-style">
+<a class="anchor" href="#%E6%8C%87%E5%AE%9A-style" aria-hidden="true"><span class="octicon octicon-link"></span></a>指定 style</h3>
+
+<p>这个是 kramdown 的语法像 <code class="language-plaintext highlighter-rouge">{:height="36px" width="36px"}</code> 。
+你可以把样式加在图片后面，e.g.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![smiley](http://xxx/1.img){:height="36px" width="36px"}
+</code></pre></div></div>
+
+<p>也可以通过这个指定 css 的类，e.g.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>`import re`{:.language-python}
+</code></pre></div></div>
+
+<h4 id="Attribute-List-Definitions">
+<a class="anchor" href="#Attribute-List-Definitions" aria-hidden="true"><span class="octicon octicon-link"></span></a>属性列表定义</h4>
+
+<p>ALD行具有以下结构：</p>
+
+<p>左括号，可选前面最多三个空格，
+然后是冒号，引用名称和另一个冒号，
+然后是属性定义（允许的字符是反斜杠转义关闭括号或除了未转义的右括号之外的任何字符），
+然后是一个右括号和可选空格，直到行尾</p>
+
+<blockquote>
+  <p>引用名称需要以单词字符或数字开头，可选地后跟其他单词字符，数字或短划线<br>
+有四种不同类型的属性定义，必须用一个或多个空格分隔</p>
+</blockquote>
+
+<blockquote>
+  <p>如果不存在具有此引用名称的属性定义列表，则在收集属性时将忽略引用名称</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{:ref-name: #myid .my-class}
+{:other: ref-name #id-of-other title="hallo you"}
+{:test: key="value \" with quote" and other='quote brace \}'}
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 以下ALD都是等效的：
+
+{:id: .cls1 .cls2}
+{:id: class="cls1" .cls2}
+{:id: class="something" class="cls1" .cls2}
+{:id: class="cls1 cls2"}
+</code></pre></div></div>
+
+<h4 id="Inline-Attribute-Lists">
+<a class="anchor" href="#Inline-Attribute-Lists" aria-hidden="true"><span class="octicon octicon-link"></span></a>内联属性列表</h4>
+
+<blockquote>
+  <p>此块级元素用于将属性附加到另一个块级元素<br>
+块内联属性列表（块IAL）具有与ALD相同的结构</p>
+</blockquote>
+
+<blockquote>
+  <p>块IAL（或两个或多个块IAL）必须直接放在属性应附加到的块级元素之前或之后。<br>
+如果块IAL直接在块级元素之后和之前，则将其应用于前一元素。在所有其他情况<br>
+下，块IAL被忽略，例如，当块IAL被空行包围时</p>
+</blockquote>
+
+<blockquote>
+  <p>在引用的ALD中，IAL的键值对 <strong>优先于同名的键值对</strong></p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 以下是块IAL的一些示例：
+
+A simple paragraph with an ID attribute.
+{: #para-one}
+
+&gt; A blockquote with a title
+{:title="The blockquote title"}
+{: #myid}
+
+{:.ruby}
+    Some code here
+</code></pre></div></div>
+
+<p class="ruby">e.g.</p>
+
+<h4 id="span_ial">
+<a class="anchor" href="#span_ial" aria-hidden="true"><span class="octicon octicon-link"></span></a>Span 内联属性列表</h4>
+<blockquote>
+  <p>span 级元素的块内联属性列表的一个版本</p>
+</blockquote>
+
+<blockquote>
+  <p>它具有与块IAL相同的结构，除了不允许前导和尾随空格<br>
+跨度IAL（或两个或更多跨度IAL）必须直接放在应该应<br>
+用它的span-level元素之后，之间不允许有其他字符，否则它将被忽略并仅从输出中删除</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This *is*{:.underline} some `code`{:#id}{:.class}.
+A [link](test.html){:rel='something'} and some **tools**{:.tools}.
+</code></pre></div></div>
+
+<h4 id="Extensions">
+<a class="anchor" href="#Extensions" aria-hidden="true"><span class="octicon octicon-link"></span></a>扩展</h4>
+<blockquote>
+  <p>扩展提供了其他功能，但使用相同的语法。它们既可以作为块也可以作为跨度级元素使用 <br>
+扩展的语法与ALD的语法非常相似</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 示例
+
+{::comment}
+This text is completely ignored by kramdown - a comment in the text.
+{:/comment}
+
+Do you see {::comment}this text{:/comment}?
+{::comment}some other comment{:/}
+
+{::options key="val" /}
+</code></pre></div></div>
+
+<ul>
+  <li>一个左大括号，</li>
+  <li>接着是两个冒号和扩展名，</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>可选地后跟空格和属性定义（允许的字符是反斜杠转义关闭括号或除了未转义的右括号之外的任何字符</td>
+          <td>同ALD</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>然后是斜线和右大括号（如果扩展没有正文）或只有右大括号（如果扩展有正文）</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># kramdown可以使用以下扩展名：
+
+comment
+将正文文本视为未在输出中显示的注释
+
+nomarkdown
+不要使用kramdown处理主体，而是按原样输出。该属性type指定哪些转换器应输出正文：如果缺少该属性，则所有转换器都应输出该属性。否则，属性值必须是以空格分隔的转换器名称列表，并且这些转换器应输出正文。
+
+options
+由于正文被忽略，应该在没有正文的情况下使用。用于设置kramdown处理器的全局选项（例如，禁用自动标头ID生成）。请注意，解析器使用的选项立即生效，而所有其他选项都不是！这意味着，例如，不能仅为kramdown文档的某些部分设置转换器选项
+</code></pre></div></div>
+
+<!-- This text is completely ignored by kramdown - a comment in the text. -->
+
+<p>Do you see <!-- this text -->?
+<!-- some other comment --></p>
+
+<h3 id="Footnotes">
+<a class="anchor" href="#Footnotes" aria-hidden="true"><span class="octicon octicon-link"></span></a>脚注</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>人有悲欢离合，月有阴晴圆缺.[^1]
+
+[^1]: 《水调歌头》
+</code></pre></div></div>
+
+<h3 id="Abbreviations">
+<a class="anchor" href="#Abbreviations" aria-hidden="true"><span class="octicon octicon-link"></span></a>缩略语</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*[another language]: It's called Markdown
+
+*[WTF]: What the fuck
+</code></pre></div></div>
+
+<p><abbr title="It's called Markdown">another language</abbr></p>
+
+<p><abbr title="suffix of `markdown file`">.md</abbr></p>
+
+<p>other see</p>
+<ul>
+  <li>《48 个你需要知道的 Jekyll 使用技巧》 - <a href="https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html">https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html</a>
+</li>
+</ul>
+
+</div><footer class="site-footer">
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!--todo google analysis-->
+<!--todo search e.g. lunr.js-->
+<!--todo seo--><script type="module" src="/blog/assets/js/modules/theme_button.js"></script><script type="module" src="/blog/assets/js/modules/toc.js"></script><script type="module" src="/blog/assets/js/modules/github_button.js"></script></footer></body>
+</html>

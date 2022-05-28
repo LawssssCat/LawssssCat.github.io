@@ -188,7 +188,7 @@ h2:hover .permalink, h3:hover .permalink, h4:hover .permalink, h5:hover .permali
 
 #post-table { width: 100%; }
 
-#post-table th, #post-table td { padding: 0.2em 1em; }
+#post-table th, #post-table td { padding: 0.2em 0em 1em 0.2; }
 
 #post-table th { text-align: left; }
 
