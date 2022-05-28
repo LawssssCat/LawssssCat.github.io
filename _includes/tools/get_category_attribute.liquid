@@ -6,13 +6,17 @@ function to get category attribute
 {%- assign category_data = site.data.categories[include.category_id] -%}
 {%- case include.attribute -%}
 {%- when 'label' -%}
-{{ category_data.label | default: include.category_id }}
+    {{ category_data.label | default: include.category_id }}
+{%- when 'label_id' -%}
+    {%- capture category_label -%}{%- include tools/get_category_attribute.liquid attribute='label' category_id=include.category_id -%}{%- endcapture -%}
+    {%- assign category_label_id = category_label | replace: ' ', '-' | downcase -%}
+    {{ category_label_id }}
 {%- when 'description' -%}
-{{ category_data.description | replace: '\n', ' ' }}
+    {{ category_data.description | replace: '\n', ' ' }}
 {%- when 'is_category_show' -%}
-{%- if category_data.show != false and include.category_id != '' -%}
-show
-{%- endif -%}
+    {%- if category_data.show != false and include.category_id != '' -%}
+    show
+    {%- endif -%}
 {%- else -%}
-{% include error-can-not-case-include.attribute-in-get_category_attribute %}
+    {% include error-can-not-case-include.attribute-in-get_category_attribute %}
 {%- endcase -%}

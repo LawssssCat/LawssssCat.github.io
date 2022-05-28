@@ -5,10 +5,10 @@ function to get post attribute
 {%- endcomment -%}
 {%- case include.attribute -%}
 {%- when 'title' -%}
-{%- assign post_file_name  = include.post.path  | split: '/' | last | split: '.' | first -%}
-{%- assign post_file_id  = include.post.id | split: '/' | last | split: '.' | first -%}
-{%- assign post_title = include.post.title | replace: '/post_file_name/g', post_file_id -%}
-{{- post_title | default: post_file_name -}}
+  {%- assign post_file_name  = include.post.path  | split: '/' | last | split: '.' | first -%}
+  {%- assign post_file_id  = include.post.id | split: '/' | last | split: '.' | first -%}
+  {%- assign post_title = include.post.title | replace: '/post_file_name/g', post_file_id -%}
+  {{- post_title | default: post_file_name -}}
 {%- else -%}
-{% include error-can-not-case-include.attribute-in-get_post_attribute %}
+  {% include error-can-not-case-include.attribute-in-get_post_attribute %}
 {%- endcase -%}
