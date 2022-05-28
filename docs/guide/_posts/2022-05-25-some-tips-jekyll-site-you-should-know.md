@@ -1,5 +1,4 @@
 ---
-title: /post_file_name/g
 tags: ['jekyll', "markdown 📓", 'tips 💡']
 ---
 
