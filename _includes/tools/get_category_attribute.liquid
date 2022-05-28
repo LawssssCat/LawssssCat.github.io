@@ -4,6 +4,7 @@ function to get category attribute
 
 {%- endcomment -%}
 {%- assign category_data = site.data.categories[include.category_id] -%}
+{%- assign category_template = site.data.categories['template'] -%}
 {%- case include.attribute -%}
 {%- when 'label' -%}
     {{ category_data.label | default: include.category_id }}
@@ -12,10 +13,12 @@ function to get category attribute
     {%- assign category_label_id = category_label | replace: ' ', '-' | downcase -%}
     {{ category_label_id }}
 {%- when 'description' -%}
-    {{ category_data.description | replace: '\n', ' ' }}
+    {{ category_data.description | default: category_template.description | replace: '\n', ' ' }}
 {%- when 'is_category_show' -%}
     {%- if category_data.show != false and include.category_id != '' -%}
-    show
+      {%- if category_template.show == true -%}
+      show
+      {%- endif -%}
     {%- endif -%}
 {%- else -%}
     {% include error-can-not-case-include.attribute-in-get_category_attribute %}

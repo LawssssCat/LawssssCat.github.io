@@ -1,13 +1,19 @@
 ---
 title: How to write Markdown in site
-tags: ["markdown", 'rules for this project']
+tags: ["markdown 📓", 'rules for this project 🏘️']
 ---
-
-{% toc %}
 
 ## How to write markdown
 
+markdown base grammar.
+
 see <https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#markdown>
+
+Jekyll's smartify filter uses kramdown as a processor.
+
+see:
++ kramdown offical website - <https://kramdown.gettalong.org/options.html>
++ 《kramdown基本语法》 - <https://zhuanlan.zhihu.com/p/60838339>
 
 ## ~~toc~~
 
@@ -21,8 +27,7 @@ see <https://github.com/toshimaru/jekyll-toc>
 
 ## Front Matter :star:
 
-see <https://jekyllrb.com/docs/step-by-step/03-front-matter/>
-
+see <https://jekyllrb.com/docs/step-by-step/03-front-matter/><br>
 see <https://jekyllrb.com/docs/configuration/front-matter-defaults/>
 
 In addition to `_posts` , you need to add Front Matter to the front of the md, with at least `---`, so it can be compiled and publish to `_site`. Otherwise, it will be publish as `.md` and cannot be accessed. (this just is a phenomenon i found in jekyll)

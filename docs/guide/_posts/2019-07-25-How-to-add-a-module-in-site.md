@@ -1,6 +1,5 @@
-some path
 ---
-tags: ['rules for this project']
+tags: ['rules for this project 🏘️']
 ---
 
 step: code 

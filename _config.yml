@@ -40,10 +40,13 @@ exclude:
 # --------------
 # liquid. see http://shopify.github.io/liquid/
 # variables. see https://jekyllrb.com/docs/variables/#site-variables
-url: "https://lawsssscat.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-title: LawssssCat's Blog
+
+# the base hostname & protocol for your site, e.g. http://example.com
+url: https://lawsssscat.github.io # feeded
+title: LawssssCat's Blog # feeded
 email:
-description:
+author: LawssssCat
+description: 👽 [ Here ] is my blog, toolbox and Experimental site # feeded
 #  Write an awesome description for your new site here. You can edit this
 #  line in _config.yml. It will appear in your document head meta (for
 #  Google search results) and in your feed.xml site description.
@@ -65,7 +68,7 @@ permalink: none # default: pretty other: none
 
 # 主题颜色
 # see post What-is-the-structure-of-this-project #样式
-color_scheme: 
+color_scheme: dark # option: red, dark, none(default)
 
 # 小图标
 favicon: /assets/favicon.ico
@@ -93,7 +96,7 @@ defaults:
     values:
       layout: "default"
       toc: true # 目录
-      author: "LawssssCat"
+      # author: "LawssssCat"
       category:
       description:
       #excerpt_separator: <!--more-->
@@ -118,6 +121,27 @@ collections:
 # see https://jekyllrb.com/tutorials/navigation/
 
 # --------------
+# feed
+# --------------
+# see https://github.com/jekyll/jekyll-feed
+feed:
+#  path: /blog/feed.atom # default: ./_site/feed.xml
+#  posts_limit: 20 # default 10
+#  categories:
+#    - news
+#  collections:
+#    - changes
+#  excerpt_only: true
+#  tags:
+#    path: "alternative/path/for/tags/feeds/"
+#    except:
+#      - tag-to-exclude
+#      - another-tag
+#    only:
+#      - tag-to-include
+#      - another-tag
+
+# --------------
 # plugins
 # --------------
 # see https://jekyllrb.com/docs/plugins/
@@ -127,4 +151,5 @@ plugins:
   - jekyll-toc
   # emoji see https://github.com/jekyll/jemoji
   - jemoji
-#  - jekyll-feed
+  # feed see https://github.com/jekyll/jekyll-feed
+  - jekyll-feed

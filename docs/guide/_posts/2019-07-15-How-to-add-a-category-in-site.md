@@ -1,5 +1,5 @@
 ---
-tags: ['rules for this project']
+tags: ['rules for this project 🏘️']
 ---
 
 ## method one

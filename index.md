@@ -1,6 +1,6 @@
 ---
 layout: home
-title: 
+title:  In{ dex } 
 ---
 
 <style type='text/css'>
@@ -18,4 +18,6 @@ title:
 
 Welcome to my Blog. Below are some of my articles.
 
-<img id='' src='{%- include tools/get_site_url.liquid file_name='coderman.gif' type='assets/images' -%}'/>
+<p>
+<img width='60%' src='{%- include tools/get_site_url.liquid file_name='coderman.gif' type='assets/images' -%}'/>
+</p>

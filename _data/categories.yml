@@ -21,3 +21,7 @@ error:
   description: | 
     Error category. 
     eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrroooooooooooooooooorrrrrrrrrrrrrrrrrrrrrrrrrrrrr.
+
+template:
+  show: true
+  description:  💡 [There are not description now. You can submit a request pull to me if you wish to contribute.]

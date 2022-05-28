@@ -192,7 +192,6 @@ var patternModeHandlers =  function() {
         if(!match) row.style.display = 'none';
       }, 
       (pattern, rows) => { // func02
-        debugger
         document.querySelectorAll('.tag-list .tag-item-'+pattern).forEach(cat => {
           cat.classList.remove('match');
           cat.classList.add('match');
@@ -294,6 +293,8 @@ var patternModeHandlers =  function() {
         item.addEventListener('click', () => {
           var label = patternModeStr +'('+item.getAttribute('data-label')+')';
           _SB.appendSearchPattern(label);
+          _SB.searchInput.focus();
+          _SB.searchInput.parentElement.scrollIntoView();
         })
       });
     }
@@ -305,6 +306,10 @@ var patternModeHandlers =  function() {
 
 
   _SB.init = function () {
+    // css
+    // ensure height during filtering
+    var tableWrapper = document.getElementById('post-table-wrapper');
+    tableWrapper.style.height = tableWrapper.clientHeight + 'px';
     _SB.searchInput = document.getElementById(env.search_input_id);
     _SB.initSearchPattern();
     return _SB;
@@ -315,7 +320,3 @@ var patternModeHandlers =  function() {
 .init()
 .setup());
 
-// css
-// ensure height during filtering
-var tableWrapper = document.getElementById('post-table-wrapper');
-tableWrapper.style.height = tableWrapper.clientHeight + 'px';

@@ -1,5 +1,5 @@
 ---
-tags: ["this project structure", 'rules for this project']
+tags: ["this project structure", 'rules for this project 🏘️']
 ---
 
 ## 默认的目录结构
