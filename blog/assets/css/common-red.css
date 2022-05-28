@@ -232,6 +232,6 @@ h2:hover .permalink, h3:hover .permalink, h4:hover .permalink, h5:hover .permali
 
 .post-search-tag-list .tag-item { margin-left: 0.1em; }
 
-.post-search-tag-list .tag-item:after { content: attr(data-size); margin-left: 0.25rem; border-left: 1em red; color: #bf0707; right: 0; }
+.post-search-tag-list .tag-item:after { content: attr(data-size); margin-left: 0.25rem; border-left: 1em red; color: #bf0707; right: 0; font-weight: bolder; }
 
 /*# sourceMappingURL=common-red.css.map */

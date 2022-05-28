@@ -3,27 +3,11 @@ import common_url from '../common_url.js';
 
 var env = {
   search_input_id: 'post-search',
-  category_list_class: 'category-list',
-  category_item_class: 'category-item',
   patternMode: { // core env
     category: '+',
     tag: '*',
   },
   patternModePostName: 'post',
-  // ====================================
-  search: {
-    patternKey: 'search_text',
-    inputBox: document.getElementById('post-search'),
-  },
-
-  category: {
-    listClass: 'category-list',
-    itemClass: 'category-item',
-    dataAttribute: 'data-label',
-    mode: '+',
-  } ,
-
-  tag: '-'
 }
 
 var tools = function() {
@@ -120,6 +104,7 @@ var tools = function() {
       try{
         var patterns =  classifiedPatterns[key];
         var handlerMatter = patternModeHandlers[key];
+        // handleMatter.force means that it will run the handler unless whether patterns is empty.
         if(patterns.length>0 || (handlerMatter && handlerMatter.force)) {
           var handler = handlerMatter.handler;
           if(handler) 
@@ -183,7 +168,7 @@ var patternModeHandlers =  function() {
         if(!match) row.style.display = 'none';
       }, 
       (pattern, rows) => { // func02
-        document.querySelectorAll('.category-item-'+pattern).forEach(cat => {
+        document.querySelectorAll('.category-list .category-item-'+pattern).forEach(cat => {
           cat.classList.remove('match');
           cat.classList.add('match');
         });
@@ -195,12 +180,40 @@ var patternModeHandlers =  function() {
       });
   }
 
+  function handle2FilterByTags(patterns) {
+    handle(patterns, 
+      (pattern, row) => { // func01
+        var match = false;
+        row.querySelectorAll('.tag-list .tag-item').forEach(tag => {
+          if(tag.getAttribute('data-label')==pattern) {
+            match = true;
+          }
+        })
+        if(!match) row.style.display = 'none';
+      }, 
+      (pattern, rows) => { // func02
+        debugger
+        document.querySelectorAll('.tag-list .tag-item-'+pattern).forEach(cat => {
+          cat.classList.remove('match');
+          cat.classList.add('match');
+        });
+      }, 
+      (patterns) => { // func03
+        document.querySelectorAll('.tag-list .tag-item').forEach(cat => {
+          cat.classList.remove('match');
+        });
+      });
+  }
+
   return {
     category: {
       handler: handle2FilterByCategory,
       force: true
     },
-    tag: null, // todo
+    tag: {
+      handler: handle2FilterByTags,
+      force: true
+    }, 
     post: {
       handler: handle2filterByPost,
     }
@@ -276,12 +289,16 @@ var patternModeHandlers =  function() {
       }
     });
     // handle user click 
-    document.querySelectorAll(".category-list .category-item").forEach((item) => {
-      item.addEventListener('click', () => {
-        var label = env.patternMode.category+'('+item.getAttribute('data-label')+')';
-        _SB.appendSearchPattern(label);
-      })
-    });
+    function addClickListener4(selectStr, patternModeStr) {
+      document.querySelectorAll(selectStr).forEach((item) => {
+        item.addEventListener('click', () => {
+          var label = patternModeStr +'('+item.getAttribute('data-label')+')';
+          _SB.appendSearchPattern(label);
+        })
+      });
+    }
+    addClickListener4(".category-list .category-item", env.patternMode.category);
+    addClickListener4(".tag-list .tag-item", env.patternMode.tag);
     // filter once on load
     _SB.filter();
   }
