@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://lawsssscat.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lawsssscat.github.io/blog/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-05-28T14:44:04+00:00</updated><id>https://lawsssscat.github.io/blog/feed.xml</id><title type="html">LawssssCat’s Blog</title><subtitle>👽 [ Here ] is my blog, toolbox and Experimental site</subtitle><author><name>LawssssCat</name></author><entry><title type="html">/post_file_name/g 😀</title><link href="https://lawsssscat.github.io/blog/docs/resource/emoji.html" rel="alternate" type="text/html" title="/post_file_name/g 😀" /><published>2022-05-28T00:00:00+00:00</published><updated>2022-05-28T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/resource/emoji</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/resource/emoji.html"><![CDATA[<p>There two kinds of emoji.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://lawsssscat.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lawsssscat.github.io/blog/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-05-28T16:03:23+00:00</updated><id>https://lawsssscat.github.io/blog/feed.xml</id><title type="html">LawssssCat’s Blog</title><subtitle>👽 [ Here ] is my blog, toolbox and Experimental site</subtitle><author><name>LawssssCat</name></author><entry><title type="html">emoji resources 😀</title><link href="https://lawsssscat.github.io/blog/docs/resource/emoji.html" rel="alternate" type="text/html" title="emoji resources 😀" /><published>2022-05-28T00:00:00+00:00</published><updated>2022-05-28T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/resource/emoji</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/resource/emoji.html"><![CDATA[<p>There two kinds of emoji.</p>
 
 <ol>
   <li><code class="language-plaintext highlighter-rouge">:some:</code> - <a href="https://www.webfx.com/tools/emoji-cheat-sheet/">https://www.webfx.com/tools/emoji-cheat-sheet/</a></li>
   <li><code class="language-plaintext highlighter-rouge">Copy and Past</code> - <a href="https://emojipedia.org/people/">https://emojipedia.org/people/</a></li>
-</ol>]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="resource" /><category term="tips 💡" /><summary type="html"><![CDATA[There two kinds of emoji.]]></summary></entry><entry><title type="html">/post_file_name/g</title><link href="https://lawsssscat.github.io/blog/docs/guide/some-tips-jekyll-site-you-should-know.html" rel="alternate" type="text/html" title="/post_file_name/g" /><published>2022-05-25T00:00:00+00:00</published><updated>2022-05-25T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/guide/some-tips-jekyll-site-you-should-know</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/guide/some-tips-jekyll-site-you-should-know.html"><![CDATA[<h2 id="关于-jekyll">关于 jekyll</h2>
+</ol>]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="resource" /><category term="tips 💡" /><summary type="html"><![CDATA[There two kinds of emoji.]]></summary></entry><entry><title type="html">Some Tips Jekyll Site You Should Know</title><link href="https://lawsssscat.github.io/blog/docs/guide/some-tips-jekyll-site-you-should-know.html" rel="alternate" type="text/html" title="Some Tips Jekyll Site You Should Know" /><published>2022-05-25T00:00:00+00:00</published><updated>2022-05-25T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/guide/some-tips-jekyll-site-you-should-know</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/guide/some-tips-jekyll-site-you-should-know.html"><![CDATA[<h2 id="关于-jekyll">关于 jekyll</h2>
 
 <h3 id="_configyml">_config.yml</h3>
 
@@ -567,11 +567,9 @@ _sass
 
 <hr />
 
-<p>site time 2022-05-28 14:44:04 +0000</p>
+<p>site time 2022-05-28 16:03:23 +0000</p>
 
 <p>site Jekyll::Drops::SiteDrop</p>
-
-<p>{“show”=&gt;true, “url”=&gt;”https://github.com/LawssssCat/lawsssscat.github.io”}</p>
 
 <p>{“show”=&gt;true, “url”=&gt;”https://github.com/LawssssCat/lawsssscat.github.io”, “new_tab”=&gt;true}</p>
 
@@ -588,13 +586,13 @@ _sass
 <ul>
   
     <li>
-      <h2><a href="/blog/docs/resource/emoji.html">/post_file_name/g 😀</a></h2>
+      <h2><a href="/blog/docs/resource/emoji.html">emoji resources 😀</a></h2>
       <p>There two kinds of emoji.</p>
 
     </li>
   
     <li>
-      <h2><a href="/blog/docs/guide/some-tips-jekyll-site-you-should-know.html">/post_file_name/g</a></h2>
+      <h2><a href="/blog/docs/guide/some-tips-jekyll-site-you-should-know.html">Some Tips Jekyll Site You Should Know</a></h2>
       <h2 id="关于-jekyll">关于 jekyll</h2>
 
     </li>
@@ -690,13 +688,13 @@ _sass
 <ul>
   
     <li>
-      <h2><a href="/blog/docs/resource/emoji.html">/post_file_name/g 😀</a></h2>
+      <h2><a href="/blog/docs/resource/emoji.html">emoji resources 😀</a></h2>
       <p>There two kinds of emoji.</p>
 
     </li>
   
     <li>
-      <h2><a href="/blog/docs/guide/some-tips-jekyll-site-you-should-know.html">/post_file_name/g</a></h2>
+      <h2><a href="/blog/docs/guide/some-tips-jekyll-site-you-should-know.html">Some Tips Jekyll Site You Should Know</a></h2>
       <h2 id="关于-jekyll">关于 jekyll</h2>
 
     </li>
