@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://lawsssscat.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lawsssscat.github.io/blog/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-05-28T16:03:23+00:00</updated><id>https://lawsssscat.github.io/blog/feed.xml</id><title type="html">LawssssCat’s Blog</title><subtitle>👽 [ Here ] is my blog, toolbox and Experimental site</subtitle><author><name>LawssssCat</name></author><entry><title type="html">emoji resources 😀</title><link href="https://lawsssscat.github.io/blog/docs/resource/emoji.html" rel="alternate" type="text/html" title="emoji resources 😀" /><published>2022-05-28T00:00:00+00:00</published><updated>2022-05-28T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/resource/emoji</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/resource/emoji.html"><![CDATA[<p>There two kinds of emoji.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://lawsssscat.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lawsssscat.github.io/blog/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-05-28T17:55:03+00:00</updated><id>https://lawsssscat.github.io/blog/feed.xml</id><title type="html">LawssssCat’s Blog</title><subtitle>👽 [ Here ] is my blog, toolbox and Experimental site</subtitle><author><name>LawssssCat</name></author><entry><title type="html">emoji resources 😀</title><link href="https://lawsssscat.github.io/blog/docs/resource/emoji.html" rel="alternate" type="text/html" title="emoji resources 😀" /><published>2022-05-28T00:00:00+00:00</published><updated>2022-05-28T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/resource/emoji</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/resource/emoji.html"><![CDATA[<p>There two kinds of emoji.</p>
 
 <ol>
   <li><code class="language-plaintext highlighter-rouge">:some:</code> - <a href="https://www.webfx.com/tools/emoji-cheat-sheet/">https://www.webfx.com/tools/emoji-cheat-sheet/</a></li>
@@ -555,7 +555,7 @@ _sass
   <li><code class="language-plaintext highlighter-rouge">support</code> - 最底层样式（基本不要动）</li>
   <li><code class="language-plaintext highlighter-rouge">modules</code> - theme 不同组件样式</li>
   <li><code class="language-plaintext highlighter-rouge">custom</code> - 自定义</li>
-</ul>]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="guide" /><category term="this project structure" /><category term="rules for this project 🏘️" /><summary type="html"><![CDATA[默认的目录结构]]></summary></entry><entry><title type="html">A Test Page 02 Show All</title><link href="https://lawsssscat.github.io/blog/docs/test/erro%20rforo%20%20%20o/A-Test-Page-02-show-all.html" rel="alternate" type="text/html" title="A Test Page 02 Show All" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/test/erro%20rforo%20%20%20o/A-Test-Page-02-show-all</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/test/erro%20rforo%20%20%20o/A-Test-Page-02-show-all.html"><![CDATA[<ul id="toc" class="section-nav">
+</ul>]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="guide" /><category term="this project structure" /><category term="rules for this project 🏘️" /><summary type="html"><![CDATA[默认的目录结构]]></summary></entry><entry><title type="html">A Test Page 02 Show All</title><link href="https://lawsssscat.github.io/blog/docs/test/test%20alse/A-Test-Page-02-show-all.html" rel="alternate" type="text/html" title="A Test Page 02 Show All" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/test/test%20alse/A-Test-Page-02-show-all</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/test/test%20alse/A-Test-Page-02-show-all.html"><![CDATA[<ul id="toc" class="section-nav">
 <li class="toc-entry toc-h1"><a href="#latest-posts">Latest Posts</a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#-posttitle-">{{ post.title }}</a></li>
@@ -567,7 +567,7 @@ _sass
 
 <hr />
 
-<p>site time 2022-05-28 16:03:23 +0000</p>
+<p>site time 2022-05-28 17:55:03 +0000</p>
 
 <p>site Jekyll::Drops::SiteDrop</p>
 
@@ -653,7 +653,7 @@ _sass
     </li>
   
     <li>
-      <h2><a href="/blog/docs/test/erro%20rforo%20%20%20o/A-Test-Page-02-show-all.html">A Test Page 02 Show All</a></h2>
+      <h2><a href="/blog/docs/test/test%20alse/A-Test-Page-02-show-all.html">A Test Page 02 Show All</a></h2>
       <ul id="toc" class="section-nav">
 </ul>
 
@@ -755,7 +755,7 @@ _sass
     </li>
   
     <li>
-      <h2><a href="/blog/docs/test/erro%20rforo%20%20%20o/A-Test-Page-02-show-all.html">A Test Page 02 Show All</a></h2>
+      <h2><a href="/blog/docs/test/test%20alse/A-Test-Page-02-show-all.html">A Test Page 02 Show All</a></h2>
       <ul id="toc" class="section-nav">
 </ul>
 
@@ -780,7 +780,7 @@ _sass
   
   </ul>
 
-<hr />]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="test" /><category term="erro rforo   o" /><category term="" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">我是一个中文标题！</title><link href="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-03-chinese.html" rel="alternate" type="text/html" title="我是一个中文标题！" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/test/A-Test-Page-03-chinese</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-03-chinese.html"><![CDATA[<p>Generated by <a href="https://github.com/menzi11/BullshitGenerator">https://github.com/menzi11/BullshitGenerator</a></p>
+<hr />]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="test" /><category term="test alse" /><category term="" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">我是一个中文标题！</title><link href="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-03-chinese.html" rel="alternate" type="text/html" title="我是一个中文标题！" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/blog/docs/test/A-Test-Page-03-chinese</id><content type="html" xml:base="https://lawsssscat.github.io/blog/docs/test/A-Test-Page-03-chinese.html"><![CDATA[<p>Generated by <a href="https://github.com/menzi11/BullshitGenerator">https://github.com/menzi11/BullshitGenerator</a></p>
 
 <p>既然如何， base_word，到底应该如何实现。 既然如此， 马克思在不经意间这样说过，一切节省，归根到底都归结为时间的节省。这启发了我， 就我个人来说，base_word对我的意义，不能不说非常重大。 莎士比亚曾经说过，人的一生是短的，但如果卑劣地过这一生，就太长了。这启发了我， 现在，解决base_word的问题，是非常非常重要的。 所以， 从这个角度来看， 杰纳勒尔·乔治·S·巴顿说过一句富有哲理的话，接受挑战，就可以享受胜利的喜悦。这句话语虽然很短，但令我浮想联翩。 亚伯拉罕·林肯说过一句富有哲理的话，你活了多少岁不算什么，重要的是你是如何度过这些岁月的。带着这句话，我们还要更加慎重的审视这个问题： 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 每个人都不得不面对这些问题。 在面对这种问题时， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 贝多芬在不经意间这样说过，卓越的人一大优点是：在不利与艰难的遭遇里百折不饶。这不禁令我深思。 问题的关键究竟为何？ 带着这些问题，我们来审视一下base_word。 经过上述讨论， 所谓base_word，关键是base_word需要如何写。 一般来说， 经过上述讨论， 这样看来， 现在，解决base_word的问题，是非常非常重要的。 所以， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 我们都知道，只要有意义，那么就必须慎重考虑。 莫扎特曾经说过，谁和我一样用功，谁就会和我一样成功。这句话语虽然很短，但令我浮想联翩。 base_word因何而发生？ 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 马克思曾经提到过，一切节省，归根到底都归结为时间的节省。这似乎解答了我的疑惑。 那么， base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 维龙在不经意间这样说过，要成功不需要什么特别的才能，只要把你能做的小事做得好就行了。这启发了我， 经过上述讨论， 问题的关键究竟为何？ 现在，解决base_word的问题，是非常非常重要的。 所以， 既然如此， 孔子曾经说过，知之者不如好之者，好之者不如乐之者。这似乎解答了我的疑惑。 base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 每个人都不得不面对这些问题。 在面对这种问题时， 既然如此。</p>
 
