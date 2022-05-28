@@ -14,6 +14,8 @@ uniformly manage site-url by include.type
 {{ '/assets/css/' | relative_url }}
 {%- when 'module/css' -%}
 {{ '/assets/css/modules/' | append: include.file_name | append: '.css' | relative_url }}
+{%- when 'assets/images' -%}
+{{ '/assets/images/' | append: include.file_name | relative_url }}
 {%- else -%}
 {% include error-can-not-case-include.type-in-get_site_url %}
 {%- endcase -%}

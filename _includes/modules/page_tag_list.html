@@ -1,0 +1,9 @@
+<ul class="tag-list">
+  {%- assign post_tags = include.post.tags | compact -%}
+  {%- for tag_id in post_tags -%}
+    {%- capture tag_show -%}{%- include tools/get_tag_attribute.liquid attribute='is_tag_show' tag_id=tag_id -%}{%- endcapture -%}
+    {%- if tag_show == 'show' -%}
+      <li><a data-label="{{ tag_id | downcase }}" class="tag-item tag-item-{{ tag_id | downcase }}">{{ tag_id }}</a></li>
+    {%- endif -%}
+  {%- endfor -%}
+</ul>

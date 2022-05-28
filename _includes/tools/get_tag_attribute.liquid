@@ -1,0 +1,13 @@
+{%- comment -%}
+
+function to get tag attribute
+
+{%- endcomment -%}
+{%- case include.attribute -%}
+{%- when 'is_tag_show' -%}
+{%- if include.tag_id != '' -%}
+show
+{%- endif -%}
+{%- else -%}
+{% include error-can-not-case-include.attribute-in-get_tag_attribute %}
+{%- endcase -%}

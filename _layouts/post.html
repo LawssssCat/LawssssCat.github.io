@@ -1,6 +1,14 @@
 ---
 layout: page
 ---
+<style type="text/css">
+#post-classified-list ul {
+  display: inline-block;
+}
+</style>
+<div id="post-classified-list">
 {%- include modules/page_category_list.html post=page -%}
+{%- include modules/page_tag_list.html post=page -%}
+</div>
 {{ content | toc_only }}
 {{ content | inject_anchors }}
