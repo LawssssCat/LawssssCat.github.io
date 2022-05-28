@@ -14,7 +14,7 @@ title:  In{ dex }
 }
 </style>
 
-<img id='index_logo' src='{{ site.favicon | relative_url }}'/>
+<!-- <img id='index_logo' src='{{ site.favicon | relative_url }}'/> -->
 
 Welcome to my Blog. Below are some of my articles.
 

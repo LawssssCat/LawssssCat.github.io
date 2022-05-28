@@ -40,6 +40,8 @@ bundle exec jekyll serve
 
 Demo: <https://lawsssscat.github.io/blog/>
 
+<img src=".github/assets/auto-README-20220529014218.png" width=100%/>
+
 ## 感谢
 
 - [Github Pages](https://docs.github.com/categories/github-pages-basics/)

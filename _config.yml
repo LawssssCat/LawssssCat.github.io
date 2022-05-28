@@ -20,6 +20,7 @@
 
 # 使这文件生效，需要重新执行 'bundle exec jekyll serve'
 
+version: "1.0.0"
 verbose: true
 
 exclude: 
