@@ -38,7 +38,7 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Demo: <https://lawsssscat.github.io/>
+Demo: <https://lawsssscat.github.io/blog/>
 
 ## 感谢
 
