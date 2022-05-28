@@ -74,16 +74,15 @@ color_scheme: dark # option: red, dark, none(default)
 favicon: /assets/favicon.ico
 # favicon: /assets/octo.gif
 
+github:
+  username: LawssssCat
+  repo: LawssssCat.github.io
+
 # 右上角图标
 github-corner: 
   show: true
   url: "https://github.com/LawssssCat/lawsssscat.github.io"
   new_tab: true
-
-# 点赞图标
-github-button:
-  show: true
-  url: "https://github.com/LawssssCat/lawsssscat.github.io"
 
 # --------------
 # defaults
