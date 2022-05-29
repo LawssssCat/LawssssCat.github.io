@@ -68,13 +68,16 @@ jobs:
         run: |
           echo ${{ github.action_status }} # github.action_status
           echo ${{ greeting_job.a }} # greeting_job.a
+          echo xxxxxxxxxxxxxxxx
       - name: b
         if: ${{ always() }}
-        run: echo haha
+        run: |
+          echo haha
+          echo {{job.a.status}}
       - name: c
         run: echo bb
       - name: job status check
-        if: ${{ github.action_status == 'failure' }}
+        if: ${{ job.a.status == 'failure' }}
         run: echo qq
 
   # expression function json. see https://docs.github.com/en/actions/learn-github-actions/expressions#fromjson
