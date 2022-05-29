@@ -22,12 +22,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Set up Ruby ✈️
-        uses: ruby/setup-ruby@359bebbc29cbe6c87da6bc9ea3bc930432750108
+        uses: actions/setup-ruby@v1
         with:
-          ruby-version: '3.1'
+          ruby-version: 2.7
           bundler-cache: true # see https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-ruby#caching-dependencies
       - name: Install dependencies 🔧
-        run: bundle install
+        run: |
+          gem install bundler
+          bundle install
       - name: Build 📦
         run: bundle exec jekyll build -d _site
       - name: Archive production artifacts 📁 # see https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#passing-data-between-jobs-in-a-workflow
