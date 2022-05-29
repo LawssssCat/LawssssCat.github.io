@@ -32,12 +32,12 @@ jobs:
           gem install bundler
           bundle install
       - name: Build 📦
-        run: bundle exec jekyll build -d _site
+        run: bundle exec jekyll build -d output/_site
       - name: Archive production artifacts 🔺  # see https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#passing-data-between-jobs-in-a-workflow
         uses: actions/upload-artifact@v3 
         with:
           name: ${{ env.ARTIFACT_PRODUCT_NAME }}
-          path: _site
+          path: output
 
   deploy: 
     runs-on: ubuntu-latest
