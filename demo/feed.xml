@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://lawsssscat.github.io/demo/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lawsssscat.github.io/demo/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-05-29T13:49:47+00:00</updated><id>https://lawsssscat.github.io/demo/feed.xml</id><title type="html">LawssssCat’s Blog</title><subtitle>👽 [ Here ] is my blog, toolbox and Experimental site</subtitle><author><name>LawssssCat</name></author><entry><title type="html">emoji resources 😀</title><link href="https://lawsssscat.github.io/demo/docs/resource/emoji.html" rel="alternate" type="text/html" title="emoji resources 😀" /><published>2022-05-28T00:00:00+00:00</published><updated>2022-05-28T00:00:00+00:00</updated><id>https://lawsssscat.github.io/demo/docs/resource/emoji</id><content type="html" xml:base="https://lawsssscat.github.io/demo/docs/resource/emoji.html"><![CDATA[<p>There two kinds of emoji.</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">:some:</code> - <a href="https://www.webfx.com/tools/emoji-cheat-sheet/">https://www.webfx.com/tools/emoji-cheat-sheet/</a></li>
+  <li><code class="language-plaintext highlighter-rouge">Copy and Past</code> - <a href="https://emojipedia.org/people/">https://emojipedia.org/people/</a></li>
+</ol>]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="resource" /><category term="tips 💡" /><summary type="html"><![CDATA[There two kinds of emoji.]]></summary></entry><entry><title type="html">Some Tips Jekyll Site You Should Know</title><link href="https://lawsssscat.github.io/demo/docs/guide/some-tips-jekyll-site-you-should-know.html" rel="alternate" type="text/html" title="Some Tips Jekyll Site You Should Know" /><published>2022-05-25T00:00:00+00:00</published><updated>2022-05-25T00:00:00+00:00</updated><id>https://lawsssscat.github.io/demo/docs/guide/some-tips-jekyll-site-you-should-know</id><content type="html" xml:base="https://lawsssscat.github.io/demo/docs/guide/some-tips-jekyll-site-you-should-know.html"><![CDATA[<h2 id="关于-jekyll">关于 jekyll</h2>
+
+<h3 id="_configyml">_config.yml</h3>
+
+<p>_config.yml 是整个站点的整体配置，以下是所有配置项和默认值</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Where things are</span>
+<span class="na">source</span><span class="pi">:</span>       <span class="s">.</span>
+<span class="na">destination</span><span class="pi">:</span>  <span class="s">./_site</span>
+<span class="na">plugins_dir</span><span class="pi">:</span>  <span class="s">_plugins</span>
+<span class="na">layouts_dir</span><span class="pi">:</span>  <span class="s">_layouts</span>
+<span class="na">data_dir</span><span class="pi">:</span>     <span class="s">_data</span>
+<span class="na">includes_dir</span><span class="pi">:</span> <span class="s">_includes</span>
+<span class="na">collections</span><span class="pi">:</span>
+  <span class="na">posts</span><span class="pi">:</span>
+    <span class="na">output</span><span class="pi">:</span>   <span class="no">true</span>
+
+<span class="c1"># Handling Reading</span>
+<span class="na">safe</span><span class="pi">:</span>         <span class="no">false</span>
+<span class="na">include</span><span class="pi">:</span>      <span class="pi">[</span><span class="s2">"</span><span class="s">.htaccess"</span><span class="pi">]</span>
+<span class="na">exclude</span><span class="pi">:</span>      <span class="pi">[</span><span class="s2">"</span><span class="s">node_modules"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">vendor/bundle/"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">vendor/cache/"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">vendor/gems/"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">vendor/ruby/"</span><span class="pi">]</span>
+<span class="na">keep_files</span><span class="pi">:</span>   <span class="pi">[</span><span class="s2">"</span><span class="s">.git"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">.svn"</span><span class="pi">]</span>
+<span class="na">encoding</span><span class="pi">:</span>     <span class="s2">"</span><span class="s">utf-8"</span>
+<span class="na">markdown_ext</span><span class="pi">:</span> <span class="s2">"</span><span class="s">markdown,mkdown,mkdn,mkd,md"</span>
+
+<span class="c1"># Filtering Content</span>
+<span class="na">show_drafts</span><span class="pi">:</span> <span class="no">null</span>
+<span class="na">limit_posts</span><span class="pi">:</span> <span class="m">0</span>
+<span class="na">future</span><span class="pi">:</span>      <span class="no">false</span>
+<span class="na">unpublished</span><span class="pi">:</span> <span class="no">false</span>
+
+<span class="c1"># Plugins</span>
+<span class="na">whitelist</span><span class="pi">:</span> <span class="pi">[]</span>
+<span class="na">gems</span><span class="pi">:</span>      <span class="pi">[]</span>
+
+<span class="c1"># Conversion</span>
+<span class="na">markdown</span><span class="pi">:</span>    <span class="s">kramdown</span>
+<span class="na">highlighter</span><span class="pi">:</span> <span class="s">rouge</span>
+<span class="na">lsi</span><span class="pi">:</span>         <span class="no">false</span>
+<span class="na">excerpt_separator</span><span class="pi">:</span> <span class="s2">"</span><span class="se">\n\n</span><span class="s">"</span>
+<span class="na">incremental</span><span class="pi">:</span> <span class="no">false</span>
+
+<span class="c1"># Serving</span>
+<span class="na">detach</span><span class="pi">:</span>  <span class="no">false</span>
+<span class="na">port</span><span class="pi">:</span>    <span class="m">4000</span>
+<span class="na">host</span><span class="pi">:</span>    <span class="s">127.0.0.1</span>
+<span class="na">baseurl</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span> <span class="c1"># does not include hostname</span>
+<span class="na">show_dir_listing</span><span class="pi">:</span> <span class="no">false</span>
+
+<span class="c1"># Outputting</span>
+<span class="na">permalink</span><span class="pi">:</span>     <span class="s">date</span>
+<span class="na">paginate_path</span><span class="pi">:</span> <span class="s">/page:num</span>
+<span class="na">timezone</span><span class="pi">:</span>      <span class="no">null</span>
+
+<span class="na">quiet</span><span class="pi">:</span>    <span class="no">false</span>
+<span class="na">verbose</span><span class="pi">:</span>  <span class="no">false</span>
+<span class="na">defaults</span><span class="pi">:</span> <span class="pi">[]</span>
+
+<span class="na">liquid</span><span class="pi">:</span>
+  <span class="na">error_mode</span><span class="pi">:</span> <span class="s">warn</span>
+
+<span class="c1"># Markdown Processors</span>
+<span class="na">rdiscount</span><span class="pi">:</span>
+  <span class="na">extensions</span><span class="pi">:</span> <span class="pi">[]</span>
+
+<span class="na">redcarpet</span><span class="pi">:</span>
+  <span class="na">extensions</span><span class="pi">:</span> <span class="pi">[]</span>
+
+<span class="na">kramdown</span><span class="pi">:</span>
+  <span class="na">auto_ids</span><span class="pi">:</span>       <span class="no">true</span>
+  <span class="na">footnote_nr</span><span class="pi">:</span>    <span class="m">1</span>
+  <span class="na">entity_output</span><span class="pi">:</span>  <span class="s">as_char</span>
+  <span class="na">toc_levels</span><span class="pi">:</span>     <span class="s">1..6</span>
+  <span class="na">smart_quotes</span><span class="pi">:</span>   <span class="s">lsquo,rsquo,ldquo,rdquo</span>
+  <span class="na">input</span><span class="pi">:</span>          <span class="s">GFM</span>
+  <span class="na">hard_wrap</span><span class="pi">:</span>      <span class="no">false</span>
+  <span class="na">footnote_nr</span><span class="pi">:</span>    <span class="m">1</span>
+</code></pre></div></div>
+
+<h2 id="关于-markdown">关于 markdown</h2>
+
+<h3 id="指定-style">指定 style</h3>
+
+<p>这个是 kramdown 的语法像 <code class="language-plaintext highlighter-rouge">{:height="36px" width="36px"}</code> 。
+你可以把样式加在图片后面，e.g.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![smiley](http://xxx/1.img){:height="36px" width="36px"}
+</code></pre></div></div>
+
+<p>也可以通过这个指定 css 的类，e.g.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>`import re`{:.language-python}
+</code></pre></div></div>
+
+<h4 id="Attribute-List-Definitions">属性列表定义</h4>
+
+<p>ALD行具有以下结构：</p>
+
+<p>左括号，可选前面最多三个空格，
+然后是冒号，引用名称和另一个冒号，
+然后是属性定义（允许的字符是反斜杠转义关闭括号或除了未转义的右括号之外的任何字符），
+然后是一个右括号和可选空格，直到行尾</p>
+
+<blockquote>
+  <p>引用名称需要以单词字符或数字开头，可选地后跟其他单词字符，数字或短划线<br />
+有四种不同类型的属性定义，必须用一个或多个空格分隔</p>
+</blockquote>
+
+<blockquote>
+  <p>如果不存在具有此引用名称的属性定义列表，则在收集属性时将忽略引用名称</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{:ref-name: #myid .my-class}
+{:other: ref-name #id-of-other title="hallo you"}
+{:test: key="value \" with quote" and other='quote brace \}'}
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 以下ALD都是等效的：
+
+{:id: .cls1 .cls2}
+{:id: class="cls1" .cls2}
+{:id: class="something" class="cls1" .cls2}
+{:id: class="cls1 cls2"}
+</code></pre></div></div>
+
+<h4 id="Inline-Attribute-Lists">内联属性列表</h4>
+
+<blockquote>
+  <p>此块级元素用于将属性附加到另一个块级元素<br />
+块内联属性列表（块IAL）具有与ALD相同的结构</p>
+</blockquote>
+
+<blockquote>
+  <p>块IAL（或两个或多个块IAL）必须直接放在属性应附加到的块级元素之前或之后。<br />
+如果块IAL直接在块级元素之后和之前，则将其应用于前一元素。在所有其他情况<br />
+下，块IAL被忽略，例如，当块IAL被空行包围时</p>
+</blockquote>
+
+<blockquote>
+  <p>在引用的ALD中，IAL的键值对 <strong>优先于同名的键值对</strong></p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 以下是块IAL的一些示例：
+
+A simple paragraph with an ID attribute.
+{: #para-one}
+
+&gt; A blockquote with a title
+{:title="The blockquote title"}
+{: #myid}
+
+{:.ruby}
+    Some code here
+</code></pre></div></div>
+
+<p class="ruby">e.g.</p>
+
+<h4 id="span_ial">Span 内联属性列表</h4>
+<blockquote>
+  <p>span 级元素的块内联属性列表的一个版本</p>
+</blockquote>
+
+<blockquote>
+  <p>它具有与块IAL相同的结构，除了不允许前导和尾随空格<br />
+跨度IAL（或两个或更多跨度IAL）必须直接放在应该应<br />
+用它的span-level元素之后，之间不允许有其他字符，否则它将被忽略并仅从输出中删除</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This *is*{:.underline} some `code`{:#id}{:.class}.
+A [link](test.html){:rel='something'} and some **tools**{:.tools}.
+</code></pre></div></div>
+
+<h4 id="Extensions">扩展</h4>
+<blockquote>
+  <p>扩展提供了其他功能，但使用相同的语法。它们既可以作为块也可以作为跨度级元素使用 <br />
+扩展的语法与ALD的语法非常相似</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 示例
+
+{::comment}
+This text is completely ignored by kramdown - a comment in the text.
+{:/comment}
+
+Do you see {::comment}this text{:/comment}?
+{::comment}some other comment{:/}
+
+{::options key="val" /}
+</code></pre></div></div>
+
+<ul>
+  <li>一个左大括号，</li>
+  <li>接着是两个冒号和扩展名，</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>可选地后跟空格和属性定义（允许的字符是反斜杠转义关闭括号或除了未转义的右括号之外的任何字符</td>
+          <td>同ALD</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>然后是斜线和右大括号（如果扩展没有正文）或只有右大括号（如果扩展有正文）</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># kramdown可以使用以下扩展名：
+
+comment
+将正文文本视为未在输出中显示的注释
+
+nomarkdown
+不要使用kramdown处理主体，而是按原样输出。该属性type指定哪些转换器应输出正文：如果缺少该属性，则所有转换器都应输出该属性。否则，属性值必须是以空格分隔的转换器名称列表，并且这些转换器应输出正文。
+
+options
+由于正文被忽略，应该在没有正文的情况下使用。用于设置kramdown处理器的全局选项（例如，禁用自动标头ID生成）。请注意，解析器使用的选项立即生效，而所有其他选项都不是！这意味着，例如，不能仅为kramdown文档的某些部分设置转换器选项
+</code></pre></div></div>
+
+<!-- This text is completely ignored by kramdown - a comment in the text. -->
+
+<p>Do you see <!-- this text -->?
+<!-- some other comment --></p>
+
+<h3 id="Footnotes">脚注</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>人有悲欢离合，月有阴晴圆缺.[^1]
+
+[^1]: 《水调歌头》
+</code></pre></div></div>
+
+<h3 id="Abbreviations">缩略语</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*[another language]: It's called Markdown
+
+*[WTF]: What the fuck
+</code></pre></div></div>
+
+<p><abbr title="It's called Markdown">another language</abbr></p>
+
+<p><abbr title="suffix of `markdown file`">.md</abbr></p>
+
+<p>other see</p>
+<ul>
+  <li>《48 个你需要知道的 Jekyll 使用技巧》 - <a href="https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html">https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html</a></li>
+</ul>]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="guide" /><category term="jekyll" /><category term="markdown 📓" /><category term="tips 💡" /><summary type="html"><![CDATA[关于 jekyll]]></summary></entry><entry><title type="html">How To Add A Module In Site</title><link href="https://lawsssscat.github.io/demo/docs/guide/How-to-add-a-module-in-site.html" rel="alternate" type="text/html" title="How To Add A Module In Site" /><published>2019-07-25T00:00:00+00:00</published><updated>2019-07-25T00:00:00+00:00</updated><id>https://lawsssscat.github.io/demo/docs/guide/How-to-add-a-module-in-site</id><content type="html" xml:base="https://lawsssscat.github.io/demo/docs/guide/How-to-add-a-module-in-site.html"><![CDATA[<p>step: code</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">./_include/modules/</code> - write the <code class="language-plaintext highlighter-rouge">html code</code> of modules.</li>
+  <li><code class="language-plaintext highlighter-rouge">./_sass/modules/</code> - write the <code class="language-plaintext highlighter-rouge">scss code</code> of modules. (first, you should <code class="language-plaintext highlighter-rouge">@import(...)</code> the new sass file in <code class="language-plaintext highlighter-rouge">./_sass/modules/modules-list.scss</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">./assets/js/modules/</code> - write the <code class="language-plaintext highlighter-rouge">js code</code> of modules.</li>
+</ol>
+
+<p>step: use</p>
+
+<ol>
+  <li>
+    <p>if you plan to use the html of the module, you should just use <code class="language-plaintext highlighter-rouge">{%- include your_module.html -%}</code>.</p>
+
+    <p>if you alse plan to use <code class="language-plaintext highlighter-rouge">js/css</code>, you should add a front matter with the name equals layout name and the value equals the name that the module name that you plan to use append <code class="language-plaintext highlighter-rouge">_modules</code>. And then add the layout name into <code class="language-plaintext highlighter-rouge">_data/layout.yml</code>.</p>
+  </li>
+</ol>
+
+<p>e.g.</p>
+
+<p>you can take the module <code class="language-plaintext highlighter-rouge">post_table</code> as an example.</p>
+
+<p>the module <code class="language-plaintext highlighter-rouge">post_table</code> is used in <code class="language-plaintext highlighter-rouge">home</code> layout</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+.... other front matter ....
+home_modules: ["post_table"]
+.... other front matter ....
+---
+
+.... other content ....
+{%- include modules/post_table.html -%}
+.... other content ....
+</code></pre></div></div>
+
+<p>and add <code class="language-plaintext highlighter-rouge">home</code> into <code class="language-plaintext highlighter-rouge">_data/layout.yml</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name:
+...........other
+  - home
+...........other
+</code></pre></div></div>]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="guide" /><category term="rules for this project 🏘️" /><summary type="html"><![CDATA[step: code]]></summary></entry><entry><title type="html">A Test Page 05 Kramdown</title><link href="https://lawsssscat.github.io/demo/docs/test/A-Test-Page-05-kramdown.html" rel="alternate" type="text/html" title="A Test Page 05 Kramdown" /><published>2019-07-22T00:00:00+00:00</published><updated>2019-07-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/demo/docs/test/A-Test-Page-05-kramdown</id><content type="html" xml:base="https://lawsssscat.github.io/demo/docs/test/A-Test-Page-05-kramdown.html"><![CDATA[<h1 id="header">atx 风格标题</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#         一级
+##
+###
+####
+#####
+######    六级
+</code></pre></div></div>
+
+<h1 id="指定标头idhead_id">指定标头ID（{#head_id}）</h1>
+
+<h6 id="head_1">I can help you</h6>
+
+<p>HTML 内代码：</p>
+<h6 id="head_1">I can help you</h6>
+
+<h1 id="Blockquotes">引用</h1>
+
+<h4 id="kramdown中--会被渲染需要转义">kramdown中 | 会被渲染，需要转义</h4>
+
+<blockquote>
+  <p>引用文本|单行</p>
+</blockquote>
+
+<blockquote>
+  <p>使用 <code class="language-plaintext highlighter-rouge">&lt;br&gt;</code> or 两个空格可<br />
+以换行</p>
+</blockquote>
+
+<h1 id="空行--blank_line">空行 {# blank_line}</h1>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;br&gt;</code> or 两个空格</p>
+
+<h1 id="code">Code</h1>
+
+<h1 id="code">Code</h1>
+
+<blockquote>
+  <p>若Code内含有 “~” 符号，则只需要将 三个 <strong>启动符号 “~”</strong> 号多写几个就可以：</p>
+</blockquote>
+
+<h1 id="Definition_Lists">清单</h1>
+
+<ul>
+  <li>kram</li>
+  <li>down</li>
+  <li>now</li>
+</ul>
+
+<ol>
+  <li>kram</li>
+  <li>down</li>
+  <li>now</li>
+</ol>
+
+<h1 id="Tables">表格</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Header One</th>
+      <th style="text-align: left">Header Two</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Item One</td>
+      <td style="text-align: left">Item Two</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="Horizontal_Rules">分割线</h1>
+
+<hr />
+
+<hr />
+
+<hr />
+
+<hr />
+
+<h1 id="html_blocks">HTML块</h1>
+
+<blockquote>
+  <p>如果HTML标记具有属性markdown=”0”，则标记将被解析为原始HTML块。<br />
+如果HTML标记具有属性markdown=”1”，则使用此标记中用于解析语法的默认机制。<br />
+如果HTML标记具有属性markdown=”block”，则标记的内容将被解析为块级元素。<br />
+如果HTML标记具有属性markdown=”span”，则标记的内容将被解析为span级别元素</p>
+</blockquote>
+
+<div>
+  <p>This is the first part of a para,
+which is continued here.</p>
+</div>
+
+<div>This is the first part of a para,
+which is continued here.
+</div>
+
+<div>
+  <p>This is the first part of a para,
+which is continued here.</p>
+</div>
+
+<div>This is the first part of a para,
+which is continued here.
+</div>
+
+<h1 id="link_img">链接和图像</h1>
+
+<p><img src="/demo/assets/images/octo.gif" alt="Image to icon" height="36px" width="36px" /></p>
+
+<h1 id="Emphasis">重点</h1>
+
+<p><em>some text</em>
+<em>some text</em>
+<strong>some text</strong>
+<strong>some text</strong></p>
+
+<h1 id="与代码块一样可以使用ial设置代码范围的语言">与代码块一样，可以使用IAL设置代码范围的语言</h1>
+
+<p>This is a Ruby code fragment <code class="language-ruby highlighter-rouge"><span class="n">x</span> <span class="o">=</span> <span class="no">Class</span><span class="p">.</span><span class="nf">new</span></code></p>
+
+<h1 id="line_code">单行代码</h1>
+
+<p>与代码块一样，可以使用IAL设置代码范围的语言</p>
+
+<p>This is a Ruby code fragment <code class="language-ruby highlighter-rouge"><span class="n">x</span> <span class="o">=</span> <span class="no">Class</span><span class="p">.</span><span class="nf">new</span></code></p>
+
+<p><code class="language-python highlighter-rouge"><span class="kn">import</span> <span class="nn">re</span></code></p>
+
+<h1 id="Footnotes">脚注</h1>
+
+<p>人有悲欢离合，月有阴晴圆缺.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+<h1 id="Abbreviations">缩略语</h1>
+
+<p>[<abbr title="It's called Markdown">another language</abbr>] <abbr title="It's called Markdown">another language</abbr></p>
+
+<h1 id="Attribute-List-Definitions">属性列表定义</h1>
+
+<p>see:</p>
+<ul>
+  <li>kramdown offical website - <a href="https://kramdown.gettalong.org/options.html">https://kramdown.gettalong.org/options.html</a></li>
+  <li>《kramdown基本语法》 - <a href="https://zhuanlan.zhihu.com/p/60838339">https://zhuanlan.zhihu.com/p/60838339</a></li>
+</ul>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>《水调歌头》 <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="test" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">How To Add A Category In Site</title><link href="https://lawsssscat.github.io/demo/docs/guide/How-to-add-a-category-in-site.html" rel="alternate" type="text/html" title="How To Add A Category In Site" /><published>2019-07-15T00:00:00+00:00</published><updated>2019-07-15T00:00:00+00:00</updated><id>https://lawsssscat.github.io/demo/docs/guide/How-to-add-a-category-in-site</id><content type="html" xml:base="https://lawsssscat.github.io/demo/docs/guide/How-to-add-a-category-in-site.html"><![CDATA[<h2 id="method-one">method one</h2>
+
+<p>just create a folder with the same name as category in <code class="language-plaintext highlighter-rouge">./docs</code>.</p>
+
+<p>and write post in <code class="language-plaintext highlighter-rouge">./docs/{new folder}/_posts</code>.</p>
+
+<p>e.g.</p>
+
+<p>ceate a category <code class="language-plaintext highlighter-rouge">test</code> and a post <code class="language-plaintext highlighter-rouge">How to add a category in site</code> with category <code class="language-plaintext highlighter-rouge">test</code> at a certain time.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./docs
+└── <span class="nb">test</span>
+    └── _posts
+          └── 2019-07-15-How-to-add-a-category-in-site.md
+</code></pre></div></div>
+
+<h2 id="method-two">method two</h2>
+
+<p>just add a front matter.</p>
+
+<p>e.g.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>categories: <span class="o">[</span><span class="s2">"category_001"</span>, <span class="s2">"category_002"</span><span class="o">]</span>
+</code></pre></div></div>]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="guide" /><category term="rules for this project 🏘️" /><summary type="html"><![CDATA[method one]]></summary></entry><entry><title type="html">What Is The Structure Of This Project</title><link href="https://lawsssscat.github.io/demo/docs/guide/What-is-the-structure-of-this-project.html" rel="alternate" type="text/html" title="What Is The Structure Of This Project" /><published>2019-07-11T00:00:00+00:00</published><updated>2019-07-11T00:00:00+00:00</updated><id>https://lawsssscat.github.io/demo/docs/guide/What-is-the-structure-of-this-project</id><content type="html" xml:base="https://lawsssscat.github.io/demo/docs/guide/What-is-the-structure-of-this-project.html"><![CDATA[<h2 id="默认的目录结构">默认的目录结构</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">.</span>
+├── _config.yml
+├── _data
+│   └── members.yml
+├── _drafts
+│   ├── begin-with-the-crazy-ideas.md
+│   └── on-simplicity-in-technology.md
+├── _includes
+│   ├── footer.html
+│   └── header.html
+├── _layouts
+│   ├── default.html
+│   └── post.html
+├── _posts
+│   ├── 2007-10-29-why-every-programmer-should-play-nethack.md
+│   └── 2009-04-26-barcamp-boston-4-roundup.md
+├── _sass
+│   ├── _base.scss
+│   └── _layout.scss
+├── _site
+├── .jekyll-cache
+│   └── Jekyll
+│       └── Cache
+│           └── <span class="o">[</span>...]
+├── .jekyll-metadata
+└── index.html <span class="c"># can also be an 'index.md' with valid front matter</span>
+</code></pre></div></div>
+
+<p>我们只需要关注几个核心的目录结构如下（可以自己创建）：</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">_config.yml</code> （全局配置文件）</li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">_layouts</code> （存放页面模板，md或html文件的内容会填充模板）</p>
+
+    <p>文章头添加下面标识应用模板</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nt">---</span>
+  layout: default
+  <span class="nt">---</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">_data</code> （格式良好的站点数据应放在此处）</p>
+
+    <p>Jekyll 引擎将自动加载此目录中的所有数据文件（使用 <code class="language-plaintext highlighter-rouge">.yml</code>、 <code class="language-plaintext highlighter-rouge">.yaml</code>、<code class="language-plaintext highlighter-rouge">.json</code>、 <code class="language-plaintext highlighter-rouge">.csv</code>或 <code class="language-plaintext highlighter-rouge">.tsv</code> 格式和扩展名），并且可以通过 <code class="language-plaintext highlighter-rouge">site.data</code> 访问它们。</p>
+
+    <p>例如目录下有文件 <code class="language-plaintext highlighter-rouge">members.yml</code>，则可以通过 <code class="language-plaintext highlighter-rouge">site.data.members</code> 访问。</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">_includes</code> （可以复用在其它页面被include的html页面）</p>
+
+    <p><code class="language-plaintext highlighter-rouge">{% include head.html %}</code></p>
+  </li>
+  <li><del><code class="language-plaintext highlighter-rouge">_posts</code>（博客文章页面）</del></li>
+  <li><code class="language-plaintext highlighter-rouge">assets</code>（原生的资源文件）</li>
+  <li><code class="language-plaintext highlighter-rouge">_sass</code>（存放样式表）</li>
+  <li><code class="language-plaintext highlighter-rouge">js</code></li>
+  <li><code class="language-plaintext highlighter-rouge">css</code></li>
+  <li><code class="language-plaintext highlighter-rouge">image</code></li>
+  <li><code class="language-plaintext highlighter-rouge">index.html</code>, <code class="language-plaintext highlighter-rouge">index.md</code>, <code class="language-plaintext highlighter-rouge">README.md</code> （首页index.html优先级最高，如果没有index，默认启用README.md文件）</li>
+</ul>
+
+<p>更多默认的目录结构参看jekyll官网：<a href="https://jekyllrb.com/docs/structure/">https://jekyllrb.com/docs/structure/</a></p>
+
+<h2 id="样式">样式</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>assets
+└── css
+    └── common.scss
+_include
+└── css
+    └── xx-theme.scss.liquid
+_sass
+├── color_schemes
+├── support
+├── modules
+└── custom
+</code></pre></div></div>
+
+<p>调用顺序</p>
+
+<p>common.scss 》 xx-theme.scss.liquid 》 _sass/*</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">color_schemes</code> - 最外层的样式，</li>
+  <li><code class="language-plaintext highlighter-rouge">support</code> - 最底层样式（基本不要动）</li>
+  <li><code class="language-plaintext highlighter-rouge">modules</code> - theme 不同组件样式</li>
+  <li><code class="language-plaintext highlighter-rouge">custom</code> - 自定义</li>
+</ul>]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="guide" /><category term="this project structure" /><category term="rules for this project 🏘️" /><summary type="html"><![CDATA[默认的目录结构]]></summary></entry><entry><title type="html">A Test Page 02 Show All</title><link href="https://lawsssscat.github.io/demo/docs/test/test%20alse/A-Test-Page-02-show-all.html" rel="alternate" type="text/html" title="A Test Page 02 Show All" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/demo/docs/test/test%20alse/A-Test-Page-02-show-all</id><content type="html" xml:base="https://lawsssscat.github.io/demo/docs/test/test%20alse/A-Test-Page-02-show-all.html"><![CDATA[<ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#latest-posts">Latest Posts</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#-posttitle-">{{ post.title }}</a></li>
+<li class="toc-entry toc-h2"><a href="#-collectionlabel-">{{ collection.label }}</a></li>
+<li class="toc-entry toc-h2"><a href="#-itemtitle-">{{ item.title }}</a></li>
+</ul>
+</li>
+</ul>
+
+<hr />
+
+<p>site time 2022-05-29 13:49:47 +0000</p>
+
+<p>site Jekyll::Drops::SiteDrop</p>
+
+<p>{“show”=&gt;true, “url”=&gt;”https://github.com/LawssssCat/lawsssscat.github.io”, “new_tab”=&gt;true}</p>
+
+<hr />
+
+<hr />
+
+<p>pages 7</p>
+
+<p>posts 14</p>
+
+<h1 id="see-httpsjekyllrbcomdocsstep-by-step08-blogging">see <a href="https://jekyllrb.com/docs/step-by-step/08-blogging/">https://jekyllrb.com/docs/step-by-step/08-blogging/</a></h1>
+<h1>Latest Posts</h1>
+<ul>
+  
+    <li>
+      <h2><a href="/demo/docs/resource/emoji.html">emoji resources 😀</a></h2>
+      <p>There two kinds of emoji.</p>
+
+    </li>
+  
+    <li>
+      <h2><a href="/demo/docs/guide/some-tips-jekyll-site-you-should-know.html">Some Tips Jekyll Site You Should Know</a></h2>
+      <h2 id="关于-jekyll">关于 jekyll</h2>
+
+    </li>
+  
+    <li>
+      <h2><a href="/demo/docs/guide/How-to-add-a-module-in-site.html">How To Add A Module In Site</a></h2>
+      <p>step: code</p>
+
+    </li>
+  
+    <li>
+      <h2><a href="/demo/docs/test/A-Test-Page-05-kramdown.html">A Test Page 05 Kramdown</a></h2>
+      
+
+    </li>
+  
+    <li>
+      <h2><a href="/demo/docs/guide/How-to-add-a-category-in-site.html">How To Add A Category In Site</a></h2>
+      <h2 id="method-one">method one</h2>
+
+    </li>
+  
+    <li>
+      <h2><a href="/demo/docs/guide/What-is-the-structure-of-this-project.html">What Is The Structure Of This Project</a></h2>
+      <h2 id="默认的目录结构">默认的目录结构</h2>
+
+    </li>
+  
+    <li>
+      <h2><a href="/demo/docs/test/A-Test-Page-05-css.html">A Test Page 05 Css</a></h2>
+      
+<h2 id="code">code</h2>
+
+    </li>
+  
+    <li>
+      <h2><a href="/demo/docs/test/A-Test-Page-04-page-attributes.html">A Test Page 04 Page Attributes</a></h2>
+      
+
+    </li>
+  
+    <li>
+      <h2><a href="/demo/docs/test/A-Test-Page-03-empty-copy-6.html">A Test Page 03 Empty copy 6</a></h2>
+      
+
+    </li>
+  
+    <li>
+      <h2><a href="/demo/docs/test/A-Test-Page-03-empty-copy-5.html">A Test Page 03 Empty copy 5</a></h2>
+      
+
+    </li>
+  
+    <li>
+      <h2><a href="/demo/docs/test/A-Test-Page-03-chinese.html">我是一个中文标题！</a></h2>
+      <p>Generated by <a href="https://github.com/menzi11/BullshitGenerator">https://github.com/menzi11/BullshitGenerator</a></p>
+
+    </li>
+  
+    <li>
+      <h2><a href="/demo/docs/test/test%20alse/A-Test-Page-02-show-all.html">A Test Page 02 Show All</a></h2>
+      <ul id="toc" class="section-nav">
+</ul>
+
+    </li>
+  
+    <li>
+      <h2><a href="/demo/docs/test/A-Test-Page-01.html">A Test Page 01</a></h2>
+      <h1 id="h1">H1</h1>
+<h2 id="h2">H2</h2>
+<h3 id="h3">H3</h3>
+<h4 id="h4">H4</h4>
+<h5 id="h5"><font color="red">H5</font></h5>
+<h6 id="h6">H6</h6>
+
+    </li>
+  
+    <li>
+      <h2><a href="/demo/docs/guide/How-to-write-Markdown-in-site.html">How to write Markdown in site</a></h2>
+      <h2 id="how-to-write-markdown">How to write markdown</h2>
+
+    </li>
+  
+</ul>
+
+<p>collections [#&lt;Jekyll::Document docs/guide/_posts/2019-05-21-How-to-write-Markdown-in-site.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-21-A-Test-Page-01.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-02-show-all.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-03-chinese.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-03-empty copy 5.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-03-empty copy 6.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-04-page-attributes.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-05-css.md collection=posts&gt;, #&lt;Jekyll::Document docs/guide/_posts/2019-07-11-What-is-the-structure-of-this-project.md collection=posts&gt;, #&lt;Jekyll::Document docs/guide/_posts/2019-07-15-How-to-add-a-category-in-site.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-07-22-A-Test-Page-05-kramdown.md collection=posts&gt;, #&lt;Jekyll::Document docs/guide/_posts/2019-07-25-How-to-add-a-module-in-site.md collection=posts&gt;, #&lt;Jekyll::Document docs/guide/_posts/2022-05-25-some-tips-jekyll-site-you-should-know.md collection=posts&gt;, #&lt;Jekyll::Document docs/resource/_posts/2022-05-28-emoji.md collection=posts&gt;]</p>
+
+<hr />
+
+<h1 id="see-httpsjekyllrbcomdocscollections">see <a href="https://jekyllrb.com/docs/collections/">https://jekyllrb.com/docs/collections/</a></h1>
+
+<h2>posts</h2>
+<ul>
+  
+    <li>
+      <h2><a href="/demo/docs/resource/emoji.html">emoji resources 😀</a></h2>
+      <p>There two kinds of emoji.</p>
+
+    </li>
+  
+    <li>
+      <h2><a href="/demo/docs/guide/some-tips-jekyll-site-you-should-know.html">Some Tips Jekyll Site You Should Know</a></h2>
+      <h2 id="关于-jekyll">关于 jekyll</h2>
+
+    </li>
+  
+    <li>
+      <h2><a href="/demo/docs/guide/How-to-add-a-module-in-site.html">How To Add A Module In Site</a></h2>
+      <p>step: code</p>
+
+    </li>
+  
+    <li>
+      <h2><a href="/demo/docs/test/A-Test-Page-05-kramdown.html">A Test Page 05 Kramdown</a></h2>
+      
+
+    </li>
+  
+    <li>
+      <h2><a href="/demo/docs/guide/How-to-add-a-category-in-site.html">How To Add A Category In Site</a></h2>
+      <h2 id="method-one">method one</h2>
+
+    </li>
+  
+    <li>
+      <h2><a href="/demo/docs/guide/What-is-the-structure-of-this-project.html">What Is The Structure Of This Project</a></h2>
+      <h2 id="默认的目录结构">默认的目录结构</h2>
+
+    </li>
+  
+    <li>
+      <h2><a href="/demo/docs/test/A-Test-Page-05-css.html">A Test Page 05 Css</a></h2>
+      
+<h2 id="code">code</h2>
+
+    </li>
+  
+    <li>
+      <h2><a href="/demo/docs/test/A-Test-Page-04-page-attributes.html">A Test Page 04 Page Attributes</a></h2>
+      
+
+    </li>
+  
+    <li>
+      <h2><a href="/demo/docs/test/A-Test-Page-03-empty-copy-6.html">A Test Page 03 Empty copy 6</a></h2>
+      
+
+    </li>
+  
+    <li>
+      <h2><a href="/demo/docs/test/A-Test-Page-03-empty-copy-5.html">A Test Page 03 Empty copy 5</a></h2>
+      
+
+    </li>
+  
+    <li>
+      <h2><a href="/demo/docs/test/A-Test-Page-03-chinese.html">我是一个中文标题！</a></h2>
+      <p>Generated by <a href="https://github.com/menzi11/BullshitGenerator">https://github.com/menzi11/BullshitGenerator</a></p>
+
+    </li>
+  
+    <li>
+      <h2><a href="/demo/docs/test/test%20alse/A-Test-Page-02-show-all.html">A Test Page 02 Show All</a></h2>
+      <ul id="toc" class="section-nav">
+</ul>
+
+    </li>
+  
+    <li>
+      <h2><a href="/demo/docs/test/A-Test-Page-01.html">A Test Page 01</a></h2>
+      <h1 id="h1">H1</h1>
+<h2 id="h2">H2</h2>
+<h3 id="h3">H3</h3>
+<h4 id="h4">H4</h4>
+<h5 id="h5"><font color="red">H5</font></h5>
+<h6 id="h6">H6</h6>
+
+    </li>
+  
+    <li>
+      <h2><a href="/demo/docs/guide/How-to-write-Markdown-in-site.html">How to write Markdown in site</a></h2>
+      <h2 id="how-to-write-markdown">How to write markdown</h2>
+
+    </li>
+  
+  </ul>
+
+<hr />]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="test" /><category term="test alse" /><category term="" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">我是一个中文标题！</title><link href="https://lawsssscat.github.io/demo/docs/test/A-Test-Page-03-chinese.html" rel="alternate" type="text/html" title="我是一个中文标题！" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/demo/docs/test/A-Test-Page-03-chinese</id><content type="html" xml:base="https://lawsssscat.github.io/demo/docs/test/A-Test-Page-03-chinese.html"><![CDATA[<p>Generated by <a href="https://github.com/menzi11/BullshitGenerator">https://github.com/menzi11/BullshitGenerator</a></p>
+
+<p>既然如何， base_word，到底应该如何实现。 既然如此， 马克思在不经意间这样说过，一切节省，归根到底都归结为时间的节省。这启发了我， 就我个人来说，base_word对我的意义，不能不说非常重大。 莎士比亚曾经说过，人的一生是短的，但如果卑劣地过这一生，就太长了。这启发了我， 现在，解决base_word的问题，是非常非常重要的。 所以， 从这个角度来看， 杰纳勒尔·乔治·S·巴顿说过一句富有哲理的话，接受挑战，就可以享受胜利的喜悦。这句话语虽然很短，但令我浮想联翩。 亚伯拉罕·林肯说过一句富有哲理的话，你活了多少岁不算什么，重要的是你是如何度过这些岁月的。带着这句话，我们还要更加慎重的审视这个问题： 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 每个人都不得不面对这些问题。 在面对这种问题时， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 贝多芬在不经意间这样说过，卓越的人一大优点是：在不利与艰难的遭遇里百折不饶。这不禁令我深思。 问题的关键究竟为何？ 带着这些问题，我们来审视一下base_word。 经过上述讨论， 所谓base_word，关键是base_word需要如何写。 一般来说， 经过上述讨论， 这样看来， 现在，解决base_word的问题，是非常非常重要的。 所以， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 我们都知道，只要有意义，那么就必须慎重考虑。 莫扎特曾经说过，谁和我一样用功，谁就会和我一样成功。这句话语虽然很短，但令我浮想联翩。 base_word因何而发生？ 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 马克思曾经提到过，一切节省，归根到底都归结为时间的节省。这似乎解答了我的疑惑。 那么， base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 维龙在不经意间这样说过，要成功不需要什么特别的才能，只要把你能做的小事做得好就行了。这启发了我， 经过上述讨论， 问题的关键究竟为何？ 现在，解决base_word的问题，是非常非常重要的。 所以， 既然如此， 孔子曾经说过，知之者不如好之者，好之者不如乐之者。这似乎解答了我的疑惑。 base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 每个人都不得不面对这些问题。 在面对这种问题时， 既然如此。</p>
+
+<p>带着这些问题，我们来审视一下base_word。 富兰克林在不经意间这样说过，你热爱生命吗？那么别浪费时间，因为时间是组成生命的材料。这启发了我， 俾斯麦在不经意间这样说过，失败是坚忍的最后考验。这似乎解答了我的疑惑。 那么， base_word，发生了会如何，不发生又会如何。 base_word，到底应该如何实现。 对我个人而言，base_word不仅仅是一个重大的事件，还可能会改变我的人生。 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 而这些并不是完全重要，更加重要的问题是， 亚伯拉罕·林肯说过一句富有哲理的话，我这个人走得很慢，但是我从不后退。这不禁令我深思。 要想清楚，base_word，到底是一种怎么样的存在。 总结的来说， base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 就我个人来说，base_word对我的意义，不能不说非常重大。 从这个角度来看， 我们不得不面对一个非常尴尬的事实，那就是， 黑塞曾经说过，有勇气承担命运这才是英雄好汉。这句话语虽然很短，但令我浮想联翩。 带着这些问题，我们来审视一下base_word。 既然如何， 我认为， base_word，到底应该如何实现。 从这个角度来看， 所谓base_word，关键是base_word需要如何写。 现在，解决base_word的问题，是非常非常重要的。 所以， 在这种困难的抉择下，本人思来想去，寝食难安。 问题的关键究竟为何？ base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 而这些并不是完全重要，更加重要的问题是。</p>
+
+<p>base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 带着这些问题，我们来审视一下base_word。 塞涅卡曾经说过，真正的人生，只有在经过艰难卓绝的斗争之后才能实现。我希望诸位也能好好地体会这句话。 斯宾诺莎在不经意间这样说过，最大的骄傲于最大的自卑都表示心灵的最软弱无力。这句话语虽然很短，但令我浮想联翩。 每个人都不得不面对这些问题。 在面对这种问题时， 从这个角度来看， 罗曼·罗兰曾经说过，只有把抱怨环境的心情，化为上进的力量，才是成功的保证。这不禁令我深思。 培根曾经提到过，要知道对好事的称颂过于夸大，也会招来人们的反感轻蔑和嫉妒。这句话语虽然很短，但令我浮想联翩。 那么， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 在这种困难的抉择下，本人思来想去，寝食难安。 base_word因何而发生？ 那么， 叔本华曾经说过，普通人只想到如何度过时间，有才能的人设法利用时间。带着这句话，我们还要更加慎重的审视这个问题： 对我个人而言，base_word不仅仅是一个重大的事件，还可能会改变我的人生。 要想清楚，base_word，到底是一种怎么样的存在。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 base_word因何而发生？ 吉格·金克拉在不经意间这样说过，如果你能做梦，你就能实现它。这句话语虽然很短，但令我浮想联翩。 歌德说过一句富有哲理的话，没有人事先了解自己到底有多大的力量，直到他试过以后才知道。这启发了我， 就我个人来说，base_word对我的意义，不能不说非常重大。 每个人都不得不面对这些问题。 在面对这种问题时， 从这个角度来看， 现在，解决base_word的问题，是非常非常重要的。 所以， 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 要想清楚，base_word，到底是一种怎么样的存在。 对我个人而言，base_word不仅仅是一个重大的事件，还可能会改变我的人生。 我认为， 带着这些问题，我们来审视一下base_word。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 经过上述讨论， 那么， 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 叔本华曾经说过，普通人只想到如何度过时间，有才能的人设法利用时间。这启发了我， 总结的来说， 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 可是，即使是这样，base_word的出现仍然代表了一定的意义。</p>
+
+<p>所谓base_word，关键是base_word需要如何写。 base_word，发生了会如何，不发生又会如何。 那么， 一般来说， 经过上述讨论， 要想清楚，base_word，到底是一种怎么样的存在。 史美尔斯在不经意间这样说过，书籍把我们引入最美好的社会，使我们认识各个时代的伟大智者。带着这句话，我们还要更加慎重的审视这个问题： 这样看来， 莎士比亚曾经提到过，那脑袋里的智慧，就像打火石里的火花一样，不去打它是不肯出来的。带着这句话，我们还要更加慎重的审视这个问题： 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 我们不得不面对一个非常尴尬的事实，那就是， 冯学峰在不经意间这样说过，当一个人用工作去迎接光明，光明很快就会来照耀着他。带着这句话，我们还要更加慎重的审视这个问题： 西班牙说过一句富有哲理的话，自知之明是最难得的知识。这不禁令我深思。 达·芬奇说过一句富有哲理的话，大胆和坚定的决心能够抵得上武器的精良。这似乎解答了我的疑惑。 一般来说， 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 那么， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 维龙说过一句富有哲理的话，要成功不需要什么特别的才能，只要把你能做的小事做得好就行了。我希望诸位也能好好地体会这句话。 base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。</p>
+
+<p>莎士比亚曾经提到过，人的一生是短的，但如果卑劣地过这一生，就太长了。带着这句话，我们还要更加慎重的审视这个问题： 这样看来， 王阳明曾经提到过，故立志者，为学之心也；为学者，立志之事也。这似乎解答了我的疑惑。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 富兰克林曾经提到过，读书是易事，思索是难事，但两者缺一，便全无用处。带着这句话，我们还要更加慎重的审视这个问题： 要想清楚，base_word，到底是一种怎么样的存在。 我认为， base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 达尔文在不经意间这样说过，敢于浪费哪怕一个钟头时间的人，说明他还不懂得珍惜生命的全部价值。这启发了我， 既然如何， 而这些并不是完全重要，更加重要的问题是， 我们都知道，只要有意义，那么就必须慎重考虑。 base_word，发生了会如何，不发生又会如何。 洛克曾经提到过，学到很多东西的诀窍，就是一下子不要学很多。我希望诸位也能好好地体会这句话。 base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 那么， base_word，到底应该如何实现。 总结的来说。</p>
+
+<p>所谓base_word，关键是base_word需要如何写。 对我个人而言，base_word不仅仅是一个重大的事件，还可能会改变我的人生。 对我个人而言，base_word不仅仅是一个重大的事件，还可能会改变我的人生。 每个人都不得不面对这些问题。 在面对这种问题时， 既然如何， 带着这些问题，我们来审视一下base_word。 每个人都不得不面对这些问题。 在面对这种问题时， 一般来讲，我们都必须务必慎重的考虑考虑。 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。</p>
+
+<p>现在，解决base_word的问题，是非常非常重要的。 所以， 经过上述讨论， 就我个人来说，base_word对我的意义，不能不说非常重大。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 笛卡儿曾经说过，阅读一切好书如同和过去最杰出的人谈话。这启发了我， 培根在不经意间这样说过，深窥自己的心，而后发觉一切的奇迹在你自己。这不禁令我深思。 现在，解决base_word的问题，是非常非常重要的。 所以， 总结的来说， 我们不得不面对一个非常尴尬的事实，那就是， 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。</p>
+
+<p>要想清楚，base_word，到底是一种怎么样的存在。 就我个人来说，base_word对我的意义，不能不说非常重大。 总结的来说， 维龙曾经提到过，要成功不需要什么特别的才能，只要把你能做的小事做得好就行了。我希望诸位也能好好地体会这句话。 现在，解决base_word的问题，是非常非常重要的。 所以， base_word因何而发生？ base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 我们不得不面对一个非常尴尬的事实，那就是， 既然如此， 老子说过一句富有哲理的话，知人者智，自知者明。胜人者有力，自胜者强。带着这句话，我们还要更加慎重的审视这个问题： 这样看来， 要想清楚，base_word，到底是一种怎么样的存在。 我们都知道，只要有意义，那么就必须慎重考虑。 对我个人而言，base_word不仅仅是一个重大的事件，还可能会改变我的人生。 经过上述讨论。</p>
+
+<p>文森特·皮尔在不经意间这样说过，改变你的想法，你就改变了自己的世界。这似乎解答了我的疑惑。 问题的关键究竟为何？ 一般来说， 在这种困难的抉择下，本人思来想去，寝食难安。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 我们都知道，只要有意义，那么就必须慎重考虑。 我们都知道，只要有意义，那么就必须慎重考虑。 老子在不经意间这样说过，知人者智，自知者明。胜人者有力，自胜者强。带着这句话，我们还要更加慎重的审视这个问题： 一般来说， 而这些并不是完全重要，更加重要的问题是， 我们都知道，只要有意义，那么就必须慎重考虑。 既然如何， 要想清楚，base_word，到底是一种怎么样的存在。 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 我们不得不面对一个非常尴尬的事实，那就是， base_word，发生了会如何，不发生又会如何。 总结的来说， 这样看来， 可是，即使是这样，base_word的出现仍然代表了一定的意义。</p>
+
+<p>从这个角度来看， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 那么， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 杰纳勒尔·乔治·S·巴顿曾经说过，接受挑战，就可以享受胜利的喜悦。带着这句话，我们还要更加慎重的审视这个问题： 这样看来， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 而这些并不是完全重要，更加重要的问题是， 从这个角度来看， 就我个人来说，base_word对我的意义，不能不说非常重大。</p>
+
+<p>生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 总结的来说， 这样看来， 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 我们不得不面对一个非常尴尬的事实，那就是， 洛克说过一句富有哲理的话，学到很多东西的诀窍，就是一下子不要学很多。这不禁令我深思。 我们都知道，只要有意义，那么就必须慎重考虑。 一般来讲，我们都必须务必慎重的考虑考虑。 马云说过一句富有哲理的话，最大的挑战和突破在于用人，而用人最大的突破在于信任人。这句话语虽然很短，但令我浮想联翩。 亚伯拉罕·林肯曾经说过，我这个人走得很慢，但是我从不后退。我希望诸位也能好好地体会这句话。 带着这些问题，我们来审视一下base_word。 每个人都不得不面对这些问题。 在面对这种问题时， base_word，发生了会如何，不发生又会如何。 我们不得不面对一个非常尴尬的事实，那就是， 从这个角度来看， 培根在不经意间这样说过，合理安排时间，就等于节约时间。这似乎解答了我的疑惑。 西班牙曾经说过，自知之明是最难得的知识。这句话语虽然很短，但令我浮想联翩。 base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 对我个人而言，base_word不仅仅是一个重大的事件，还可能会改变我的人生。 一般来讲，我们都必须务必慎重的考虑考虑。 而这些并不是完全重要，更加重要的问题是， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。</p>
+
+<p>总结的来说， 那么， 在这种困难的抉择下，本人思来想去，寝食难安。 在这种困难的抉择下，本人思来想去，寝食难安。 既然如此， 黑格尔曾经提到过，只有永远躺在泥坑里的人，才不会再掉进坑里。我希望诸位也能好好地体会这句话。 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 在这种困难的抉择下，本人思来想去，寝食难安。 这样看来， 马云说过一句富有哲理的话，最大的挑战和突破在于用人，而用人最大的突破在于信任人。这句话语虽然很短，但令我浮想联翩。 所谓base_word，关键是base_word需要如何写。 所谓base_word，关键是base_word需要如何写。 base_word，到底应该如何实现。 对我个人而言，base_word不仅仅是一个重大的事件，还可能会改变我的人生。 美华纳曾经提到过，勿问成功的秘诀为何，且尽全力做你应该做的事吧。这不禁令我深思。</p>
+
+<p>带着这些问题，我们来审视一下base_word。 培根曾经说过，阅读使人充实，会谈使人敏捷，写作使人精确。我希望诸位也能好好地体会这句话。 对我个人而言，base_word不仅仅是一个重大的事件，还可能会改变我的人生。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 既然如此， 老子曾经说过，知人者智，自知者明。胜人者有力，自胜者强。这似乎解答了我的疑惑。 可是，即使是这样，base_word的出现仍然代表了一定的意义。 base_word，发生了会如何，不发生又会如何。 一般来讲，我们都必须务必慎重的考虑考虑。 一般来说， 总结的来说， 总结的来说， 富兰克林说过一句富有哲理的话，你热爱生命吗？那么别浪费时间，因为时间是组成生命的材料。这不禁令我深思。 而这些并不是完全重要，更加重要的问题是， base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 要想清楚，base_word，到底是一种怎么样的存在。 总结的来说。</p>
+
+<p>了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 既然如何， 歌德曾经提到过，决定一个人的一生，以及整个命运的，只是一瞬之间。这似乎解答了我的疑惑。 卡莱尔曾经提到过，过去一切时代的精华尽在书中。带着这句话，我们还要更加慎重的审视这个问题： 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 笛卡儿曾经说过，读一切好书，就是和许多高尚的人谈话。这句话语虽然很短，但令我浮想联翩。 希腊曾经提到过，最困难的事情就是认识自己。这不禁令我深思。 吉格·金克拉说过一句富有哲理的话，如果你能做梦，你就能实现它。这启发了我， 每个人都不得不面对这些问题。 在面对这种问题时， 培根说过一句富有哲理的话，合理安排时间，就等于节约时间。这启发了我， 一般来讲，我们都必须务必慎重的考虑考虑。 既然如何， 问题的关键究竟为何？ 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 就我个人来说，base_word对我的意义，不能不说非常重大。 一般来讲，我们都必须务必慎重的考虑考虑。 我们不得不面对一个非常尴尬的事实，那就是， 这样看来， 一般来说， 每个人都不得不面对这些问题。 在面对这种问题时， base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 对我个人而言，base_word不仅仅是一个重大的事件，还可能会改变我的人生。</p>
+
+<p>既然如此， 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 卡耐基在不经意间这样说过，我们若已接受最坏的，就再没有什么损失。带着这句话，我们还要更加慎重的审视这个问题： 既然如此， 每个人都不得不面对这些问题。 在面对这种问题时， 问题的关键究竟为何？ base_word，到底应该如何实现。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 从这个角度来看， 可是，即使是这样，base_word的出现仍然代表了一定的意义。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 总结的来说， 既然如何， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 从这个角度来看， 要想清楚，base_word，到底是一种怎么样的存在。 我们不得不面对一个非常尴尬的事实，那就是， 那么， 一般来讲，我们都必须务必慎重的考虑考虑。</p>
+
+<p>我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 要想清楚，base_word，到底是一种怎么样的存在。 就我个人来说，base_word对我的意义，不能不说非常重大。 笛卡儿说过一句富有哲理的话，读一切好书，就是和许多高尚的人谈话。这启发了我， 现在，解决base_word的问题，是非常非常重要的。 所以， 那么， 总结的来说， 要想清楚，base_word，到底是一种怎么样的存在。 一般来讲，我们都必须务必慎重的考虑考虑。 而这些并不是完全重要，更加重要的问题是， 我认为， 经过上述讨论。</p>
+
+<p>base_word因何而发生？ 从这个角度来看， 从这个角度来看， base_word，发生了会如何，不发生又会如何。 叔本华在不经意间这样说过，意志是一个强壮的盲人，倚靠在明眼的跛子肩上。带着这句话，我们还要更加慎重的审视这个问题： 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 一般来说， base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 带着这些问题，我们来审视一下base_word。 一般来说， 这样看来， 左拉曾经提到过，生活的道路一旦选定，就要勇敢地走到底，决不回头。这句话语虽然很短，但令我浮想联翩。 每个人都不得不面对这些问题。 在面对这种问题时， 我们都知道，只要有意义，那么就必须慎重考虑。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 莎士比亚曾经说过，本来无望的事，大胆尝试，往往能成功。这似乎解答了我的疑惑。 米歇潘曾经说过，生命是一条艰险的峡谷，只有勇敢的人才能通过。这句话语虽然很短，但令我浮想联翩。 base_word，发生了会如何，不发生又会如何。 base_word，到底应该如何实现。 一般来说， 每个人都不得不面对这些问题。 在面对这种问题时， 问题的关键究竟为何？ 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 俾斯麦曾经说过，对于不屈不挠的人来说，没有失败这回事。这句话语虽然很短，但令我浮想联翩。 这样看来， 吉格·金克拉说过一句富有哲理的话，如果你能做梦，你就能实现它。这不禁令我深思。 base_word因何而发生？ 我们不得不面对一个非常尴尬的事实，那就是。</p>
+
+<p>base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 既然如何， base_word因何而发生？ 苏轼曾经说过，古之立大事者，不惟有超世之才，亦必有坚忍不拔之志。我希望诸位也能好好地体会这句话。 要想清楚，base_word，到底是一种怎么样的存在。 塞涅卡说过一句富有哲理的话，真正的人生，只有在经过艰难卓绝的斗争之后才能实现。这启发了我， 经过上述讨论， 博曾经提到过，一次失败，只是证明我们成功的决心还够坚强。 维这启发了我， 所谓base_word，关键是base_word需要如何写。 那么， 经过上述讨论， 而这些并不是完全重要，更加重要的问题是， 在这种困难的抉择下，本人思来想去，寝食难安。 总结的来说， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。</p>
+
+<p>一般来讲，我们都必须务必慎重的考虑考虑。 可是，即使是这样，base_word的出现仍然代表了一定的意义。 总结的来说， 可是，即使是这样，base_word的出现仍然代表了一定的意义。 吉姆·罗恩曾经提到过，要么你主宰生活，要么你被生活主宰。我希望诸位也能好好地体会这句话。 带着这些问题，我们来审视一下base_word。 所谓base_word，关键是base_word需要如何写。 俾斯麦说过一句富有哲理的话，对于不屈不挠的人来说，没有失败这回事。我希望诸位也能好好地体会这句话。 现在，解决base_word的问题，是非常非常重要的。 所以。</p>
+
+<p>base_word，发生了会如何，不发生又会如何。 孔子曾经说过，知之者不如好之者，好之者不如乐之者。这句话语虽然很短，但令我浮想联翩。 而这些并不是完全重要，更加重要的问题是， base_word，发生了会如何，不发生又会如何。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 那么， 我们不得不面对一个非常尴尬的事实，那就是， 这样看来， 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 这样看来， 一般来讲，我们都必须务必慎重的考虑考虑。 在这种困难的抉择下，本人思来想去，寝食难安。 经过上述讨论， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 问题的关键究竟为何？ 带着这些问题，我们来审视一下base_word。 这样看来， 带着这些问题，我们来审视一下base_word。 我们都知道，只要有意义，那么就必须慎重考虑。 一般来讲，我们都必须务必慎重的考虑考虑。 而这些并不是完全重要，更加重要的问题是， 就我个人来说，base_word对我的意义，不能不说非常重大。 总结的来说， 问题的关键究竟为何？ 对我个人而言，base_word不仅仅是一个重大的事件，还可能会改变我的人生。 所谓base_word，关键是base_word需要如何写。 一般来讲，我们都必须务必慎重的考虑考虑。</p>
+
+<p>这样看来， 一般来讲，我们都必须务必慎重的考虑考虑。 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 base_word，到底应该如何实现。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 裴斯泰洛齐说过一句富有哲理的话，今天应做的事没有做，明天再早也是耽误了。这似乎解答了我的疑惑。 一般来讲，我们都必须务必慎重的考虑考虑。 base_word因何而发生？ base_word，发生了会如何，不发生又会如何。 每个人都不得不面对这些问题。 在面对这种问题时， 在这种困难的抉择下，本人思来想去，寝食难安。 一般来说， 一般来讲，我们都必须务必慎重的考虑考虑。 我认为。</p>
+
+<p>这样看来， 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 base_word，到底应该如何实现。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 我们都知道，只要有意义，那么就必须慎重考虑。 问题的关键究竟为何？ 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 对我个人而言，base_word不仅仅是一个重大的事件，还可能会改变我的人生。 每个人都不得不面对这些问题。 在面对这种问题时， 现在，解决base_word的问题，是非常非常重要的。 所以， 可是，即使是这样，base_word的出现仍然代表了一定的意义。 现在，解决base_word的问题，是非常非常重要的。 所以， 所谓base_word，关键是base_word需要如何写。 一般来说， 所谓base_word，关键是base_word需要如何写。 base_word，发生了会如何，不发生又会如何。 问题的关键究竟为何？ 经过上述讨论， 问题的关键究竟为何？ 从这个角度来看， 每个人都不得不面对这些问题。 在面对这种问题时。</p>
+
+<p>我认为， 问题的关键究竟为何？ 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 可是，即使是这样，base_word的出现仍然代表了一定的意义。 卡耐基在不经意间这样说过，一个不注意小事情的人，永远不会成就大事业。我希望诸位也能好好地体会这句话。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 吉格·金克拉曾经说过，如果你能做梦，你就能实现它。这似乎解答了我的疑惑。 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 维龙曾经说过，要成功不需要什么特别的才能，只要把你能做的小事做得好就行了。这句话语虽然很短，但令我浮想联翩。</p>
+
+<p>我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 俾斯麦曾经提到过，失败是坚忍的最后考验。这句话语虽然很短，但令我浮想联翩。 黑塞说过一句富有哲理的话，有勇气承担命运这才是英雄好汉。我希望诸位也能好好地体会这句话。 base_word，到底应该如何实现。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 我们不得不面对一个非常尴尬的事实，那就是， 就我个人来说，base_word对我的意义，不能不说非常重大。 日本谚语说过一句富有哲理的话，不幸可能成为通向幸福的桥梁。我希望诸位也能好好地体会这句话。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 吉姆·罗恩曾经说过，要么你主宰生活，要么你被生活主宰。带着这句话，我们还要更加慎重的审视这个问题： base_word因何而发生？ 从这个角度来看， 经过上述讨论， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。</p>]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="test" /><category term="测试：我是一个中文标签" /><summary type="html"><![CDATA[Generated by https://github.com/menzi11/BullshitGenerator]]></summary></entry><entry><title type="html">A Test Page 03 Empty copy 5</title><link href="https://lawsssscat.github.io/demo/docs/test/A-Test-Page-03-empty-copy-5.html" rel="alternate" type="text/html" title="A Test Page 03 Empty copy 5" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/demo/docs/test/A-Test-Page-03-empty%20copy%205</id><content type="html" xml:base="https://lawsssscat.github.io/demo/docs/test/A-Test-Page-03-empty-copy-5.html"><![CDATA[]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="test" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">A Test Page 03 Empty copy 6</title><link href="https://lawsssscat.github.io/demo/docs/test/A-Test-Page-03-empty-copy-6.html" rel="alternate" type="text/html" title="A Test Page 03 Empty copy 6" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/demo/docs/test/A-Test-Page-03-empty%20copy%206</id><content type="html" xml:base="https://lawsssscat.github.io/demo/docs/test/A-Test-Page-03-empty-copy-6.html"><![CDATA[]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="test" /><summary type="html"><![CDATA[]]></summary></entry></feed>
