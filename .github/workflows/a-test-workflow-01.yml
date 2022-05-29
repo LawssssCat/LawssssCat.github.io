@@ -1,4 +1,6 @@
 # official guide for github actios. see https://docs.github.com/en/actions
+on:
+  workflow_dispatch
 jobs:
   build:
     runs-on: ubuntu-latest
