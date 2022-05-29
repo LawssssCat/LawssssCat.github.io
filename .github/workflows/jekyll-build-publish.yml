@@ -25,7 +25,7 @@ jobs:
       - name: Set up Ruby 📁
         uses: actions/setup-ruby@v1
         with:
-          ruby-version: 2.7
+          # ruby-version: 2.7
           bundler-cache: true # see https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-ruby#caching-dependencies
       - name: Install dependencies 🔧
         run: |
@@ -51,7 +51,7 @@ jobs:
           name: ${{ env.ARTIFACT_PRODUCT_NAME }}
       - name: Deploy dev 🚀 # see https://github.com/LawssssCat/github-pages-deploy-action
         if: ${{ github.ref == 'refs/heads/dev' }}
-        uses: LawssssCat/github-pages-deploy-action@3.6.2
+        uses: LawssssCat/github-pages-deploy-action@v4.3.3
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
           branch: gh-pages
@@ -60,7 +60,7 @@ jobs:
           target-folder: ${{env.DEV_DEPLOY_PREFIX}}
       - name: Deploy pro 🚀 # see https://github.com/LawssssCat/github-pages-deploy-action
         if: ${{ github.ref != 'refs/heads/dev' }}
-        uses: LawssssCat/github-pages-deploy-action@3.6.2
+        uses: LawssssCat/github-pages-deploy-action@v4.3.3
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
           branch: gh-pages
