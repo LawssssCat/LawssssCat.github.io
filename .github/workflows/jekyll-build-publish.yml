@@ -53,19 +53,19 @@ jobs:
         if: ${{ github.ref == 'refs/heads/dev' }}
         uses: LawssssCat/github-pages-deploy-action@v4.3.3
         with:
-          token: ${{ secrets.ACCESS_TOKEN }}
-          branch: gh-pages
-          folder: _site
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: _site
           # clean: true
           target-folder: ${{env.DEV_DEPLOY_PREFIX}}
       - name: Deploy pro 🚀 # see https://github.com/LawssssCat/github-pages-deploy-action
         if: ${{ github.ref != 'refs/heads/dev' }}
         uses: LawssssCat/github-pages-deploy-action@v4.3.3
         with:
-          token: ${{ secrets.ACCESS_TOKEN }}
-          branch: gh-pages
-          folder: _site
-          # clean: true
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: _site
+          # CLEAN: true
           # target-folder: ${{env.DEV_DEPLOY_PREFIX}}
 
   # see https://docs.github.com/en/actions/learn-github-actions/contexts#example-printing-context-information-to-the-log
