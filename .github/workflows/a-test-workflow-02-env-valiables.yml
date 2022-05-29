@@ -92,8 +92,8 @@ jobs:
       matrix: ${{fromJSON(needs.job1.outputs.matrix)}}
     steps:
       - run: |
-        env
-        echo ${{needs.job1.outputs.matrix}}
+          env
+          echo ${{needs.job1.outputs.matrix}}
   # context. see https://docs.github.com/en/actions/learn-github-actions/contexts#about-contexts
   prod-check:
     if: ${{ github.ref == 'refs/heads/main' }}
