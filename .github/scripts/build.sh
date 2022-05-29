@@ -1,2 +1,3 @@
 echo 'build~'
-env
+whoami
+# env
