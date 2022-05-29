@@ -36,22 +36,56 @@ jobs:
         shell: bash
         run: |
           expr 1 + 1 > output.log
+          ls -l 
+          cat output.log
+          echo hashFiles('output.log')
       - name: Upload output file
+        if: ${{ always() }}
         uses: actions/upload-artifact@v3
         with:
           name: output-log-file
           path: output.log
       - name: delete data between jobs
+        if: ${{ always() }}
         run: |
           ls -l 
           cat output.log
+          echo hashFiles('output.log')
           rm output.log
           ls -l 
       - name: Download a single artifact
         uses: actions/download-artifact@v3
+        if: ${{ always() }}
         with:
           name: output-log-file
       - name: check data between jobs
+        if: ${{ always() }}
         run: |
           ls -l 
           cat output.log
+          echo hashFiles('output.log')
+      - name: a
+        run: xxxxxxxxxxxxxx
+      - name: b
+        if: ${{ always() }}
+        run: echo haha
+      - name: c
+        run: echo bb
+      - name: job status check
+        if: ${{ github.action_status == 'failure' }}
+
+  # expression function json. see https://docs.github.com/en/actions/learn-github-actions/expressions#fromjson
+  job1:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - id: set-matrix
+        run: echo "::set-output name=matrix::{\"include\":[{\"project\":\"foo\",\"config\":\"Debug\"},{\"project\":\"bar\",\"config\":\"Release\"}]}"
+  job2:
+    needs: job1
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: ${{fromJSON(needs.job1.outputs.matrix)}}
+    steps:
+      - run: build
