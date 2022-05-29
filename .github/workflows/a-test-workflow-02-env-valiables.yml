@@ -38,7 +38,7 @@ jobs:
           expr 1 + 1 > output.log
           ls -l 
           cat output.log
-          echo hashFiles('output.log')
+          echo ${{ hashFiles('output.log') }}
       - name: Upload output file
         if: ${{ always() }}
         uses: actions/upload-artifact@v3
@@ -50,7 +50,7 @@ jobs:
         run: |
           ls -l 
           cat output.log
-          echo hashFiles('output.log')
+          echo ${{ hashFiles('output.log') }}
           rm output.log
           ls -l 
       - name: Download a single artifact
@@ -63,7 +63,7 @@ jobs:
         run: |
           ls -l 
           cat output.log
-          echo hashFiles('output.log')
+          echo ${{ hashFiles('output.log') }}
       - name: a
         run: xxxxxxxxxxxxxx
       - name: b
@@ -88,4 +88,4 @@ jobs:
     strategy:
       matrix: ${{fromJSON(needs.job1.outputs.matrix)}}
     steps:
-      - run: build
+      - run: echo ${{needs.job1.outputs.matrix.include[0].project}}
