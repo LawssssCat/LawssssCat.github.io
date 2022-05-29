@@ -20,7 +20,7 @@ env:
 jobs:
 
   docs_update:
-    runs-on: ${{ RUNS_ON }}
+    runs-on: ${{ env.RUNS_ON  }}
     steps:
       - name: Checkout 🛎️ # publish to dev
         uses: actions/checkout@v3
@@ -33,7 +33,7 @@ jobs:
           path: docs
 
   build_deploy:
-    runs-on: ${{ RUNS_ON }}
+    runs-on: ${{ env.RUNS_ON  }}
     needs: [ docs_update ]
     steps:
       - name: Checkout 🛎️ # publish to dev
@@ -88,7 +88,7 @@ jobs:
 
   # see https://docs.github.com/en/actions/learn-github-actions/contexts#example-printing-context-information-to-the-log
   dump_contexts_to_log:
-      runs-on: ${{ RUNS_ON }}
+      runs-on: ${{ env.RUNS_ON  }}
       steps:
         - name: Dump GitHub context 🛎️
           id: github_context_step
