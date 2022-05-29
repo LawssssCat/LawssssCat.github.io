@@ -1,31 +1,54 @@
 name: jekyll-build-publish
 
+# see https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-including-and-excluding-branches
 on:
+  pull_request:
+    branches: [ main, dev ]
   push:
-    branches: [ main ]
+    branches: [ main, dev ]
+    paths-ignore: 
+      - '!README.md'
   workflow_dispatch:
-  
+
+# see https://docs.github.com/en/actions/learn-github-actions/environment-variables
+env: 
+  ARTIFACT_PRODUCT_NAME: static-site
+  DEV_DEPLOY_PREFIX: demo
+
 jobs:
-  build-and-deploy:
+
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        #with: 
-        #  persist-credentials: false
-
-      - name: Set Ruby 2.7
-        uses: actions/setup-ruby@v1
+      - uses: actions/checkout@v3
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@359bebbc29cbe6c87da6bc9ea3bc930432750108
         with:
-          ruby-version: 2.7
+          ruby-version: 3.1 # Not needed with a .ruby-version file
+          bundler-cache: true # see https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-ruby#caching-dependencies
+      - name: Install dependencies
+        run: bundle install
+      - name: Build 
+        run: bundle exec jekyll build -d _site
+      - name: Archive production artifacts # see https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#passing-data-between-jobs-in-a-workflow
+        uses: actions/upload-artifact@v3 
+        with:
+          name: ${{ env.ARTIFACT_PRODUCT_NAME }}
+          path: _site
 
-      - name: Install and Build
-        run: |
-          gem install bundler
-          bundle install
-          bundle exec jekyll build -d _site/blog
-          #bundle exec jekyll build -d _site
-        
+  deploy: 
+    needs: [ build ]
+    steps:
+      - name: Download production artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: ${{ env.ARTIFACT_PRODUCT_NAME }}
+      - name: Move to Dev path 
+        if: ${{ github.ref == 'refs/heads/dev' }}
+        run: 
+          cd _site
+          mkdir {{ DEV_DEPLOY_PREFIX }} -p
+          ls -1 |  grep -v '^\.\+$\|{{ DEV_DEPLOY_PREFIX }}' | awk '{cmd="mv "$1" {{ DEV_DEPLOY_PREFIX }}/"$0; print cmd; system(cmd)}'
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
@@ -34,3 +57,28 @@ jobs:
           FOLDER: _site
           CLEAN: true
 
+  # see https://docs.github.com/en/actions/learn-github-actions/contexts#example-printing-context-information-to-the-log
+  dump_contexts_to_log:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Dump GitHub context
+          id: github_context_step
+          run: echo '${{ toJSON(github) }}'
+        - name: Dump env context
+          run: echo '${{ toJSON(env) }}'
+        - name: Dump job context
+          run: echo '${{ toJSON(job) }}'
+        - name: Dump steps context
+          run: echo '${{ toJSON(steps) }}'
+        - name: Dump runner context
+          run: echo '${{ toJSON(runner) }}'
+        - name: Dump strategy context
+          run: echo '${{ toJSON(strategy) }}'
+        - name: Dump matrix context
+          run: echo '${{ toJSON(matrix) }}'
+        - name: Dump secrets context
+          run: echo '${{ toJSON(secrets) }}'
+        - name: Dump needs context
+          run: echo '${{ toJSON(needs) }}'
+        - name: Dump inputs context
+          run: echo '${{ toJSON(inputs) }}'  
