@@ -73,8 +73,9 @@ jobs:
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: _site/${{ env.DEV_DEPLOY_PREFIX }}
+          FOLDER: _site
           # clean: true
+          target-folder: ${{ env.DEV_DEPLOY_PREFIX }}
       - name: Deploy pro 🚀 # see https://github.com/LawssssCat/github-pages-deploy-action
         if: ${{ !env.IS_DEV }}
         uses: LawssssCat/github-pages-deploy-action@v4.3.3
