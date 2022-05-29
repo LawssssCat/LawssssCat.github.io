@@ -38,7 +38,7 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Demo: <https://lawsssscat.github.io/blog/>
+Demo: <https://lawsssscat.github.io/demo/>
 
 <img src=".github/assets/auto-README-20220529014218.png" width=100%/>
 
