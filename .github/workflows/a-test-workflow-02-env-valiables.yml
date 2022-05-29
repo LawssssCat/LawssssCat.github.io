@@ -67,7 +67,6 @@ jobs:
       - name: a
         run: |
           echo ${{ github.action_status }} # github.action_status
-          echo ${{ greeting_job.a }} # greeting_job.a
           echo xxxxxxxxxxxxxxxx
       - name: b
         if: ${{ always() }}
