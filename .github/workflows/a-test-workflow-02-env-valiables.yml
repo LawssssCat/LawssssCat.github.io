@@ -65,7 +65,9 @@ jobs:
           cat output.log
           echo ${{ hashFiles('output.log') }}
       - name: a
-        run: xxxxxxxxxxxxxx
+        run: |
+          echo ${{ github.action_status }} # github.action_status
+          echo ${{ greeting_job.a }} # greeting_job.a
       - name: b
         if: ${{ always() }}
         run: echo haha
@@ -89,7 +91,9 @@ jobs:
     strategy:
       matrix: ${{fromJSON(needs.job1.outputs.matrix)}}
     steps:
-      - run: echo ${{needs.job1.outputs.matrix.include[0].project}}
+      - run: |
+        env
+        echo ${{needs.job1.outputs.matrix}}
   # context. see https://docs.github.com/en/actions/learn-github-actions/contexts#about-contexts
   prod-check:
     if: ${{ github.ref == 'refs/heads/main' }}
