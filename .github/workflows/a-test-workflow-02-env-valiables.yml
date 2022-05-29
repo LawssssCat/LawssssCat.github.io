@@ -41,7 +41,17 @@ jobs:
         with:
           name: output-log-file
           path: output.log
+      - name: delete data between jobs
+        run: |
+          ll
+          cat output.log
+          rm output.log
+          ll
       - name: Download a single artifact
         uses: actions/download-artifact@v3
         with:
           name: output-log-file
+      - name: check data between jobs
+        run: |
+          ll
+          cat output.log
