@@ -73,6 +73,7 @@ jobs:
         run: echo bb
       - name: job status check
         if: ${{ github.action_status == 'failure' }}
+        run: echo qq
 
   # expression function json. see https://docs.github.com/en/actions/learn-github-actions/expressions#fromjson
   job1:
