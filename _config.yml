@@ -29,6 +29,7 @@ exclude:
   - '/README.md'
   - '/script'
   - '/node_modules'
+  - '/.github'
 #   - .sass-cache/
 #  - .jekyll-cache/
 #   - vendor/bundle/
@@ -58,7 +59,7 @@ description: 👽 [ Here ] is my blog, toolbox and Experimental site # feeded
 # The language of the webpage. see http://www.lingoes.net/en/translator/langcode.htm
 lang: en
 
-baseurl:  /blog # the subpath of your site, e.g. /blog
+baseurl:  /demo # the subpath of your site, e.g. /blog
 # see https://jekyllrb.com/docs/permalinks/#built-in-formats
 # # there are problem that chinese make path of post error when permalink is pretty
 permalink: none # default: pretty other: none 

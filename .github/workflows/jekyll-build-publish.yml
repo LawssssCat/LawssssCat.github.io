@@ -1,36 +1,95 @@
 name: jekyll-build-publish
 
+# see https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-including-and-excluding-branches
 on:
+  pull_request:
+    branches: [ main, dev ]
   push:
-    branches: [ main ]
+    branches: [ main, dev ]
+    paths-ignore: 
+      - '!README.md'
   workflow_dispatch:
-  
+
+# see https://docs.github.com/en/actions/learn-github-actions/environment-variables
+env: 
+  ARTIFACT_PRODUCT_NAME: static-site
+  DEV_DEPLOY_PREFIX: demo
+
 jobs:
-  build-and-deploy:
+
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout 🛎️
         uses: actions/checkout@v3
-        #with: 
-        #  persist-credentials: false
-
-      - name: Set Ruby 2.7
+      - name: Set up Ruby 📁
         uses: actions/setup-ruby@v1
         with:
-          ruby-version: 2.7
-
-      - name: Install and Build
+          # ruby-version: 2.7
+          bundler-cache: true # see https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-ruby#caching-dependencies
+      - name: Install dependencies 🔧
         run: |
           gem install bundler
           bundle install
-          bundle exec jekyll build -d _site/blog
-          #bundle exec jekyll build -d _site
-        
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@3.6.2
+      - name: Build 📦
+        run: bundle exec jekyll build -d output/_site
+      - name: Archive production artifacts 🔺  # see https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#passing-data-between-jobs-in-a-workflow
+        uses: actions/upload-artifact@v3 
+        with:
+          name: ${{ env.ARTIFACT_PRODUCT_NAME }}
+          path: output
+
+  deploy: 
+    runs-on: ubuntu-latest
+    needs: [ build ]
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+      - name: Download production artifact 🔻
+        uses: actions/download-artifact@v3
+        with:
+          name: ${{ env.ARTIFACT_PRODUCT_NAME }}
+      - name: Deploy dev 🚀 # see https://github.com/LawssssCat/github-pages-deploy-action
+        if: ${{ github.ref == 'refs/heads/dev' }}
+        uses: LawssssCat/github-pages-deploy-action@v4.3.3
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
           FOLDER: _site
-          CLEAN: true
+          # clean: true
+          target-folder: ${{env.DEV_DEPLOY_PREFIX}}
+      - name: Deploy pro 🚀 # see https://github.com/LawssssCat/github-pages-deploy-action
+        if: ${{ github.ref != 'refs/heads/dev' }}
+        uses: LawssssCat/github-pages-deploy-action@v4.3.3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: _site
+          # CLEAN: true
+          # target-folder: ${{env.DEV_DEPLOY_PREFIX}}
 
+  # see https://docs.github.com/en/actions/learn-github-actions/contexts#example-printing-context-information-to-the-log
+  dump_contexts_to_log:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Dump GitHub context 🛎️
+          id: github_context_step
+          run: echo '${{ toJSON(github) }}'
+        - name: Dump env context
+          run: echo '${{ toJSON(env) }}'
+        - name: Dump job context
+          run: echo '${{ toJSON(job) }}'
+        - name: Dump steps context
+          run: echo '${{ toJSON(steps) }}'
+        - name: Dump runner context
+          run: echo '${{ toJSON(runner) }}'
+        - name: Dump strategy context
+          run: echo '${{ toJSON(strategy) }}'
+        - name: Dump matrix context
+          run: echo '${{ toJSON(matrix) }}'
+        - name: Dump secrets context
+          run: echo '${{ toJSON(secrets) }}'
+        - name: Dump needs context
+          run: echo '${{ toJSON(needs) }}'
+        - name: Dump inputs context
+          run: echo '${{ toJSON(inputs) }}'  
