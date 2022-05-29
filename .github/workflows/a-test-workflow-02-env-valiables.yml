@@ -2,7 +2,9 @@
 name: Greeting on variable day
 
 on:
-  workflow_dispatch
+  push:
+    branches: [ docs ]
+  workflow_dispatch:
 
 env:
   DAY_OF_WEEK: Monday
@@ -13,9 +15,28 @@ jobs:
     env:
       Greeting: Hello
     steps:
+      # Environment variables. see https://docs.github.com/en/actions/learn-github-actions/environment-variables
       - name: "Say Hello Mona it's Monday"
         run: |
           echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
           env
         env:
           First_Name: Mona
+      - run: npm install -g bats
+      - name: Run build script
+        run: ./.github/scripts/build.sh
+        shell: bash
+      # Sharing data between jobs. see https://docs.github.com/en/actions/learn-github-actions/essential-features-of-github-actions#sharing-data-between-jobs
+      - name: Sharing data between jobs
+        shell: bash
+        run: |
+          expr 1 + 1 > output.log
+      - name: Upload output file
+        uses: actions/upload-artifact@v3
+        with:
+          name: output-log-file
+          path: output.log
+      - name: Download a single artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: output-log-file
