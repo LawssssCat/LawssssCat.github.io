@@ -3,25 +3,54 @@ name: jekyll-build-publish
 # see https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-including-and-excluding-branches
 on:
   pull_request:
-    branches: [ main, dev ]
+    branches: [ main, dev , docs ]
   push:
-    branches: [ main, dev ]
+    branches: [ main, dev , docs ]
     paths-ignore: 
       - '!README.md'
   workflow_dispatch:
 
 # see https://docs.github.com/en/actions/learn-github-actions/environment-variables
 env: 
-  ARTIFACT_PRODUCT_NAME: static-site
+  RUNS_ON: ubuntu-latest
+  IS_DEV: ${{ github.ref == 'refs/heads/dev' }}
+  ARTIFACT_DOCS_NAME: docs
   DEV_DEPLOY_PREFIX: demo
 
 jobs:
 
-  build:
-    runs-on: ubuntu-latest
+  docs_update:
+    runs-on: ${{ RUNS_ON }}
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout 🛎️ # publish to dev
         uses: actions/checkout@v3
+        with:
+          ref: docs
+      - name: Archive production artifacts 🔺  # see https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#passing-data-between-jobs-in-a-workflow
+        uses: actions/upload-artifact@v3 
+        with:
+          name: ${{ env.ARTIFACT_DOCS_NAME }}
+          path: docs
+
+  build_deploy:
+    runs-on: ${{ RUNS_ON }}
+    needs: [ docs_update ]
+    steps:
+      - name: Checkout 🛎️ # publish to dev
+        if: ${{ env.IS_DEV }}
+        uses: actions/checkout@v3
+        with:
+          ref: dev
+      - name: Checkout 🛎️ # publish to pro
+        if: ${{ !env.IS_DEV }}
+        uses: actions/checkout@v3
+        with:
+          ref: main
+      - name: Download production artifact 🔻
+        uses: actions/download-artifact@v3
+        with:
+          name: ${{ env.ARTIFACT_DOCS_NAME }}
+          path: docs
       - name: Set up Ruby 📁
         uses: actions/setup-ruby@v1
         with:
@@ -32,40 +61,34 @@ jobs:
           gem install bundler
           bundle install
       - name: Build dev 📦
-        if: ${{ github.ref != 'refs/heads/main' }}
-        run: bundle exec jekyll build -d output/_site/{{ DEV_DEPLOY_PREFIX }}
+        if: ${{ env.IS_DEV }}
+        run: bundle exec jekyll build -d _site/
       - name: Build pro 📦
-        if: ${{ github.ref == 'refs/heads/main' }}
+        if: ${{ !env.IS_DEV }}
         run: |
           sed -i "s/^baseurl:.*${{ env.DEV_DEPLOY_PREFIX }}.*/baseurl: /g" _config.yml
-          bundle exec jekyll build -d output/_site/
-      - name: Archive production artifacts 🔺  # see https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#passing-data-between-jobs-in-a-workflow
-        uses: actions/upload-artifact@v3 
-        with:
-          name: ${{ env.ARTIFACT_PRODUCT_NAME }}
-          path: output
-
-  deploy: 
-    runs-on: ubuntu-latest
-    needs: [ build ]
-    steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v3
-      - name: Download production artifact 🔻
-        uses: actions/download-artifact@v3
-        with:
-          name: ${{ env.ARTIFACT_PRODUCT_NAME }}
+          bundle exec jekyll build -d _site/
       - name: Deploy dev 🚀 # see https://github.com/LawssssCat/github-pages-deploy-action
+        if: ${{ env.IS_DEV }}
+        uses: LawssssCat/github-pages-deploy-action@v4.3.3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: _site/${{ env.DEV_DEPLOY_PREFIX }}
+          # clean: true
+      - name: Deploy pro 🚀 # see https://github.com/LawssssCat/github-pages-deploy-action
+        if: ${{ !env.IS_DEV }}
         uses: LawssssCat/github-pages-deploy-action@v4.3.3
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
           FOLDER: _site
           # clean: true
+          clean-exclude: ${{ env.DEV_DEPLOY_PREFIX }}
 
   # see https://docs.github.com/en/actions/learn-github-actions/contexts#example-printing-context-information-to-the-log
   dump_contexts_to_log:
-      runs-on: ubuntu-latest
+      runs-on: ${{ RUNS_ON }}
       steps:
         - name: Dump GitHub context 🛎️
           id: github_context_step
