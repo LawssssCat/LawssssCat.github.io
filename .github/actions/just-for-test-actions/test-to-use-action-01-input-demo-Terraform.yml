@@ -1,0 +1,52 @@
+# https://github.com/go-fjords/sync-terraform-version
+name: 'Sync Version To Terraform'
+description: 'Syncs the version of a deployed image to the operations repository'
+inputs:
+  token:
+    description: 'Token to access private repos'
+    required: true
+  file-path:
+    description: 'Path to terraform file'
+    required: true
+  service-name:
+    description: 'Name of service we are updating'
+    required: true
+  environment:
+    description: 'Environment to update'
+    required: true
+  docker-image-digest:
+    description: 'Docker Image digest'
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/checkout@v2
+      with:
+        repository: 'go-fjords/operation'
+        ref: 'main'
+        token: ${{ inputs.token }}
+    - run: |
+        echo "Update '${{ inputs.environment }}' in '${{ inputs.file-path }}' with digest '$DOCKER_IMAGE_DIGEST'"
+        sed -ie "s/${{ inputs.environment }}\(\s*\)= \"sha256:[a-z0-9]*\"/${{ inputs.environment }}\1= \"$DOCKER_IMAGE_DIGEST\"/" ${{ inputs.file-path }}
+      shell: bash
+      id: update-version
+      env:
+        DOCKER_IMAGE_DIGEST: ${{ inputs.docker-image-digest }}
+    - name: Create Commit
+      id: commit-1
+      run: |
+        git config user.name 'go-fjords-tech'
+        git config user.email 'go-fjords-tech@users.noreply.github.com'
+        git add ${{ inputs.file-path }}
+        git commit -m "Update ${{ inputs.environment }} for ${{ inputs.service-name }} [skip actions]" -m "Updating \`${{ inputs.environment }}\` version in \`${{ inputs.file-path }}\` with \`${{ inputs.docker-image-digest }}\`" || true
+        git push
+      shell: bash
+    - uses: peter-evans/rebase@v1
+      id: rebase-1
+      if: ${{ always() && steps.commit-1.outcome != 'success' }}
+      with:
+        base: main
+    - name: Create Commit
+      if: ${{ always() && steps.rebase-1.outcome == 'success' }}
+      run: git push
+      shell: bash

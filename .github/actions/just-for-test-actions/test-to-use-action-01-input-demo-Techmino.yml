@@ -1,0 +1,13 @@
+# Adding an action from the same repository. see https://docs.github.com/en/actions/learn-github-actions/finding-and-customizing-actions#adding-an-action-from-the-same-repository
+# this code from https://github.com/26F-Studio/Techmino/blob/111790fdabc7acbcec048ea45f81e18ac358273c/.github/actions/build-love/action.yml
+name: 'build love'
+description: 'build love file'
+inputs:
+  file-path:
+    required: true
+    default: Techmino.love
+runs:
+  using: "composite"
+  steps:
+    - run: 7z a -tzip ${{ inputs.file-path }} media parts Zframework conf.lua main.lua version.lua legals.md license.txt
+      shell: bash
