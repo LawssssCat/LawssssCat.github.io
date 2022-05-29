@@ -20,17 +20,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@359bebbc29cbe6c87da6bc9ea3bc930432750108
+      - uses: actions/checkout@v3 ✈️
+      - name: Set up Ruby 
+        uses: actions/setup-ruby@v1
         with:
-          ruby-version: 3.1 # Not needed with a .ruby-version file
+          ruby-version: 2.7 # Not needed with a .ruby-version file
           bundler-cache: true # see https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-ruby#caching-dependencies
-      - name: Install dependencies
+      - name: Install dependencies 🔧
         run: bundle install
-      - name: Build 
+      - name: Build 📦
         run: bundle exec jekyll build -d _site
-      - name: Archive production artifacts # see https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#passing-data-between-jobs-in-a-workflow
+      - name: Archive production artifacts 📁 # see https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#passing-data-between-jobs-in-a-workflow
         uses: actions/upload-artifact@v3 
         with:
           name: ${{ env.ARTIFACT_PRODUCT_NAME }}
@@ -40,29 +40,34 @@ jobs:
     runs-on: ubuntu-latest
     needs: [ build ]
     steps:
-      - name: Download production artifact
+      - name: Download production artifact 📁
         uses: actions/download-artifact@v3
         with:
           name: ${{ env.ARTIFACT_PRODUCT_NAME }}
-      - name: Move to Dev path 
+      - name: Deploy dev 🚀 # see https://github.com/LawssssCat/github-pages-deploy-action
         if: ${{ github.ref == 'refs/heads/dev' }}
-        run: 
-          cd _site
-          mkdir {{ DEV_DEPLOY_PREFIX }} -p
-          ls -1 |  grep -v '^\.\+$\|{{ DEV_DEPLOY_PREFIX }}' | awk '{cmd="mv "$1" {{ DEV_DEPLOY_PREFIX }}/"$0; print cmd; system(cmd)}'
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@3.6.2
+        uses: LawssssCat/github-pages-deploy-action@3.6.2
         with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: _site
-          CLEAN: true
+          # token: ${{ secrets.ACCESS_TOKEN }}
+          branch: gh-pages
+          folder: _site
+          # clean: true
+          target-folder: ${{DEV_DEPLOY_PREFIX}}
+      - name: Deploy pro 🚀 # see https://github.com/LawssssCat/github-pages-deploy-action
+        if: ${{ github.ref != 'refs/heads/dev' }}
+        uses: LawssssCat/github-pages-deploy-action@3.6.2
+        with:
+          # token: ${{ secrets.ACCESS_TOKEN }}
+          branch: gh-pages
+          folder: _site
+          # clean: true
+          # target-folder: ${{DEV_DEPLOY_PREFIX}}
 
   # see https://docs.github.com/en/actions/learn-github-actions/contexts#example-printing-context-information-to-the-log
   dump_contexts_to_log:
       runs-on: ubuntu-latest
       steps:
-        - name: Dump GitHub context
+        - name: Dump GitHub context 🛎️
           id: github_context_step
           run: echo '${{ toJSON(github) }}'
         - name: Dump env context
