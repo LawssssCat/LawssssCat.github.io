@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://lawsssscat.github.io/demo/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lawsssscat.github.io/demo/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-05-29T14:06:46+00:00</updated><id>https://lawsssscat.github.io/demo/feed.xml</id><title type="html">LawssssCat’s Blog</title><subtitle>👽 [ Here ] is my blog, toolbox and Experimental site</subtitle><author><name>LawssssCat</name></author><entry><title type="html">emoji resources 😀</title><link href="https://lawsssscat.github.io/demo/docs/resource/emoji.html" rel="alternate" type="text/html" title="emoji resources 😀" /><published>2022-05-28T00:00:00+00:00</published><updated>2022-05-28T00:00:00+00:00</updated><id>https://lawsssscat.github.io/demo/docs/resource/emoji</id><content type="html" xml:base="https://lawsssscat.github.io/demo/docs/resource/emoji.html"><![CDATA[<p>There two kinds of emoji.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://lawsssscat.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lawsssscat.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-05-29T15:23:28+00:00</updated><id>https://lawsssscat.github.io/feed.xml</id><title type="html">LawssssCat’s Blog</title><subtitle>👽 [ Here ] is my blog, toolbox and Experimental site</subtitle><author><name>LawssssCat</name></author><entry><title type="html">emoji resources 😀</title><link href="https://lawsssscat.github.io/docs/resource/emoji.html" rel="alternate" type="text/html" title="emoji resources 😀" /><published>2022-05-28T00:00:00+00:00</published><updated>2022-05-28T00:00:00+00:00</updated><id>https://lawsssscat.github.io/docs/resource/emoji</id><content type="html" xml:base="https://lawsssscat.github.io/docs/resource/emoji.html"><![CDATA[<p>There two kinds of emoji.</p>
 
 <ol>
   <li><code class="language-plaintext highlighter-rouge">:some:</code> - <a href="https://www.webfx.com/tools/emoji-cheat-sheet/">https://www.webfx.com/tools/emoji-cheat-sheet/</a></li>
   <li><code class="language-plaintext highlighter-rouge">Copy and Past</code> - <a href="https://emojipedia.org/people/">https://emojipedia.org/people/</a></li>
-</ol>]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="resource" /><category term="tips 💡" /><summary type="html"><![CDATA[There two kinds of emoji.]]></summary></entry><entry><title type="html">Some Tips Jekyll Site You Should Know</title><link href="https://lawsssscat.github.io/demo/docs/guide/some-tips-jekyll-site-you-should-know.html" rel="alternate" type="text/html" title="Some Tips Jekyll Site You Should Know" /><published>2022-05-25T00:00:00+00:00</published><updated>2022-05-25T00:00:00+00:00</updated><id>https://lawsssscat.github.io/demo/docs/guide/some-tips-jekyll-site-you-should-know</id><content type="html" xml:base="https://lawsssscat.github.io/demo/docs/guide/some-tips-jekyll-site-you-should-know.html"><![CDATA[<h2 id="关于-jekyll">关于 jekyll</h2>
+</ol>]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="resource" /><category term="tips 💡" /><summary type="html"><![CDATA[There two kinds of emoji.]]></summary></entry><entry><title type="html">Some Tips Jekyll Site You Should Know</title><link href="https://lawsssscat.github.io/docs/guide/some-tips-jekyll-site-you-should-know.html" rel="alternate" type="text/html" title="Some Tips Jekyll Site You Should Know" /><published>2022-05-25T00:00:00+00:00</published><updated>2022-05-25T00:00:00+00:00</updated><id>https://lawsssscat.github.io/docs/guide/some-tips-jekyll-site-you-should-know</id><content type="html" xml:base="https://lawsssscat.github.io/docs/guide/some-tips-jekyll-site-you-should-know.html"><![CDATA[<h2 id="关于-jekyll">关于 jekyll</h2>
 
 <h3 id="_configyml">_config.yml</h3>
 
@@ -246,7 +246,7 @@ options
 <p>other see</p>
 <ul>
   <li>《48 个你需要知道的 Jekyll 使用技巧》 - <a href="https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html">https://crispgm.com/page/48-tips-for-jekyll-you-should-know.html</a></li>
-</ul>]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="guide" /><category term="jekyll" /><category term="markdown 📓" /><category term="tips 💡" /><summary type="html"><![CDATA[关于 jekyll]]></summary></entry><entry><title type="html">How To Add A Module In Site</title><link href="https://lawsssscat.github.io/demo/docs/guide/How-to-add-a-module-in-site.html" rel="alternate" type="text/html" title="How To Add A Module In Site" /><published>2019-07-25T00:00:00+00:00</published><updated>2019-07-25T00:00:00+00:00</updated><id>https://lawsssscat.github.io/demo/docs/guide/How-to-add-a-module-in-site</id><content type="html" xml:base="https://lawsssscat.github.io/demo/docs/guide/How-to-add-a-module-in-site.html"><![CDATA[<p>step: code</p>
+</ul>]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="guide" /><category term="jekyll" /><category term="markdown 📓" /><category term="tips 💡" /><summary type="html"><![CDATA[关于 jekyll]]></summary></entry><entry><title type="html">How To Add A Module In Site</title><link href="https://lawsssscat.github.io/docs/guide/How-to-add-a-module-in-site.html" rel="alternate" type="text/html" title="How To Add A Module In Site" /><published>2019-07-25T00:00:00+00:00</published><updated>2019-07-25T00:00:00+00:00</updated><id>https://lawsssscat.github.io/docs/guide/How-to-add-a-module-in-site</id><content type="html" xml:base="https://lawsssscat.github.io/docs/guide/How-to-add-a-module-in-site.html"><![CDATA[<p>step: code</p>
 
 <ol>
   <li><code class="language-plaintext highlighter-rouge">./_include/modules/</code> - write the <code class="language-plaintext highlighter-rouge">html code</code> of modules.</li>
@@ -287,7 +287,7 @@ home_modules: ["post_table"]
 ...........other
   - home
 ...........other
-</code></pre></div></div>]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="guide" /><category term="rules for this project 🏘️" /><summary type="html"><![CDATA[step: code]]></summary></entry><entry><title type="html">A Test Page 07 Kramdown</title><link href="https://lawsssscat.github.io/demo/docs/test/A-Test-Page-07-kramdown.html" rel="alternate" type="text/html" title="A Test Page 07 Kramdown" /><published>2019-07-22T00:00:00+00:00</published><updated>2019-07-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/demo/docs/test/A-Test-Page-07-kramdown</id><content type="html" xml:base="https://lawsssscat.github.io/demo/docs/test/A-Test-Page-07-kramdown.html"><![CDATA[<h1 id="header">atx 风格标题</h1>
+</code></pre></div></div>]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="guide" /><category term="rules for this project 🏘️" /><summary type="html"><![CDATA[step: code]]></summary></entry><entry><title type="html">A Test Page 07 Kramdown</title><link href="https://lawsssscat.github.io/docs/test/A-Test-Page-07-kramdown.html" rel="alternate" type="text/html" title="A Test Page 07 Kramdown" /><published>2019-07-22T00:00:00+00:00</published><updated>2019-07-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/docs/test/A-Test-Page-07-kramdown</id><content type="html" xml:base="https://lawsssscat.github.io/docs/test/A-Test-Page-07-kramdown.html"><![CDATA[<h1 id="header">atx 风格标题</h1>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#         一级
 ##
 ###
@@ -398,7 +398,7 @@ which is continued here.
 
 <h1 id="link_img">链接和图像</h1>
 
-<p><img src="/demo/assets/images/octo.gif" alt="Image to icon" height="36px" width="36px" /></p>
+<p><img src="/assets/images/octo.gif" alt="Image to icon" height="36px" width="36px" /></p>
 
 <h1 id="Emphasis">重点</h1>
 
@@ -441,7 +441,7 @@ which is continued here.
       <p>《水调歌头》 <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="test" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">How To Add A Category In Site</title><link href="https://lawsssscat.github.io/demo/docs/guide/How-to-add-a-category-in-site.html" rel="alternate" type="text/html" title="How To Add A Category In Site" /><published>2019-07-15T00:00:00+00:00</published><updated>2019-07-15T00:00:00+00:00</updated><id>https://lawsssscat.github.io/demo/docs/guide/How-to-add-a-category-in-site</id><content type="html" xml:base="https://lawsssscat.github.io/demo/docs/guide/How-to-add-a-category-in-site.html"><![CDATA[<h2 id="method-one">method one</h2>
+</div>]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="test" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">How To Add A Category In Site</title><link href="https://lawsssscat.github.io/docs/guide/How-to-add-a-category-in-site.html" rel="alternate" type="text/html" title="How To Add A Category In Site" /><published>2019-07-15T00:00:00+00:00</published><updated>2019-07-15T00:00:00+00:00</updated><id>https://lawsssscat.github.io/docs/guide/How-to-add-a-category-in-site</id><content type="html" xml:base="https://lawsssscat.github.io/docs/guide/How-to-add-a-category-in-site.html"><![CDATA[<h2 id="method-one">method one</h2>
 
 <p>just create a folder with the same name as category in <code class="language-plaintext highlighter-rouge">./docs</code>.</p>
 
@@ -464,7 +464,7 @@ which is continued here.
 <p>e.g.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>categories: <span class="o">[</span><span class="s2">"category_001"</span>, <span class="s2">"category_002"</span><span class="o">]</span>
-</code></pre></div></div>]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="guide" /><category term="rules for this project 🏘️" /><summary type="html"><![CDATA[method one]]></summary></entry><entry><title type="html">What Is The Structure Of This Project</title><link href="https://lawsssscat.github.io/demo/docs/guide/What-is-the-structure-of-this-project.html" rel="alternate" type="text/html" title="What Is The Structure Of This Project" /><published>2019-07-11T00:00:00+00:00</published><updated>2019-07-11T00:00:00+00:00</updated><id>https://lawsssscat.github.io/demo/docs/guide/What-is-the-structure-of-this-project</id><content type="html" xml:base="https://lawsssscat.github.io/demo/docs/guide/What-is-the-structure-of-this-project.html"><![CDATA[<h2 id="默认的目录结构">默认的目录结构</h2>
+</code></pre></div></div>]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="guide" /><category term="rules for this project 🏘️" /><summary type="html"><![CDATA[method one]]></summary></entry><entry><title type="html">What Is The Structure Of This Project</title><link href="https://lawsssscat.github.io/docs/guide/What-is-the-structure-of-this-project.html" rel="alternate" type="text/html" title="What Is The Structure Of This Project" /><published>2019-07-11T00:00:00+00:00</published><updated>2019-07-11T00:00:00+00:00</updated><id>https://lawsssscat.github.io/docs/guide/What-is-the-structure-of-this-project</id><content type="html" xml:base="https://lawsssscat.github.io/docs/guide/What-is-the-structure-of-this-project.html"><![CDATA[<h2 id="默认的目录结构">默认的目录结构</h2>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">.</span>
 ├── _config.yml
@@ -555,7 +555,7 @@ _sass
   <li><code class="language-plaintext highlighter-rouge">support</code> - 最底层样式（基本不要动）</li>
   <li><code class="language-plaintext highlighter-rouge">modules</code> - theme 不同组件样式</li>
   <li><code class="language-plaintext highlighter-rouge">custom</code> - 自定义</li>
-</ul>]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="guide" /><category term="this project structure" /><category term="rules for this project 🏘️" /><summary type="html"><![CDATA[默认的目录结构]]></summary></entry><entry><title type="html">A Test Page 02 Show All</title><link href="https://lawsssscat.github.io/demo/docs/test/test%20alse/A-Test-Page-02-show-all.html" rel="alternate" type="text/html" title="A Test Page 02 Show All" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/demo/docs/test/test%20alse/A-Test-Page-02-show-all</id><content type="html" xml:base="https://lawsssscat.github.io/demo/docs/test/test%20alse/A-Test-Page-02-show-all.html"><![CDATA[<ul id="toc" class="section-nav">
+</ul>]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="guide" /><category term="this project structure" /><category term="rules for this project 🏘️" /><summary type="html"><![CDATA[默认的目录结构]]></summary></entry><entry><title type="html">A Test Page 02 Show All</title><link href="https://lawsssscat.github.io/docs/test/test%20alse/A-Test-Page-02-show-all.html" rel="alternate" type="text/html" title="A Test Page 02 Show All" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/docs/test/test%20alse/A-Test-Page-02-show-all</id><content type="html" xml:base="https://lawsssscat.github.io/docs/test/test%20alse/A-Test-Page-02-show-all.html"><![CDATA[<ul id="toc" class="section-nav">
 <li class="toc-entry toc-h1"><a href="#latest-posts">Latest Posts</a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#-posttitle-">{{ post.title }}</a></li>
@@ -567,7 +567,7 @@ _sass
 
 <hr />
 
-<p>site time 2022-05-29 14:06:46 +0000</p>
+<p>site time 2022-05-29 15:23:28 +0000</p>
 
 <p>site Jekyll::Drops::SiteDrop</p>
 
@@ -586,81 +586,81 @@ _sass
 <ul>
   
     <li>
-      <h2><a href="/demo/docs/resource/emoji.html">emoji resources 😀</a></h2>
+      <h2><a href="/docs/resource/emoji.html">emoji resources 😀</a></h2>
       <p>There two kinds of emoji.</p>
 
     </li>
   
     <li>
-      <h2><a href="/demo/docs/guide/some-tips-jekyll-site-you-should-know.html">Some Tips Jekyll Site You Should Know</a></h2>
+      <h2><a href="/docs/guide/some-tips-jekyll-site-you-should-know.html">Some Tips Jekyll Site You Should Know</a></h2>
       <h2 id="关于-jekyll">关于 jekyll</h2>
 
     </li>
   
     <li>
-      <h2><a href="/demo/docs/guide/How-to-add-a-module-in-site.html">How To Add A Module In Site</a></h2>
+      <h2><a href="/docs/guide/How-to-add-a-module-in-site.html">How To Add A Module In Site</a></h2>
       <p>step: code</p>
 
     </li>
   
     <li>
-      <h2><a href="/demo/docs/test/A-Test-Page-07-kramdown.html">A Test Page 07 Kramdown</a></h2>
+      <h2><a href="/docs/test/A-Test-Page-07-kramdown.html">A Test Page 07 Kramdown</a></h2>
       
 
     </li>
   
     <li>
-      <h2><a href="/demo/docs/guide/How-to-add-a-category-in-site.html">How To Add A Category In Site</a></h2>
+      <h2><a href="/docs/guide/How-to-add-a-category-in-site.html">How To Add A Category In Site</a></h2>
       <h2 id="method-one">method one</h2>
 
     </li>
   
     <li>
-      <h2><a href="/demo/docs/guide/What-is-the-structure-of-this-project.html">What Is The Structure Of This Project</a></h2>
+      <h2><a href="/docs/guide/What-is-the-structure-of-this-project.html">What Is The Structure Of This Project</a></h2>
       <h2 id="默认的目录结构">默认的目录结构</h2>
 
     </li>
   
     <li>
-      <h2><a href="/demo/docs/test/A-Test-Page-06-em.html">A Test Page 06 Em</a></h2>
+      <h2><a href="/docs/test/A-Test-Page-06-em.html">A Test Page 06 Em</a></h2>
       
 
     </li>
   
     <li>
-      <h2><a href="/demo/docs/test/A-Test-Page-05-css.html">A Test Page 05 Css</a></h2>
+      <h2><a href="/docs/test/A-Test-Page-05-css.html">A Test Page 05 Css</a></h2>
       
 <h2 id="code">code</h2>
 
     </li>
   
     <li>
-      <h2><a href="/demo/docs/test/A-Test-Page-04-page-attributes.html">A Test Page 04 Page Attributes</a></h2>
+      <h2><a href="/docs/test/A-Test-Page-04-page-attributes.html">A Test Page 04 Page Attributes</a></h2>
       
 
     </li>
   
     <li>
-      <h2><a href="/demo/docs/test/A-Test-Page-03-empty-copy-6.html">A Test Page 03 Empty copy 6</a></h2>
+      <h2><a href="/docs/test/A-Test-Page-03-empty-copy-6.html">A Test Page 03 Empty copy 6</a></h2>
       
 
     </li>
   
     <li>
-      <h2><a href="/demo/docs/test/A-Test-Page-03-chinese.html">我是一个中文标题！</a></h2>
+      <h2><a href="/docs/test/A-Test-Page-03-chinese.html">我是一个中文标题！</a></h2>
       <p>Generated by <a href="https://github.com/menzi11/BullshitGenerator">https://github.com/menzi11/BullshitGenerator</a></p>
 
     </li>
   
     <li>
-      <h2><a href="/demo/docs/test/test%20alse/A-Test-Page-02-show-all.html">A Test Page 02 Show All</a></h2>
+      <h2><a href="/docs/test/test%20alse/A-Test-Page-02-show-all.html">A Test Page 02 Show All</a></h2>
       <ul id="toc" class="section-nav">
 </ul>
 
     </li>
   
     <li>
-      <h2><a href="/demo/docs/test/A-Test-Page-01.html">A Test Page 01</a></h2>
+      <h2><a href="/docs/test/A-Test-Page-01.html">A Test Page 01</a></h2>
       <h1 id="h1">H1</h1>
 <h2 id="h2">H2</h2>
 <h3 id="h3">H3</h3>
@@ -671,7 +671,7 @@ _sass
     </li>
   
     <li>
-      <h2><a href="/demo/docs/guide/How-to-write-Markdown-in-site.html">How to write Markdown in site</a></h2>
+      <h2><a href="/docs/guide/How-to-write-Markdown-in-site.html">How to write Markdown in site</a></h2>
       <h2 id="how-to-write-markdown">How to write markdown</h2>
 
     </li>
@@ -688,81 +688,81 @@ _sass
 <ul>
   
     <li>
-      <h2><a href="/demo/docs/resource/emoji.html">emoji resources 😀</a></h2>
+      <h2><a href="/docs/resource/emoji.html">emoji resources 😀</a></h2>
       <p>There two kinds of emoji.</p>
 
     </li>
   
     <li>
-      <h2><a href="/demo/docs/guide/some-tips-jekyll-site-you-should-know.html">Some Tips Jekyll Site You Should Know</a></h2>
+      <h2><a href="/docs/guide/some-tips-jekyll-site-you-should-know.html">Some Tips Jekyll Site You Should Know</a></h2>
       <h2 id="关于-jekyll">关于 jekyll</h2>
 
     </li>
   
     <li>
-      <h2><a href="/demo/docs/guide/How-to-add-a-module-in-site.html">How To Add A Module In Site</a></h2>
+      <h2><a href="/docs/guide/How-to-add-a-module-in-site.html">How To Add A Module In Site</a></h2>
       <p>step: code</p>
 
     </li>
   
     <li>
-      <h2><a href="/demo/docs/test/A-Test-Page-07-kramdown.html">A Test Page 07 Kramdown</a></h2>
+      <h2><a href="/docs/test/A-Test-Page-07-kramdown.html">A Test Page 07 Kramdown</a></h2>
       
 
     </li>
   
     <li>
-      <h2><a href="/demo/docs/guide/How-to-add-a-category-in-site.html">How To Add A Category In Site</a></h2>
+      <h2><a href="/docs/guide/How-to-add-a-category-in-site.html">How To Add A Category In Site</a></h2>
       <h2 id="method-one">method one</h2>
 
     </li>
   
     <li>
-      <h2><a href="/demo/docs/guide/What-is-the-structure-of-this-project.html">What Is The Structure Of This Project</a></h2>
+      <h2><a href="/docs/guide/What-is-the-structure-of-this-project.html">What Is The Structure Of This Project</a></h2>
       <h2 id="默认的目录结构">默认的目录结构</h2>
 
     </li>
   
     <li>
-      <h2><a href="/demo/docs/test/A-Test-Page-06-em.html">A Test Page 06 Em</a></h2>
+      <h2><a href="/docs/test/A-Test-Page-06-em.html">A Test Page 06 Em</a></h2>
       
 
     </li>
   
     <li>
-      <h2><a href="/demo/docs/test/A-Test-Page-05-css.html">A Test Page 05 Css</a></h2>
+      <h2><a href="/docs/test/A-Test-Page-05-css.html">A Test Page 05 Css</a></h2>
       
 <h2 id="code">code</h2>
 
     </li>
   
     <li>
-      <h2><a href="/demo/docs/test/A-Test-Page-04-page-attributes.html">A Test Page 04 Page Attributes</a></h2>
+      <h2><a href="/docs/test/A-Test-Page-04-page-attributes.html">A Test Page 04 Page Attributes</a></h2>
       
 
     </li>
   
     <li>
-      <h2><a href="/demo/docs/test/A-Test-Page-03-empty-copy-6.html">A Test Page 03 Empty copy 6</a></h2>
+      <h2><a href="/docs/test/A-Test-Page-03-empty-copy-6.html">A Test Page 03 Empty copy 6</a></h2>
       
 
     </li>
   
     <li>
-      <h2><a href="/demo/docs/test/A-Test-Page-03-chinese.html">我是一个中文标题！</a></h2>
+      <h2><a href="/docs/test/A-Test-Page-03-chinese.html">我是一个中文标题！</a></h2>
       <p>Generated by <a href="https://github.com/menzi11/BullshitGenerator">https://github.com/menzi11/BullshitGenerator</a></p>
 
     </li>
   
     <li>
-      <h2><a href="/demo/docs/test/test%20alse/A-Test-Page-02-show-all.html">A Test Page 02 Show All</a></h2>
+      <h2><a href="/docs/test/test%20alse/A-Test-Page-02-show-all.html">A Test Page 02 Show All</a></h2>
       <ul id="toc" class="section-nav">
 </ul>
 
     </li>
   
     <li>
-      <h2><a href="/demo/docs/test/A-Test-Page-01.html">A Test Page 01</a></h2>
+      <h2><a href="/docs/test/A-Test-Page-01.html">A Test Page 01</a></h2>
       <h1 id="h1">H1</h1>
 <h2 id="h2">H2</h2>
 <h3 id="h3">H3</h3>
@@ -773,14 +773,14 @@ _sass
     </li>
   
     <li>
-      <h2><a href="/demo/docs/guide/How-to-write-Markdown-in-site.html">How to write Markdown in site</a></h2>
+      <h2><a href="/docs/guide/How-to-write-Markdown-in-site.html">How to write Markdown in site</a></h2>
       <h2 id="how-to-write-markdown">How to write markdown</h2>
 
     </li>
   
   </ul>
 
-<hr />]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="test" /><category term="test alse" /><category term="" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">我是一个中文标题！</title><link href="https://lawsssscat.github.io/demo/docs/test/A-Test-Page-03-chinese.html" rel="alternate" type="text/html" title="我是一个中文标题！" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/demo/docs/test/A-Test-Page-03-chinese</id><content type="html" xml:base="https://lawsssscat.github.io/demo/docs/test/A-Test-Page-03-chinese.html"><![CDATA[<p>Generated by <a href="https://github.com/menzi11/BullshitGenerator">https://github.com/menzi11/BullshitGenerator</a></p>
+<hr />]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="test" /><category term="test alse" /><category term="" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">我是一个中文标题！</title><link href="https://lawsssscat.github.io/docs/test/A-Test-Page-03-chinese.html" rel="alternate" type="text/html" title="我是一个中文标题！" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/docs/test/A-Test-Page-03-chinese</id><content type="html" xml:base="https://lawsssscat.github.io/docs/test/A-Test-Page-03-chinese.html"><![CDATA[<p>Generated by <a href="https://github.com/menzi11/BullshitGenerator">https://github.com/menzi11/BullshitGenerator</a></p>
 
 <p>既然如何， base_word，到底应该如何实现。 既然如此， 马克思在不经意间这样说过，一切节省，归根到底都归结为时间的节省。这启发了我， 就我个人来说，base_word对我的意义，不能不说非常重大。 莎士比亚曾经说过，人的一生是短的，但如果卑劣地过这一生，就太长了。这启发了我， 现在，解决base_word的问题，是非常非常重要的。 所以， 从这个角度来看， 杰纳勒尔·乔治·S·巴顿说过一句富有哲理的话，接受挑战，就可以享受胜利的喜悦。这句话语虽然很短，但令我浮想联翩。 亚伯拉罕·林肯说过一句富有哲理的话，你活了多少岁不算什么，重要的是你是如何度过这些岁月的。带着这句话，我们还要更加慎重的审视这个问题： 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 每个人都不得不面对这些问题。 在面对这种问题时， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 贝多芬在不经意间这样说过，卓越的人一大优点是：在不利与艰难的遭遇里百折不饶。这不禁令我深思。 问题的关键究竟为何？ 带着这些问题，我们来审视一下base_word。 经过上述讨论， 所谓base_word，关键是base_word需要如何写。 一般来说， 经过上述讨论， 这样看来， 现在，解决base_word的问题，是非常非常重要的。 所以， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 我们都知道，只要有意义，那么就必须慎重考虑。 莫扎特曾经说过，谁和我一样用功，谁就会和我一样成功。这句话语虽然很短，但令我浮想联翩。 base_word因何而发生？ 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 马克思曾经提到过，一切节省，归根到底都归结为时间的节省。这似乎解答了我的疑惑。 那么， base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 维龙在不经意间这样说过，要成功不需要什么特别的才能，只要把你能做的小事做得好就行了。这启发了我， 经过上述讨论， 问题的关键究竟为何？ 现在，解决base_word的问题，是非常非常重要的。 所以， 既然如此， 孔子曾经说过，知之者不如好之者，好之者不如乐之者。这似乎解答了我的疑惑。 base_word的发生，到底需要如何做到，不base_word的发生，又会如何产生。 每个人都不得不面对这些问题。 在面对这种问题时， 既然如此。</p>
 
@@ -828,7 +828,7 @@ _sass
 
 <p>我认为， 问题的关键究竟为何？ 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 可是，即使是这样，base_word的出现仍然代表了一定的意义。 卡耐基在不经意间这样说过，一个不注意小事情的人，永远不会成就大事业。我希望诸位也能好好地体会这句话。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 吉格·金克拉曾经说过，如果你能做梦，你就能实现它。这似乎解答了我的疑惑。 生活中，若base_word出现了，我们就不得不考虑它出现了的事实。 维龙曾经说过，要成功不需要什么特别的才能，只要把你能做的小事做得好就行了。这句话语虽然很短，但令我浮想联翩。</p>
 
-<p>我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 俾斯麦曾经提到过，失败是坚忍的最后考验。这句话语虽然很短，但令我浮想联翩。 黑塞说过一句富有哲理的话，有勇气承担命运这才是英雄好汉。我希望诸位也能好好地体会这句话。 base_word，到底应该如何实现。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 我们不得不面对一个非常尴尬的事实，那就是， 就我个人来说，base_word对我的意义，不能不说非常重大。 日本谚语说过一句富有哲理的话，不幸可能成为通向幸福的桥梁。我希望诸位也能好好地体会这句话。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 吉姆·罗恩曾经说过，要么你主宰生活，要么你被生活主宰。带着这句话，我们还要更加慎重的审视这个问题： base_word因何而发生？ 从这个角度来看， 经过上述讨论， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。</p>]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="test" /><category term="测试：我是一个中文标签" /><summary type="html"><![CDATA[Generated by https://github.com/menzi11/BullshitGenerator]]></summary></entry><entry><title type="html">A Test Page 03 Empty copy 6</title><link href="https://lawsssscat.github.io/demo/docs/test/A-Test-Page-03-empty-copy-6.html" rel="alternate" type="text/html" title="A Test Page 03 Empty copy 6" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/demo/docs/test/A-Test-Page-03-empty%20copy%206</id><content type="html" xml:base="https://lawsssscat.github.io/demo/docs/test/A-Test-Page-03-empty-copy-6.html"><![CDATA[]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="test" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">A Test Page 04 Page Attributes</title><link href="https://lawsssscat.github.io/demo/docs/test/A-Test-Page-04-page-attributes.html" rel="alternate" type="text/html" title="A Test Page 04 Page Attributes" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/demo/docs/test/A-Test-Page-04-page-attributes</id><content type="html" xml:base="https://lawsssscat.github.io/demo/docs/test/A-Test-Page-04-page-attributes.html"><![CDATA[<p>content <code class="language-plaintext highlighter-rouge">&lt;below&gt;</code></p>
+<p>我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。 俾斯麦曾经提到过，失败是坚忍的最后考验。这句话语虽然很短，但令我浮想联翩。 黑塞说过一句富有哲理的话，有勇气承担命运这才是英雄好汉。我希望诸位也能好好地体会这句话。 base_word，到底应该如何实现。 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 我们不得不面对一个非常尴尬的事实，那就是， 就我个人来说，base_word对我的意义，不能不说非常重大。 日本谚语说过一句富有哲理的话，不幸可能成为通向幸福的桥梁。我希望诸位也能好好地体会这句话。 本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。 吉姆·罗恩曾经说过，要么你主宰生活，要么你被生活主宰。带着这句话，我们还要更加慎重的审视这个问题： base_word因何而发生？ 从这个角度来看， 经过上述讨论， 了解清楚base_word到底是一种怎么样的存在，是解决一切问题的关键。</p>]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="test" /><category term="测试：我是一个中文标签" /><summary type="html"><![CDATA[Generated by https://github.com/menzi11/BullshitGenerator]]></summary></entry><entry><title type="html">A Test Page 03 Empty copy 6</title><link href="https://lawsssscat.github.io/docs/test/A-Test-Page-03-empty-copy-6.html" rel="alternate" type="text/html" title="A Test Page 03 Empty copy 6" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/docs/test/A-Test-Page-03-empty%20copy%206</id><content type="html" xml:base="https://lawsssscat.github.io/docs/test/A-Test-Page-03-empty-copy-6.html"><![CDATA[]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="test" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">A Test Page 04 Page Attributes</title><link href="https://lawsssscat.github.io/docs/test/A-Test-Page-04-page-attributes.html" rel="alternate" type="text/html" title="A Test Page 04 Page Attributes" /><published>2019-06-22T00:00:00+00:00</published><updated>2019-06-22T00:00:00+00:00</updated><id>https://lawsssscat.github.io/docs/test/A-Test-Page-04-page-attributes</id><content type="html" xml:base="https://lawsssscat.github.io/docs/test/A-Test-Page-04-page-attributes.html"><![CDATA[<p>content <code class="language-plaintext highlighter-rouge">&lt;below&gt;</code></p>
 
 <p>{{ page.content }}</p>
 
@@ -979,18 +979,18 @@ _sass
 <html lang="en"><head>
     <meta charset="UTF-8" />
     <title>A Test Page 03 Empty copy 6 |LawssssCat's Blog
-    </title><link rel="icon" href="/demo/assets/favicon.ico" />
+    </title><link rel="icon" href="/assets/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
     <!-- My CSS -->
-    <link rel="stylesheet" type="text/css" href="/demo/assets/css/common.css" id="common_css" /><!--custom head-->
+    <link rel="stylesheet" type="text/css" href="/assets/css/common.css" id="common_css" /><!--custom head-->
 <!-- 显示MathJax公式 see https://www.codecogs.com/latex/eqneditor.php -->
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <!--feed-->
-<link type="application/atom+xml" rel="alternate" href="https://lawsssscat.github.io/demo/feed.xml" title="LawssssCat&apos;s Blog" />
+<link type="application/atom+xml" rel="alternate" href="https://lawsssscat.github.io/feed.xml" title="LawssssCat&apos;s Blog" />
 <!--custom head end--></head><body><header class="site-header"><a href="https://github.com/LawssssCat/lawsssscat.github.io" class="github-corner" aria-label="View source on Github" target="_blank" rel="noopener noreferrer">
     <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style></header>
 <div class="site-content"><h1><!--todo front page-->
-<a href="/demo/">..</a>/A Test Page 03 Empty copy 6<div class="github-buttons">
+<a href="/">..</a>/A Test Page 03 Empty copy 6<div class="github-buttons">
     <img style="padding-left:10px;" src="https://komarev.com/ghpvc/?username=LawssssCat&amp;style=flat-square" />
     <img src="https://img.shields.io/github/commit-activity/m/LawssssCat/LawssssCat.github.io" alt="GitHub commit activity" />
     <!--<a class="github-button" href="https://github.com/LawssssCat/LawssssCat.github.io" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a>-->
@@ -1010,7 +1010,7 @@ _sass
 <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
 <!--todo google analysis-->
 <!--todo search e.g. lunr.js-->
-<!--todo seo--><script type="module" src="/demo/assets/js/modules/theme_button.js"></script><script type="module" src="/demo/assets/js/modules/toc.js"></script><script type="module" src="/demo/assets/js/modules/github_button.js"></script></footer></body>
+<!--todo seo--><script type="module" src="/assets/js/modules/theme_button.js"></script><script type="module" src="/assets/js/modules/toc.js"></script><script type="module" src="/assets/js/modules/github_button.js"></script></footer></body>
 </html>
 
 <hr />]]></content><author><name>{&quot;picture&quot;=&gt;&quot;/assets/octo.gif&quot;, &quot;github&quot;=&gt;&quot;https://github.com/LawssssCat/&quot;, &quot;twitter&quot;=&gt;nil}</name></author><category term="docs" /><category term="test" /><summary type="html"><![CDATA[]]></summary></entry></feed>

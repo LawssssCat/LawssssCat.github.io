@@ -14,7 +14,7 @@ function changeTheme(color) {
     } else {
       _color='';
     }
-    var href = `/demo/assets/css/common${_color}.css`;
+    var href = `/assets/css/common${_color}.css`;
     // document.getElementById(key_common_css_id).href = href; // 页面抖动
     var a = document.getElementById(key_common_css_id);
     var b = a.cloneNode();
