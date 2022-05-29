@@ -31,8 +31,14 @@ jobs:
         run: |
           gem install bundler
           bundle install
-      - name: Build 📦
-        run: bundle exec jekyll build -d output/_site
+      - name: Build dev 📦
+        if: ${{ github.ref != 'refs/heads/main' }}
+        run: bundle exec jekyll build -d output/_site/{{ DEV_DEPLOY_PREFIX }}
+      - name: Build pro 📦
+        if: ${{ github.ref == 'refs/heads/main' }}
+        run: |
+          sed -i "s/^baseurl:.*${{ env.DEV_DEPLOY_PREFIX }}.*/baseurl: /g" _config.yml
+          bundle exec jekyll build -d output/_site/
       - name: Archive production artifacts 🔺  # see https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#passing-data-between-jobs-in-a-workflow
         uses: actions/upload-artifact@v3 
         with:
@@ -50,23 +56,12 @@ jobs:
         with:
           name: ${{ env.ARTIFACT_PRODUCT_NAME }}
       - name: Deploy dev 🚀 # see https://github.com/LawssssCat/github-pages-deploy-action
-        if: ${{ github.ref == 'refs/heads/dev' }}
         uses: LawssssCat/github-pages-deploy-action@v4.3.3
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
           FOLDER: _site
           # clean: true
-          target-folder: ${{env.DEV_DEPLOY_PREFIX}}
-      - name: Deploy pro 🚀 # see https://github.com/LawssssCat/github-pages-deploy-action
-        if: ${{ github.ref != 'refs/heads/dev' }}
-        uses: LawssssCat/github-pages-deploy-action@v4.3.3
-        with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: _site
-          # CLEAN: true
-          # target-folder: ${{env.DEV_DEPLOY_PREFIX}}
 
   # see https://docs.github.com/en/actions/learn-github-actions/contexts#example-printing-context-information-to-the-log
   dump_contexts_to_log:
