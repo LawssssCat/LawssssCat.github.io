@@ -52,7 +52,7 @@ jobs:
           branch: gh-pages
           folder: _site
           # clean: true
-          target-folder: ${{DEV_DEPLOY_PREFIX}}
+          target-folder: ${{env.DEV_DEPLOY_PREFIX}}
       - name: Deploy pro 🚀 # see https://github.com/LawssssCat/github-pages-deploy-action
         if: ${{ github.ref != 'refs/heads/dev' }}
         uses: LawssssCat/github-pages-deploy-action@3.6.2
@@ -61,7 +61,7 @@ jobs:
           branch: gh-pages
           folder: _site
           # clean: true
-          # target-folder: ${{DEV_DEPLOY_PREFIX}}
+          # target-folder: ${{env.DEV_DEPLOY_PREFIX}}
 
   # see https://docs.github.com/en/actions/learn-github-actions/contexts#example-printing-context-information-to-the-log
   dump_contexts_to_log:
