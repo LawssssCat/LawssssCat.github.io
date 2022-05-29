@@ -90,3 +90,9 @@ jobs:
       matrix: ${{fromJSON(needs.job1.outputs.matrix)}}
     steps:
       - run: echo ${{needs.job1.outputs.matrix.include[0].project}}
+  # context. see https://docs.github.com/en/actions/learn-github-actions/contexts#about-contexts
+  prod-check:
+    if: ${{ github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploying to production server on branch $GITHUB_REF"
