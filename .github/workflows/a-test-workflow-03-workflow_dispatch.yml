@@ -1,6 +1,6 @@
 # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputs
 on:
-  workflow_dispatch:
+  workflow_dispatch: 
     inputs:
       logLevel:
         description: 'Log level'
