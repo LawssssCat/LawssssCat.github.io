@@ -24,7 +24,7 @@ jobs:
       - name: Set up Ruby ✈️
         uses: ruby/setup-ruby@359bebbc29cbe6c87da6bc9ea3bc930432750108
         with:
-          ruby-version: 3.1 # Not needed with a .ruby-version file
+          ruby-version: '3.1'
           bundler-cache: true # see https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-ruby#caching-dependencies
       - name: Install dependencies 🔧
         run: bundle install
