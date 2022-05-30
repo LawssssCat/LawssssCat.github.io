@@ -7,8 +7,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  call-jekyll-build-publish-dev:
-    uses: ${{ github.repository }}/.github/workflows/jekyll-build-publish.yml@dev
-  call-jekyll-build-publish-pro:
-    needs: [ call-jekyll-build-publish-dev ]
-    uses: ${{ github.repository }}/.github/workflows/jekyll-build-publish.yml@main
+  call-jekyll-build-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ${{ github.repository }}/.github/workflows/jekyll-build-publish.yml@dev
+      - uses: ${{ github.repository }}/.github/workflows/jekyll-build-publish.yml@main
