@@ -72,13 +72,24 @@ jobs:
           ruby-version: 2.7
       - name: Install dependencies 🔧
         run: |
+          echo =============== gem environment
           gem environment
+          echo =============== gem list
           gem list 
+          echo =============== gem gem install
           gem install bundler
+          echo =============== gem bundle config list
+          bundle config list
+          echo =============== gem bundle list
           bundle list
           # bundle install
           # see https://github.com/actions/cache/blob/master/examples.md#ruby---bundler
+          echo =============== gem bundle config change
           bundle config path vendor/bundle
+          bundle config list
+          echo =============== gem bundle list
+          bundle list
+          echo =============== gem bundle install
           bundle install --jobs 4 --retry 3
       - name: Build dev 📦
         if: ${{ env.IS_DEV == 'true' }}
