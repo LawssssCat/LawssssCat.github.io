@@ -74,8 +74,8 @@ jobs:
         run: |
           gem environment
           gem list 
-          bundle list
           gem install bundler
+          bundle list
           # bundle install
           # see https://github.com/actions/cache/blob/master/examples.md#ruby---bundler
           bundle config path vendor/bundle
