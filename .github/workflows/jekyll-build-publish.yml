@@ -35,28 +35,37 @@ jobs:
     runs-on: ubuntu-latest
     needs: [ docs_update ]
     steps:
-      - name: Checkout 🛎️ # publish to dev
+      - name: Checkout dev 🛎️ # publish to dev
         if: ${{ env.IS_DEV == 'true' }}
         uses: actions/checkout@v3
         with:
           ref: dev
-      - name: Checkout 🛎️ # publish to pro
+      - name: Checkout pro 🛎️ # publish to pro
         if: ${{ env.IS_DEV == 'false' }}
         uses: actions/checkout@v3
         with:
           ref: main
+      # - name: Cache bundle install # cache. see https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows
+      #   uses: 
       - name: Download production artifact 🔻
         uses: actions/download-artifact@v3
         with:
           name: ${{ env.ARTIFACT_DOCS_NAME }}
           path: docs
+      # uses: ruby/setup-ruby@v1 # see https://github.com/ruby/setup-ruby#caching-bundle-install-automatically
       - name: Set up Ruby 📁
-        uses: actions/setup-ruby@v1
+        uses: ruby/setup-ruby@473e4d8fe5dd94ee328fdfca9f8c9c7afc9dae5e
         with:
-          # ruby-version: 2.7
-          bundler-cache: true # see https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-ruby#caching-dependencies
+          ruby-version: 2.7
+          # see https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-ruby#caching-dependencies
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      # - name: Set up Ruby 📁
+      #   uses: actions/setup-ruby@v1
+      #   # with:
+      #   #   ruby-version: 2.7
       - name: Install dependencies 🔧
         run: |
+          bundle list
           gem install bundler
           bundle install
       - name: Build dev 📦
