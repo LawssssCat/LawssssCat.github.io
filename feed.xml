@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://lawsssscat.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lawsssscat.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-05-29T15:23:28+00:00</updated><id>https://lawsssscat.github.io/feed.xml</id><title type="html">LawssssCat’s Blog</title><subtitle>👽 [ Here ] is my blog, toolbox and Experimental site</subtitle><author><name>LawssssCat</name></author><entry><title type="html">emoji resources 😀</title><link href="https://lawsssscat.github.io/docs/resource/emoji.html" rel="alternate" type="text/html" title="emoji resources 😀" /><published>2022-05-28T00:00:00+00:00</published><updated>2022-05-28T00:00:00+00:00</updated><id>https://lawsssscat.github.io/docs/resource/emoji</id><content type="html" xml:base="https://lawsssscat.github.io/docs/resource/emoji.html"><![CDATA[<p>There two kinds of emoji.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://lawsssscat.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lawsssscat.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-05-30T03:19:41+00:00</updated><id>https://lawsssscat.github.io/feed.xml</id><title type="html">LawssssCat’s Blog</title><subtitle>👽 [ Here ] is my blog, toolbox and Experimental site</subtitle><author><name>LawssssCat</name></author><entry><title type="html">emoji resources 😀</title><link href="https://lawsssscat.github.io/docs/resource/emoji.html" rel="alternate" type="text/html" title="emoji resources 😀" /><published>2022-05-28T00:00:00+00:00</published><updated>2022-05-28T00:00:00+00:00</updated><id>https://lawsssscat.github.io/docs/resource/emoji</id><content type="html" xml:base="https://lawsssscat.github.io/docs/resource/emoji.html"><![CDATA[<p>There two kinds of emoji.</p>
 
 <ol>
   <li><code class="language-plaintext highlighter-rouge">:some:</code> - <a href="https://www.webfx.com/tools/emoji-cheat-sheet/">https://www.webfx.com/tools/emoji-cheat-sheet/</a></li>
@@ -567,7 +567,7 @@ _sass
 
 <hr />
 
-<p>site time 2022-05-29 15:23:28 +0000</p>
+<p>site time 2022-05-30 03:19:41 +0000</p>
 
 <p>site Jekyll::Drops::SiteDrop</p>
 
@@ -579,7 +579,7 @@ _sass
 
 <p>pages 7</p>
 
-<p>posts 14</p>
+<p>posts 15</p>
 
 <h1 id="see-httpsjekyllrbcomdocsstep-by-step08-blogging">see <a href="https://jekyllrb.com/docs/step-by-step/08-blogging/">https://jekyllrb.com/docs/step-by-step/08-blogging/</a></h1>
 <h1>Latest Posts</h1>
@@ -676,9 +676,15 @@ _sass
 
     </li>
   
+    <li>
+      <h2><a href="/docs/test/A-Test-Post-From-Docs-Branch.html">A Test Post From Docs Branch</a></h2>
+      <p>Test the sync from docs branch.</p>
+
+    </li>
+  
 </ul>
 
-<p>collections [#&lt;Jekyll::Document docs/guide/_posts/2019-05-21-How-to-write-Markdown-in-site.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-21-A-Test-Page-01.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-02-show-all.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-03-chinese.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-03-empty copy 6.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-04-page-attributes.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-05-css.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-06-em.md collection=posts&gt;, #&lt;Jekyll::Document docs/guide/_posts/2019-07-11-What-is-the-structure-of-this-project.md collection=posts&gt;, #&lt;Jekyll::Document docs/guide/_posts/2019-07-15-How-to-add-a-category-in-site.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-07-22-A-Test-Page-07-kramdown.md collection=posts&gt;, #&lt;Jekyll::Document docs/guide/_posts/2019-07-25-How-to-add-a-module-in-site.md collection=posts&gt;, #&lt;Jekyll::Document docs/guide/_posts/2022-05-25-some-tips-jekyll-site-you-should-know.md collection=posts&gt;, #&lt;Jekyll::Document docs/resource/_posts/2022-05-28-emoji.md collection=posts&gt;]</p>
+<p>collections [#&lt;Jekyll::Document docs/test/_posts/1997-05-29-A-Test-Post-From-Docs-Branch.md collection=posts&gt;, #&lt;Jekyll::Document docs/guide/_posts/2019-05-21-How-to-write-Markdown-in-site.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-21-A-Test-Page-01.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-02-show-all.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-03-chinese.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-03-empty copy 6.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-04-page-attributes.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-05-css.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-06-22-A-Test-Page-06-em.md collection=posts&gt;, #&lt;Jekyll::Document docs/guide/_posts/2019-07-11-What-is-the-structure-of-this-project.md collection=posts&gt;, #&lt;Jekyll::Document docs/guide/_posts/2019-07-15-How-to-add-a-category-in-site.md collection=posts&gt;, #&lt;Jekyll::Document docs/test/_posts/2019-07-22-A-Test-Page-07-kramdown.md collection=posts&gt;, #&lt;Jekyll::Document docs/guide/_posts/2019-07-25-How-to-add-a-module-in-site.md collection=posts&gt;, #&lt;Jekyll::Document docs/guide/_posts/2022-05-25-some-tips-jekyll-site-you-should-know.md collection=posts&gt;, #&lt;Jekyll::Document docs/resource/_posts/2022-05-28-emoji.md collection=posts&gt;]</p>
 
 <hr />
 
@@ -775,6 +781,12 @@ _sass
     <li>
       <h2><a href="/docs/guide/How-to-write-Markdown-in-site.html">How to write Markdown in site</a></h2>
       <h2 id="how-to-write-markdown">How to write markdown</h2>
+
+    </li>
+  
+    <li>
+      <h2><a href="/docs/test/A-Test-Post-From-Docs-Branch.html">A Test Post From Docs Branch</a></h2>
+      <p>Test the sync from docs branch.</p>
 
     </li>
   
