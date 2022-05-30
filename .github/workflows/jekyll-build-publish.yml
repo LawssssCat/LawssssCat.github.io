@@ -68,8 +68,8 @@ jobs:
       #     bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - name: Set up Ruby 📁
         uses: actions/setup-ruby@v1
-        with:
-          # ruby-version: 2.7
+        # with:
+        #     ruby-version: 2.7
       - name: Install dependencies 🔧
         run: |
           echo =============== gem environment
