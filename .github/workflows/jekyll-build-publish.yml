@@ -12,7 +12,7 @@ on:
 
 # see https://docs.github.com/en/actions/learn-github-actions/environment-variables
 env: 
-  IS_DEV: ${{ github.ref == 'refs/heads/dev' }}
+  IS_DEV: ${{ ${{ github.ref == 'refs/heads/dev' }} }}
   ARTIFACT_DOCS_NAME: docs
   DEV_DEPLOY_PREFIX: demo
 
