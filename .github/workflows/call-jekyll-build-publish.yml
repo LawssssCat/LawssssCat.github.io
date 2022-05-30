@@ -10,5 +10,31 @@ jobs:
   call-jekyll-build-publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: ${{ github.repository }}/.github/workflows/jekyll-build-publish.yml@dev
-      - uses: ${{ github.repository }}/.github/workflows/jekyll-build-publish.yml@main
+      - uses: LawssssCat/LawssssCat.github.io/.github/workflows/jekyll-build-publish.yml@dev
+      - uses: LawssssCat/LawssssCat.github.io/.github/workflows/jekyll-build-publish.yml@main
+
+  # see https://docs.github.com/en/actions/learn-github-actions/contexts#example-printing-context-information-to-the-log
+  dump_contexts_to_log:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Dump GitHub context 🛎️
+          id: github_context_step
+          run: echo '${{ toJSON(github) }}'
+        - name: Dump env context
+          run: echo '${{ toJSON(env) }}'
+        - name: Dump job context
+          run: echo '${{ toJSON(job) }}'
+        - name: Dump steps context
+          run: echo '${{ toJSON(steps) }}'
+        - name: Dump runner context
+          run: echo '${{ toJSON(runner) }}'
+        - name: Dump strategy context
+          run: echo '${{ toJSON(strategy) }}'
+        - name: Dump matrix context
+          run: echo '${{ toJSON(matrix) }}'
+        - name: Dump secrets context
+          run: echo '${{ toJSON(secrets) }}'
+        - name: Dump needs context
+          run: echo '${{ toJSON(needs) }}'
+        - name: Dump inputs context
+          run: echo '${{ toJSON(inputs) }}'  
