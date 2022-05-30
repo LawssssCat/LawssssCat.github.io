@@ -81,14 +81,16 @@ jobs:
           echo =============== gem bundle config list
           bundle config list
           echo =============== gem bundle list
-          bundle list
+          # bundle list
           echo =============== gem bundle config change see https://github.com/actions/cache/blob/master/examples.md#ruby---bundler
           bundle config path vendor/bundle
           bundle config list
           echo =============== gem bundle list
-          bundle list
+          # bundle list
           echo =============== gem bundle install
           bundle install --jobs 4 --retry 3
+          echo =============== gem bundle list
+          bundle list
       - name: Build dev 📦
         if: ${{ env.IS_DEV == 'true' }}
         run: bundle exec jekyll build -d _site/
