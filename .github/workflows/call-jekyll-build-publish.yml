@@ -4,7 +4,7 @@ on:
     branches: [ docs ]
   push:
     branches: [ docs ]
-  workflow_dispatch:
+  workflow_dispatch: 
 
 jobs:
   call-jekyll-build-publish-dev:
