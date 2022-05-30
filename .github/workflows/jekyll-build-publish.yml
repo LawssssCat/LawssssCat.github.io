@@ -46,29 +46,40 @@ jobs:
         with:
           ref: main
       # - name: Cache bundle install # cache. see https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows
-      #   uses: 
+      - name: Cache Ruby - Bundler # see https://github.com/actions/cache/blob/master/examples.md#ruby---bundler
+        uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
       - name: Download production artifact 🔻
         uses: actions/download-artifact@v3
         with:
           name: ${{ env.ARTIFACT_DOCS_NAME }}
           path: docs
       # uses: ruby/setup-ruby@v1 # see https://github.com/ruby/setup-ruby#caching-bundle-install-automatically
-      - name: Set up Ruby 📁
-        # uses: ruby/setup-ruby@473e4d8fe5dd94ee328fdfca9f8c9c7afc9dae5e
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.0'
-          # see https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-ruby#caching-dependencies
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       # - name: Set up Ruby 📁
-      #   uses: actions/setup-ruby@v1
-      #   # with:
-      #   #   ruby-version: 2.7
+      #   # uses: ruby/setup-ruby@473e4d8fe5dd94ee328fdfca9f8c9c7afc9dae5e
+      #   uses: ruby/setup-ruby@v1
+      #   with:
+      #     ruby-version: '3.0'
+      #     # see https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-ruby#caching-dependencies
+      #     bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      - name: Set up Ruby 📁
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.7
       - name: Install dependencies 🔧
         run: |
+          gem environment
+          gen list 
           bundle list
           gem install bundler
-          bundle install
+          # bundle install
+          # see https://github.com/actions/cache/blob/master/examples.md#ruby---bundler
+          bundle config path vendor/bundle
+          bundle install --jobs 4 --retry 3
       - name: Build dev 📦
         if: ${{ env.IS_DEV == 'true' }}
         run: bundle exec jekyll build -d _site/
