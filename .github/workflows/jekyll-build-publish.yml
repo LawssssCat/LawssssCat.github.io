@@ -3,12 +3,13 @@ name: jekyll-build-publish
 # see https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-including-and-excluding-branches
 on:
   pull_request:
-    branches: [ main, dev , docs ]
+    branches: [ main, dev ]
   push:
-    branches: [ main, dev , docs ]
+    branches: [ main, dev ]
     paths-ignore: 
       - '!README.md'
   workflow_dispatch:
+  workflow_call: # see https://docs.github.com/en/actions/using-workflows/reusing-workflows#using-inputs-and-secrets-in-a-reusable-workflow
 
 # see https://docs.github.com/en/actions/learn-github-actions/environment-variables
 env: 
