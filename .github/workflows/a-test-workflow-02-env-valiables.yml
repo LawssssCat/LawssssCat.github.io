@@ -2,8 +2,8 @@
 name: Greeting on variable day
 
 on:
-  push:
-    branches: [ docs ]
+  # push:
+  #   branches: [ docs ]
   workflow_dispatch:
 
 env:
