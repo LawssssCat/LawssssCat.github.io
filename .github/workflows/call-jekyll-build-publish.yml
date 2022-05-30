@@ -7,11 +7,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  call-jekyll-build-publish:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: LawssssCat/LawssssCat.github.io/.github/workflows/jekyll-build-publish.yml@dev
-      - uses: LawssssCat/LawssssCat.github.io/.github/workflows/jekyll-build-publish.yml@main
+  call-jekyll-build-publish-dev:
+    uses: LawssssCat/LawssssCat.github.io/.github/workflows/jekyll-build-publish.yml@dev
+  call-jekyll-build-publish-main:
+    uses: LawssssCat/LawssssCat.github.io/.github/workflows/jekyll-build-publish.yml@main
 
   # see https://docs.github.com/en/actions/learn-github-actions/contexts#example-printing-context-information-to-the-log
   dump_contexts_to_log:
