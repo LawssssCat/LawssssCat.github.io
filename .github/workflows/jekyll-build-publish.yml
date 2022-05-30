@@ -54,9 +54,10 @@ jobs:
           path: docs
       # uses: ruby/setup-ruby@v1 # see https://github.com/ruby/setup-ruby#caching-bundle-install-automatically
       - name: Set up Ruby 📁
-        uses: ruby/setup-ruby@473e4d8fe5dd94ee328fdfca9f8c9c7afc9dae5e
+        # uses: ruby/setup-ruby@473e4d8fe5dd94ee328fdfca9f8c9c7afc9dae5e
+        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7
+          ruby-version: '3.0'
           # see https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-ruby#caching-dependencies
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       # - name: Set up Ruby 📁
