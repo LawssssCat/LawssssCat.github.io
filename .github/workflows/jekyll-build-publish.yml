@@ -73,7 +73,7 @@ jobs:
       - name: Install dependencies 🔧
         run: |
           gem environment
-          gen list 
+          gem list 
           bundle list
           gem install bundler
           # bundle install
