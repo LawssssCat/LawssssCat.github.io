@@ -38,7 +38,7 @@ exclude:
 #   - vendor/ruby/
 
 # --------------
-# variables
+# seo
 # --------------
 # liquid. see http://shopify.github.io/liquid/
 # variables. see https://jekyllrb.com/docs/variables/#site-variables
@@ -46,6 +46,8 @@ exclude:
 # the base hostname & protocol for your site, e.g. http://example.com
 url: https://lawsssscat.github.io # feeded
 title: LawssssCat's Blog # feeded
+logo: /assets/favicon.ico
+tagline: # A short description 
 email:
 author: LawssssCat
 description: 👽 [ Here ] is my blog, toolbox and Experimental site # feeded
@@ -63,6 +65,22 @@ baseurl:  /demo # the subpath of your site, e.g. /blog
 # see https://jekyllrb.com/docs/permalinks/#built-in-formats
 # # there are problem that chinese make path of post error when permalink is pretty
 permalink: none # default: pretty other: none 
+
+social:
+  # name: Ben Balter #  If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles.
+    - https://www.linkedin.com/in/LawssssCat
+    - https://github.com/LawssssCat
+
+google_site_verification:
+webmaster_verifications:
+# twitter:
+#   username: benbalter
+#   card: summary
+# facebook:
+#   app_id: 1234
+#   publisher: 1234
+#   admins: 1234
 
 # --------------
 # variables custom
@@ -154,3 +172,5 @@ plugins:
   - jemoji
   # feed see https://github.com/jekyll/jekyll-feed
   - jekyll-feed
+  # https://github.com/jekyll/jekyll-seo-tag
+  - jekyll-seo-tag
