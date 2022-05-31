@@ -1,5 +1,10 @@
 
 ## code
+```diff
++ haha
+- f**k
+```
+
 
 ```js
   function setup() {
